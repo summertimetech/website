@@ -54,7 +54,7 @@
 
 								<!-- Box -->
 									<!-- <h2>OVER DEZE WEBSITE</h2>	-->
-									<div class="box">
+								<div class="box">
 										<p><span class="image right"><img src="images/theweb23.jpg" alt="" /></span>
 										Een website en of App ontwikkelaar kan met behulp van reeks van technieken, dus zonder gebruik van kant en klare hulpmiddelen zoals CMS of Web Builder, ideeen omzetten naar werkelijkheid. Het is een uitermate complexe omgeving en ontwikkeling geschiedt door speciaal daartoe opgeleide medewerkers.
 										</p>
@@ -127,8 +127,60 @@
 										→ zie:<a href="https://linuxmint-installation-guide.readthedocs.io/nl/latest/" target=blank> Handleiding installatie Linux als dual boot of dedicated stand alone computer </a><br /></li>
 										→ zie:<a href="https://www.dell.com/nl-nl/work/shop/scc/sc/laptops?~ck=mn&appliedRefinements=10673" target="blank"> Kopen kant en klaar Linux laptop </a><br /></li>
 										</p>
+
+									<dl>
+										<dt id="virtualbox">VirtualBox</dt>										
+										<dd>
+										<p><span class="image right"><img src="images/theweb23virtualbox.jpg" alt="" /></span>
+										VirtualBox is een vrij computerprogramma om "ander" besturingssystemen te draaien op eigen computer. Dit gebeurt op basis van virtualisatie. VirtualBox is beschikbaar voor Windows, macOS, Linux, OS/2, Solaris en Unix.<br /></li>
+										→ zie:<a href="https://nl.wikipedia.org/wiki/VirtualBox" target="blank"> Wikipedia VirtualBox </a>
+										</p>
+
+										<p>
+										Met VirtualBox kunnen virtuele machines (VM) worden aangemaakt, kort door de bocht vergelijkbaar als huren van een VM (heet aldaar VPM) bij hosting bedrijf alleen dan zelf doen op eigen computer. De hiervoor ondersteunde bestandsformaten zijn VDI, VMDK, VHD, HDD, QED en QCOW. VirtualBox emuleert typische computer hardware en beschikt daarnaast over gastuitbreidingen waaronder MS Fonts en integratie met de host zoals gedeelde folder tussen host en VB gast.			
+										</p>										
+
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/sB_5fqiysi4" target="blank"> YouTube Videotorial VirtualBox installatie voor beginners </a>
+										</p>
+
+										<p>
+										VirtualBox kan onder andere ook gebruikt worden om een webserver te simuleren (VS), kort door de bocht vergelijkbaar met huren van een VS (heet aldaar VPS) bij hosting bedrijf alleen dan zelf doen op eigen computer. Bij in dit geval dan eigen VS dient die met een uniek IP adres benaderbaar te zijn. Om dit te bereiken dienen juiste VB netwerk settings zijn ingesteld. Zie in onderstaande videotorial voor mogelijke opties waaronder Host Only Netwerk die ook het internet op kan wat handig is voor updates zoeken van server software, of Internal Network die niet het internet op kan, hetgeen handig is ingeval van testen waarbij de omgeving gelijk móet blijven.
+										</p>										
+
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/QO_Tv02ND-k" target="blank"> YouTube Videotorial VirtualBox networking mode </a>
+										</p>
+
+										<p>
+										Ingeval gebruiker de VirtualBox vanuit het internet wil kunnen benaderen dient de eigen router waarachter VS of VM is aangesloten, ingesteld te worden met port forwarding. Dit is niet zonder security risico's. Indien gewenst fixeer dan binnen VB het netwerk IP adres bij Netwerk Settings Advanced. Onhou het ingestelde vaste interne IP adres en login via browser op router (adres is meestal 192.168.178.1) en volg de instructie in onderstaande videotorial.
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/jfSLxs40sIw" target="blank"> YouTube Videotorial Port Forwading beginner guide </a>
+										</p>
 										
-									</div>
+										<p>
+										In video hierboven wordt uitgelegd om security issues welke gepaard gaan met openstellen en "bekendmaken" van eigen IP adres in enige mate te beperken via<br /></li>
+										→ kopen eigen domeinnaam<br /></li>
+										→ aldaar via C-Panel instellen A-record naar eigen IP adres<br /></li>
+										Het is een aanrader om dat inderdaad zo te doen.
+										</p>
+
+										<p>
+										→ zie:<a href="theweb08.html#dns"> Domeinnaam </a>
+										</p>
+
+										<p>
+										Opvallend is dat bij meeste tutorials gebruiker het advies krijgt niet zoveel GB's te reserveren voor de virtuele harddisk. Iets in de grootte van 10GB of 20GB. Echter, na enige tijd inrichten en gebruiken van de VB omgeving kan het zijn dat de gereserveerde ruimte volloopt. En als gebruiker bewuste VB niet wil verwijderen en opnieuw maar dan groter te beginnen, maar omgeving wil bewaren dan dient dus de virtuele disk vergroot te worden. En dat is geen sinecure. Vandaar handleiding ingeval nodig. 
+										</p>
+
+										<p>
+										→ zie:<a href="https://drive.google.com/open?id=1L4-aY07CrpB1_js2uiVt_ZMWRZEfzRxo" target="blank"> VirtualBox Resize disk </a>
+										</p>
+
+										</dd>
+									</dl>
+
+								</div>
 		
 							</section>
 
