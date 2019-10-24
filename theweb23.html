@@ -128,7 +128,7 @@
 										→ zie:<a href="https://www.dell.com/nl-nl/work/shop/scc/sc/laptops?~ck=mn&appliedRefinements=10673" target="blank"> Kopen kant en klaar Linux laptop </a><br /></li>
 										</p>
 
-									<dl>
+								<dl>
 										<dt id="virtualbox">VirtualBox</dt>										
 										<dd>
 										<p><span class="image right"><img src="images/theweb23virtualbox.jpg" alt="" /></span>
@@ -136,28 +136,57 @@
 										→ zie:<a href="https://nl.wikipedia.org/wiki/VirtualBox" target="blank"> Wikipedia VirtualBox </a>
 										</p>
 
+										<dt>VirtualBox Virtual Machine</dt>
+										<dd>
 										<p>
-										Met VirtualBox kunnen virtuele machines (VM) worden aangemaakt, kort door de bocht vergelijkbaar als huren van een VM (heet aldaar VPM) bij hosting bedrijf alleen dan zelf doen op eigen computer. De hiervoor ondersteunde bestandsformaten zijn VDI, VMDK, VHD, HDD, QED en QCOW. VirtualBox emuleert typische computer hardware en beschikt daarnaast over gastuitbreidingen waaronder MS Fonts en integratie met de host zoals gedeelde folder tussen host en VB gast.			
+										Met VirtualBox kunnen virtuele machines (VM) worden aangemaakt, vergelijkbaar met huren van een VM bij hosting bedrijf alleen dan zelf doen op eigen computer. De hiervoor ondersteunde bestandsformaten zijn VDI, VMDK, VHD, HDD, QED en QCOW. VirtualBox emuleert computer hardware en beschikt daarnaast over gastuitbreidingen waaronder MS Fonts en integratie met de host zoals gedeelde folder tussen host en VB gast.			
 										</p>										
 
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/sB_5fqiysi4" target="blank"> YouTube Videotorial VirtualBox installatie voor beginners </a>
 										</p>
 
+										<dt>VirtualBox Virtual Server</dt>
+										<dd>
 										<p>
-										VirtualBox kan onder andere ook gebruikt worden om een webserver te simuleren (VS), kort door de bocht vergelijkbaar met huren van een VS (heet aldaar VPS) bij hosting bedrijf alleen dan zelf doen op eigen computer. Bij in dit geval dan eigen VS dient die met een uniek IP adres benaderbaar te zijn. Om dit te bereiken dienen juiste VB netwerk settings zijn ingesteld. Zie in onderstaande videotorial voor mogelijke opties waaronder Host Only Netwerk die ook het internet op kan wat handig is voor updates zoeken van server software, of Internal Network die niet het internet op kan, hetgeen handig is ingeval van testen waarbij de omgeving gelijk móet blijven.
+										VirtualBox kan onder andere ook gebruikt worden om een webserver te simuleren (VS), vergelijkbaar met huren van een VPS bij hosting bedrijf alleen dan zelf doen op eigen computer. (Op een webserver draait meestal Apache2 of NginX als server programma, maar dat is nu niet het topic). Bij in dit geval dan eigen VS dient die met een uniek IP adres benaderbaar te zijn. Om dit te bereiken dienen juiste VB netwerk settings zijn ingesteld. Zie in onderstaande videotorial voor mogelijke opties waaronder Host Only Netwerk die ook het internet op kan wat handig is voor updates zoeken van server software, of Internal Network die niet het internet op kan, hetgeen handig is ingeval van testen waarbij de omgeving gelijk móet blijven.
 										</p>										
 
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/QO_Tv02ND-k" target="blank"> YouTube Videotorial VirtualBox networking mode </a>
 										</p>
 
+										<dt>VirtualBox inloggen via SSH</dt>
+										<dd>
 										<p>
-										Ingeval gebruiker de VirtualBox vanuit het internet wil kunnen benaderen dient de eigen router waarachter VS of VM is aangesloten, ingesteld te worden met port forwarding. Dit is niet zonder security risico's. Indien gewenst fixeer dan binnen VB het netwerk IP adres bij Netwerk Settings Advanced. Onhou het ingestelde vaste interne IP adres en login via browser op router (adres is meestal 192.168.178.1) en volg de instructie in onderstaande videotorial.
+										Het is mogelijk om vanuit computer cq "virtuele omgeving" waarachter gebruiker zit en is ingelogd, in te loggen op elke computer of virtuele omgeving aangesloten op het internet met aldaar eigen IP adres, door middel van Secure Shell. Indien gewenst kan dat SSH inloggen dus ook op VirtualBox omgeving, want dat maakt beheer van die VB omgeving een stuk handzamer. Voor het initieel opzetten van SSH connectie is minimaal nodig het target IP adres (zie ook vorige item), in eigen LAN of op internet.<br /></li>
+										→ zie:<a href="https://nl.wikipedia.org/wiki/Secure_Shell" target="blank"> Wikipedia SSH </a>
+										</p>										
+
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/S7jD6nnYJy0" target="blank"> YouTube Videotorial VirtualBox Netwerk en SSH toegang</a>
+										</p>
+
+										<dt>VirtualBox key based login</dt>
+										<dd>
+										<p>
+										In vorige item ging het over via SSH inloggen op andere omgeving met gebruikmaking van loginnaam en password. Dat inloggen met loginnaam en password is op het internet niet secure genoeg want inloggen met password is hack gevoelig. Daarvoor in de plaats kan ook worden ingelogd op andere omgeving weliswaar mét loginnaam maar zónder password! Daarvoor in de plaats komt een secure tekenreeks van duizenden karakters. Deze key based SSH verbinding dient eenmalig te worden opgezet en werkt daarna helemaal prima. Key based SSH login zonder mogelijkheid van password login op remote omgeving is mondiaal "de industrie standaard", dus het is aan te bevelen om ook in eigen beheer deze manier van opereren te hanteren.  
+										</p>										
+
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/vpk_1gldOAE" target="blank"> YouTube Videotorial SSH key based toegang </a>
+										</p>
+
+										<dt>VirtualBox login vanaf Internet</dt>
+										<dd>
+										<p>
+										Ingeval gebruiker de VirtualBox vanuit het internet wil kunnen benaderen dient de eigen router waarachter VS of VM is aangesloten, ingesteld te worden met port forwarding. Dit is niet zonder security risico's. Indien gewenst fixeer dan binnen VB het netwerk IP adres bij Netwerk Settings Advanced. Dit fixeren van vast IP adres van VB omgeving is ook al in vorige items aan de orde geweest. Te doen for port forwarding is login via browser op eigen router (adres is meestal 192.168.178.1) en volg de instructie in onderstaande videotorial.
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/jfSLxs40sIw" target="blank"> YouTube Videotorial Port Forwading beginner guide </a>
 										</p>
 										
+										<dt>Op internet maskeren van eigen IP adres</dt>
+										<dd>
 										<p>
 										In video hierboven wordt uitgelegd om security issues welke gepaard gaan met openstellen en "bekendmaken" van eigen IP adres in enige mate te beperken via<br /></li>
 										→ kopen eigen domeinnaam<br /></li>
@@ -166,19 +195,55 @@
 										</p>
 
 										<p>
-										→ zie:<a href="theweb08.html#dns"> Domeinnaam </a>
+										→ zie:<a href="theweb08.html#dns"> Kopen Domeinnaam </a>
+										</p>										
+									</dd>
+								</dl>
+
+										<h3 id="otapbeheer">OTAP Beheer</h3>
+										<p>
+										Met inachtneming van het vorenstaande is het dus met VirtualBox of fysieke hardware "bare metal" of gehuurde machines in de cloud mogelijk om een OTAP omgeving op te zetten met voor elke letter een eigen netwerk connectivity.
 										</p>
 
 										<p>
-										Opvallend is dat bij meeste tutorials gebruiker het advies krijgt niet zoveel GB's te reserveren voor de virtuele harddisk. Iets in de grootte van 10GB of 20GB. Echter, na enige tijd inrichten en gebruiken van de VB omgeving kan het zijn dat de gereserveerde ruimte volloopt. En als gebruiker bewuste VB niet wil verwijderen en opnieuw maar dan groter te beginnen, maar omgeving wil bewaren dan dient dus de virtuele disk vergroot te worden. En dat is geen sinecure. Vandaar handleiding ingeval nodig. 
+										Dus gestel Ontwikkelomgeving kan bestaan uit meerdere VB omgevingen zoals 1e "Linux desktop" en 2e voor "Ubuntu webserver draaien WordPress of HTML website" en 3e voor "Ubuntu server voor Database" en meer zoals 4e "Load Balancer voor verdelen netwerk verkeer" en 5e voor "Domain Controller LDAP Autorisaties" etc. Ergo de echte buitenwereld kan "in house" virtueel gesimuleerd worden. Op alle onderwerpen wordt later nader ingegaan.
 										</p>
 
 										<p>
-										→ zie:<a href="https://drive.google.com/open?id=1L4-aY07CrpB1_js2uiVt_ZMWRZEfzRxo" target="blank"> Handleiding VirtualBox Resize disk </a>
+										Zoals in vorige alinea voorgesteld kan dus die Ontwikkelomgeving bestaan uit 5 delen. Dus als hetzelfde wordt gedaan voor Testen omgeving dan is nodig een separate(!) kopie van die 5, dan voor Acceptatie omgeving nodig separaat weer 5, en zelf Productie omgeving kan virtual dan nodig weer separaat 5; geeft totaal in dit voorbeeld 4 x 5 = 20 omgevingen voor één App, of een reeks van Apps binnen een module, of reeks modules binnen een software pakket, of een reeks software pakketten voor een organisatie.
 										</p>
 
-										</dd>
-									</dl>
+										<p>
+										Gelet op vorige alinea, wat veel organisaties dan anno heden ook doen is hun omgevingen virtueel inrichten. En als dat nodig is, om welke reden dan ook, dan kan beheerder uitwijken naar ander rekencentrum door paar commando's. Vaak zijn daar ook tools voor die dan "automatisch" de IP adressen van target machines binnen de virtuele omgevingen overnemen. Die beheertools komen later aan bod. Een digitale verhuizing is zodoende weliswaar hightech maar eenvoudig te doen. Na verhuizen van omgevingen alleen nog A-record in DNS veranderen met verwijzen naar nieuwe IP adressen en organisatie is up and running in no time.
+										</p>
+								<dl>
+										<dt>VirtualBox Snapshots</dt>										
+										<dd>
+										<p>
+										Het inrichten van goed werkende stabiele omgevingen, met behouden van correcte settings, testdata en ook onderlinge afhankelijkheden van diverse versies van software is tijdrovend. Als eenmaal een VB omgeving gereed is en waardig om te bewaren, kan een Snapshot daarvan worden gemaakt. Na maken van Snapshot kan gebruiker op die omgeving van alles wijzigen, toevoegen en verwijderen. Het mooie van Snapshot is dat indien gewenst later gewoon weer kan worden teruggevallen op initiele uitgangspunt van vóór die changes door activeren van Snapshot van ¨situatie ervoor".									
+										</p>
+
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/Qte4X-rdr2Q" target="blank"> YouTube Videotorial VirtualBox how to use Snapshots </a>
+										</p>
+										
+
+										<dt>VirtualBox vergroten Disk size</dt>
+										<dd>
+										<p>
+										Bij meeste tutorials krijgt gebruiker het advies niet zoveel GB's te reserveren voor de virtuele harddisk. Iets in de grootte van 10GB of 20GB. Helemaal prima, totdat na enige tijd inrichten en gebruiken van de VB omgeving de gereserveerde ruimte volloopt. En als gebruiker bewuste VB niet wil verwijderen en opnieuw maar dan groter te beginnen, maar omgeving wil bewaren dan dient dus de virtuele disk vergroot te worden. En dat is geen sinecure. 
+										</p>
+
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/r_UyKufXR3c" target="blank"> YouTube Videotorial VirtualBox Resize disk </a>
+										</p>
+									</dd>
+
+								</dl>
+
+										<p>
+										In professionele setting is het gebruikelijk dat volgens het OTAP model wordt gewerkt en het is aan te bevelen om ook in eigen beheer deze manier van opereren te hanteren. 
+										</p>
 
 								</div>
 		
