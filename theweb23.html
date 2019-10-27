@@ -104,8 +104,8 @@
 										Op daily driver installatie van dual boot met 2e of meer OS<br /></li>
 										Stand alone dedicated 2e computer inrichten zoals Pi4 of ombouwen bestaande computer<br /></li>
 										In de cloud huren Virtual Machine bij Google GCP, AWS, Azure of Oracle<br /></li>
-										In de cloud huren Virtual Private Server<br /></li>										
-										</p>											
+										Cloud huren kan via shared hosting met meerdere klanten op één server, of<br /></li>
+										Cloud huren kan via Virtual Private Server is dedicated "eigen" machine					</p>											
 										</dd>
 									</dl>
 
@@ -119,7 +119,7 @@
 
 										<p>
 										<span class="image right"><img src="images/theweb23pi4.jpg" alt="" /></span>
-										Voor OTAP computers is mondiaal veel gebruikt, een stand alone Single Board Computer (SBC). Er zijn vele SBC varianten te koop, waarvan de Raspberry Pi de meest bekende en gebruikte is.
+										Om 100% fysieke functie scheiding te verkrijgen is voor OTAP computers mondiaal veel gebruikt, een stand alone Single Board Computer (SBC). Er zijn vele SBC varianten te koop, waarvan de Raspberry Pi de meest bekende en gebruikte is.
 										</p>
 
 										<p>
@@ -132,7 +132,7 @@
 										<dt id="virtualbox">VirtualBox</dt>										
 										<dd>
 										<p><span class="image right"><img src="images/theweb23virtualbox.jpg" alt="" /></span>
-										VirtualBox is een vrij computerprogramma om "ander" besturingssystemen te draaien op eigen computer. Dit gebeurt op basis van virtualisatie. VirtualBox is beschikbaar voor Windows, macOS, Linux, OS/2, Solaris en Unix.<br /></li>
+										VirtualBox is een voor thuisgebruik kostenloos maar bedrijven betaalde App om "ander" besturingssystemen te draaien op eigen computer. Dit gebeurt op basis van virtualisatie. VirtualBox is beschikbaar voor Windows, macOS, Linux, OS/2, Solaris en Unix.<br /></li>
 										→ zie:<a href="https://nl.wikipedia.org/wiki/VirtualBox" target="blank"> Wikipedia VirtualBox </a>
 										</p>
 
@@ -150,7 +150,11 @@
 										<dt>VirtualBox Virtual Server</dt>
 										<dd>
 										<p>
-										VirtualBox kan onder andere ook gebruikt worden om een webserver te simuleren (VS), vergelijkbaar met huren van een VPS bij hosting bedrijf alleen dan zelf doen op eigen computer. (Op een webserver draait meestal Apache2 of NginX als server programma, maar dat is nu niet het topic). Bij in dit geval dan eigen VS dient die met een uniek IP adres benaderbaar te zijn. Om dit te bereiken dienen juiste VB netwerk settings zijn ingesteld. Zie in onderstaande videotorial voor mogelijke opties waaronder Host Only Netwerk die ook het internet op kan wat handig is voor updates zoeken van server software, of Internal Network die niet het internet op kan, hetgeen handig is ingeval van testen waarbij de omgeving gelijk móet blijven.
+										VirtualBox kan onder andere ook gebruikt worden om een webserver te simuleren (VS), vergelijkbaar met huren van een VPS bij hosting bedrijf alleen dan zelf doen op eigen computer. (Op een webserver draait meestal Apache2 of NginX als server programma, maar dat is nu niet het topic). Bij in dit geval dan eigen VS dient die met een uniek eigen LAN IP adres benaderbaar te zijn.
+										</p>
+
+										<p>
+										Om dit te bereiken dienen juiste VB netwerk settings zijn ingesteld. Zie in onderstaande videotorial voor mogelijke opties waaronder Host Only Netwerk die ook het internet op kan wat handig is voor updates zoeken van server software, of Internal Network die niet het internet op kan, hetgeen handig is ingeval van testen waarbij de omgeving gelijk móet blijven.
 										</p>										
 
 										<p>
@@ -158,10 +162,10 @@
 										</p>
 										</dd>
 
-										<dt>VirtualBox inloggen via SSH</dt>
+										<dt id="ssh">VirtualBox inloggen via SSH</dt>
 										<dd>
 										<p>
-										Het is mogelijk om vanuit computer cq "virtuele omgeving" waarachter gebruiker zit en is ingelogd, in te loggen op elke computer of virtuele omgeving aangesloten op het internet met aldaar eigen IP adres, door middel van Secure Shell. Indien gewenst kan dat SSH inloggen dus ook op VirtualBox omgeving, want dat maakt beheer van die VB omgeving een stuk handzamer. Voor het initieel opzetten van SSH connectie is minimaal nodig het target IP adres (zie ook vorige item), in eigen LAN of op internet.<br /></li>
+										Het is mogelijk om vanuit host computer cq VB omgeving waar gebruiker op is ingelogd, in te loggen op elke computer of virtuele omgeving aangesloten op het LAN of internet door middel van Secure Shell. Indien gewenst kan dat SSH inloggen dus ook op VirtualBox omgeving, want dat maakt beheer van die VB omgeving een stuk handzamer. Voor het initieel opzetten van SSH connectie is minimaal nodig het target (LAN/WAN) IP adres.<br /></li>
 										→ zie:<a href="https://nl.wikipedia.org/wiki/Secure_Shell" target="blank"> Wikipedia SSH </a>
 										</p>										
 
@@ -170,10 +174,14 @@
 										</p>
 										</dd>
 
-										<dt>VirtualBox key based login</dt>
+										<dt id="sshkeybased">VirtualBox key based login</dt>
 										<dd>
 										<p>
-										In vorige item ging het over via SSH inloggen op andere omgeving met gebruikmaking van loginnaam en password. Dat inloggen met loginnaam en password is op het internet niet secure genoeg want inloggen met password is hack gevoelig. Daarvoor in de plaats kan ook worden ingelogd op andere omgeving weliswaar mét loginnaam maar zónder password! Daarvoor in de plaats komt een secure tekenreeks van duizenden karakters. Deze key based SSH verbinding dient eenmalig te worden opgezet en werkt daarna helemaal prima. Key based SSH login zonder mogelijkheid van password login op remote omgeving is mondiaal "de industrie standaard", dus het is aan te bevelen om ook in eigen beheer deze manier van opereren te hanteren.  
+										In vorige item ging het over via SSH inloggen op andere omgeving met gebruikmaking van loginnaam en password. Dat inloggen met loginnaam en password is op het internet niet secure genoeg want inloggen met password is hack gevoelig. Daarvoor in de plaats kan ook worden ingelogd op andere omgeving weliswaar mét loginnaam maar zónder password!
+										</p>
+
+										<p>
+										Daarvoor in de plaats komt een secure key van duizenden karakters. Deze key based SSH verbinding dient eenmalig te worden opgezet en werkt daarna helemaal prima. Key based SSH login zonder mogelijkheid van password login op remote omgeving is mondiaal "de industrie standaard", dus het is aan te bevelen om ook in eigen beheer deze manier van opereren te hanteren.  
 										</p>										
 
 										<p>
@@ -181,21 +189,22 @@
 										</p>
 										</dd>
 
-										<dt>VirtualBox login vanaf Internet</dt>
+										<dt id="portforwarding">VirtualBox login vanaf Internet</dt>
 										<dd>
 										<p>
-										Ingeval gebruiker de VirtualBox vanuit het internet wil kunnen benaderen dient de eigen router waarachter VS of VM is aangesloten, ingesteld te worden met port forwarding. Dit is niet zonder security risico's. Indien gewenst fixeer dan binnen VB het netwerk IP adres bij Netwerk Settings Advanced. Dit fixeren van vast IP adres van VB omgeving is ook al in vorige items aan de orde geweest. Te doen for port forwarding is login via browser op eigen router (adres is meestal 192.168.178.1) en volg de instructie in onderstaande videotorial.
+										Ingeval gebruiker de VirtualBox vanuit het internet wil kunnen benaderen dient de eigen router waarachter VS of VM is aangesloten, ingesteld te worden met port forwarding. Dit is niet zonder security risico's. Indien gewenst fixeer dan binnen VB het LAN IP adres bij Netwerk Settings Advanced. Dit fixeren van vast IP adres van VB omgeving is ook al in vorige items aan de orde geweest. Te doen for port forwarding is login via browser op eigen router (adres is meestal 192.168.178.1) en volg de instructie in onderstaande videotorial.
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/jfSLxs40sIw" target="blank"> YouTube Videotorial Port Forwading beginner guide </a>
 										</p>
 										</dd>
 										
-										<dt>Op internet maskeren van eigen IP adres</dt>
+										<dt id="dns">Op internet maskeren van eigen IP adres</dt>
 										<dd>
 										<p>
 										In video hierboven wordt uitgelegd om security issues welke gepaard gaan met openstellen en "bekendmaken" van eigen IP adres in enige mate te beperken via<br /></li>
-										→ kopen eigen domeinnaam<br /></li>
-										→ aldaar via C-Panel instellen A-record naar eigen IP adres<br /></li>
+										→ Kopen eigen domeinnaam<br /></li>
+										→ Aldaar via C-Panel instellen A-record naar eigen static IP adres<br /></li>
+										→ En als eigen IP adres dynamic is (DDNS) zie volgende item<br /></li>
 										Het is een aanrader om dat inderdaad zo te doen.
 										</p>
 
@@ -203,6 +212,22 @@
 										→ zie:<a href="theweb08.html#dns"> Kopen Domeinnaam </a>
 										</p>										
 										</dd>
+
+										<dt id="ddns">Dynamic IP adres (DDNS)</dt>
+										<dd>
+										<p>
+										Behoudens bedrijven hebben meeste internet gebruikers een dynamisch IP adres. Dat wil zeggen dat providers zoals Ziggo, KPN etc. bij gebruikers niét garanderen dat hun IP adres altijd hetzelfde blijft. Om er voor te zorgen dat bij DNS Registrar altijd op A record(s) het juiste IP adres staat vermeld, zónder dat elke dag handmatig te controleren en indien nodig alsdan handmatig de A records te wijzigen, is er een mechanisme om dat proces te automatiseren.
+										</p>
+
+										<p>
+										Onderstaand wordt ook beheertool Vagrant genoemd, en met reden want alhoewel dat tool voor gevorderden is cq meestal niet aan het begin van web developers guide aan de orde komt, toch hierbij alvast even vermeld dat van de nood (het niet hebben van een vast IP adres) een deugd gemaakt kan worden, namelijk door toevoegen in Vagrantfile de provisioning van een DDNS script in cron voor borgen mobiliteit van omgeving.
+										</p>
+
+										<p>
+										→ zie:<a href="https://www.namecheap.com/support/knowledgebase/article.aspx/36/11/how-do-i-start-using-dynamic-dns" target="blank"> Handleiding Dynamic DNS Apps </a>
+										</p>										
+										</dd>
+
 								</dl>
 
 										<h3 id="otapbeheer">OTAP Beheer</h3>
@@ -219,10 +244,10 @@
 										</p>
 
 										<p>
-										Gelet op vorige alinea, wat veel organisaties dan anno heden ook doen is hun omgevingen virtueel inrichten. En als dat nodig is, om welke reden dan ook, dan kan beheerder uitwijken naar ander rekencentrum door paar commando's. Vaak zijn daar ook tools voor die dan "automatisch" de IP adressen van target machines binnen de virtuele omgevingen overnemen. Die beheertools komen later aan bod. Een digitale verhuizing is zodoende weliswaar hightech maar eenvoudig te doen. Na verhuizen van omgevingen alleen nog A-record in DNS veranderen met verwijzen naar nieuwe IP adressen en organisatie is up and running in no time.
+										Gelet op vorige alinea, wat veel organisaties dan anno heden ook doen is hun omgevingen virtueel inrichten. En als dat nodig is, om welke reden dan ook, dan kan beheerder uitwijken naar ander rekencentrum door paar commando's. Die beheertools met bijvoorbeeld ook Vagrant komen later aan bod. Een digitale verhuizing is zodoende weliswaar hightech maar eenvoudig te doen.
 										</p>
 								<dl>
-										<dt>VirtualBox Snapshots</dt>										
+										<dt id="vbsnapshot">VirtualBox Virtual Machine Snapshots</dt>										
 										<dd>
 										<p>
 										Het inrichten van goed werkende stabiele omgevingen, met behouden van correcte settings, testdata en ook onderlinge afhankelijkheden van diverse versies van software is tijdrovend. Als eenmaal een VB omgeving gereed is en waardig om te bewaren, kan een Snapshot daarvan worden gemaakt. Na maken van Snapshot kan gebruiker op die omgeving van alles wijzigen, toevoegen en verwijderen. Het mooie van Snapshot is dat indien gewenst later gewoon weer kan worden teruggevallen op initiele uitgangspunt van vóór die changes door activeren van Snapshot van ¨situatie ervoor".									
@@ -233,7 +258,18 @@
 										</p>
 										</dd>
 
-										<dt>VirtualBox vergroten Disk size</dt>
+										<dt id="vbclone">VirtualBox Virtual Machine Clone</dt>										
+										<dd>
+										<p>
+										Een Clone kan prima gebruikt worden voor opzetten van OTAP omgevingen. Bijvoorbeeld zet 1e omgeving op, noem die "Ont" omgeving en clone deze dan naar "Tst", en clone naar "Acc" en clone naar "Prd". Dit soort afkortingen in de naam van een omgeving worden bij bedrijven vaak gebruikt. Dus bijvoorbeeld: "Ubuntu Server v19.10 (Ont)"
+										</p>
+
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/6uyUzdBA2IM" target="blank"> YouTube Videotorial VirtualBox how to Clone VM </a>
+										</p>
+										</dd>
+
+										<dt id="vbresizedisk">VirtualBox vergroten Disk size</dt>
 										<dd>
 										<p>
 										Bij meeste tutorials krijgt gebruiker het advies niet zoveel GB's te reserveren voor de virtuele harddisk. Iets in de grootte van 10GB of 20GB. Helemaal prima, totdat na enige tijd inrichten en gebruiken van de VB omgeving de gereserveerde ruimte volloopt. En als gebruiker bewuste VB niet wil verwijderen en opnieuw maar dan groter te beginnen, maar omgeving wil bewaren dan dient dus de virtuele disk vergroot te worden. En dat is geen sinecure. 
