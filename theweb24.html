@@ -379,21 +379,21 @@
 
 										<p>	
 										Compute<br /></li>
-										→ App Engine Platform as a Service to deploy Java, PHP, Node.js, Python, C#, .Net, Ruby and Go applications<br /></li>
-										→ Compute Engine Infrastructure as a Service to run Microsoft Windows and Linux virtual machines<br /></li>
-										→ Kubernetes Engine Containers as a Service based on Kubernetes<br /></li>
-										→ Cloud Functions Functions as a Service to run event-driven code written in Node.js or Python
+										- App Engine Platform as a Service to deploy Java, PHP, Node.js, Python, C#, .Net, Ruby and Go applications<br /></li>
+										- Compute Engine Infrastructure as a Service to run Microsoft Windows and Linux virtual machines<br /></li>
+										- Kubernetes Engine Containers as a Service based on Kubernetes<br /></li>
+										- Cloud Functions Functions as a Service to run event-driven code written in Node.js or Python
 										</p>
 
 										<p>
 										Storage & Databases<br /></li>
-										→ Cloud Storage Object storage with integrated edge caching to store unstructured data<br /></li>
-										→ Cloud SQL Database as a Service based on MySQL and PostgreSQL<br /></li>
-										→ Cloud BigTable Managed NoSQL database servicev
-										→ Cloud Spanner Horizontally scalable, strongly consistent, relational database service<br /></li>
-										→ Cloud Datastore NoSQL database for web and mobile applications<br /></li>
-										→ Persistent Disk Block storage for Compute Engine virtual machines<br /></li>
-										→ Cloud MemoryStore Managed in-memory data store based on Redis
+										- Cloud Storage Object storage with integrated edge caching to store unstructured data<br /></li>
+										- Cloud SQL Database as a Service based on MySQL and PostgreSQL<br /></li>
+										- Cloud BigTable Managed NoSQL database servicev
+										- Cloud Spanner Horizontally scalable, strongly consistent, relational database service<br /></li>
+										- Cloud Datastore NoSQL database for web and mobile applications<br /></li>
+										- Persistent Disk Block storage for Compute Engine virtual machines<br /></li>
+										- Cloud MemoryStore Managed in-memory data store based on Redis
 										</p>
 
 										<p>
@@ -410,17 +410,42 @@
 
 										<p>
 										In tutorial wordt uitgegaan van shared hosting via Google Cloud Platform bij product Compute Engine. Hiervoor nodig:<br /></li>
-										→ nodig gmail account<br /></li>
-										→ nodig creditcard tbv registratie (kostenvrij)<br /></li>
-										→ nodig domeinnaam<br /></li>
-										→ voorbeeld is LAMP stack installatie (Linux, Apache2, MySql, PHP)<br /></li>
-										→ voorbeeld is CMS WordPress
+										- nodig gmail account<br /></li>
+										- nodig creditcard tbv registratie (kostenvrij)<br /></li>
+										- nodig domeinnaam<br /></li>
+										- voorbeeld is LAMP stack installatie (Linux, Apache2, MySql, PHP)<br /></li>
+										- voorbeeld is CMS WordPress
 										</p>
 
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/vIJdypOqlL4" target="blank"> YouTube Videotorial Hosting Website on Google Cloud </a>
 										</p>
 										</dd>
+
+
+										<dt id="elastic">Website Traffic Statistieken</dt>								
+										<dd>
+										<p><span class="image right"><img src="images/theweb24elastic.jpg" alt="" /></span>
+										De meeste eigenaren willen het bezoek op de website bijhouden. Daarvoor bouwt eigenaar zelf dan Google Analytics, Facebook Pixel etc in. Nice to have maar enorm nadeel van dat soort analyse pixels is dat datasharks als bijvangst zeer gedetailleerde info van bezoekers ontvangen én bewaren om te verkopen.
+										</p>
+
+										<p>
+										Om níet mee te werken aan die ongebreidelde persoonsgebonden opslag van bezoekers hun internetgedrag, maar toch eigen website traffic te analyseren is er de free en open source toolkit Elastic.
+										</p>
+
+										<p>
+										Vanaf Apache2 webserver voert deamon Logstash actuele data vanuit /var/log/apache2/access.log naar viewer Kibana. En met vooraf gedefinieerde queries kunnen realtime statistieken worden ingezien..<br /></li>
+										→ zie:<a href="https://en.wikipedia.org/wiki/Elasticsearch" target="blank"> Wikipedia Elastic </a><br /></li>
+										→ zie:<a href="https://www.elastic.co/products/elasticsearch" target="blank"> Website Elastic get started </a>
+										</p>
+
+										<p>
+										→ zie:<a href="https://www.youtube.com/playlist?list=PLBtyBPTlyC7sPQDrYOEcQC3d1txIwF299" target="blank"> YouTube Videotorial playlist Elastic </a>
+										</p>
+										</dd>
+
+
+
 
 										<dt id="design">Design en MockUp</dt>
 										<dd>
@@ -457,13 +482,13 @@
 
 										<p>
 										Installeer VS Codium vanaf website via boven achter button. Gebruik voor Linux de optie Debian / Ubuntu (deb package):<br /></li>
-										→ Add the GPG key of the repository<br /></li>
-										→ Add the repository<br /></li>
-										→ Update then install vscodium<br /></li>
+										- Add the GPG key of the repository<br /></li>
+										- Add the repository<br /></li>
+										- Update then install vscodium<br /></li>
 										Voor alle zekerheid controle op telemetrie binnen VS Codium:<br /></li>
-										→ Ga naar File, Preferences, Settings<br /></li>
-										→ Zoek op "telemetry" en disable<br /></li>
-										→ Zoek op "crash" en disable
+										- Ga naar File, Preferences, Settings<br /></li>
+										- Zoek op "telemetry" en disable<br /></li>
+										- Zoek op "crash" en disable
 										</p>
 
 										<p>
@@ -535,14 +560,14 @@
 
 										<p>
 										Enkele van de meest voorkomende taken zijn:<br /></li>
-										→ Reeks afbeelding bestanden comprimeren<br /></li>
-										→ Debugger en console instructies uit scripts elimineren<br /></li>
-										→ CSS en JavaScript minimaliseren, samenvoegen en opschonen<br /></li>
-										→ Analyseren source code op fouten<br /></li>
-										→ LESS bestanden compileren<br /></li>
-										→ Unit test uitvoeren<br /></li>
-										→ Updates verzenden naar een productieserver<br /></li>
-										→ Updaten van databases
+										- Reeks afbeelding bestanden comprimeren<br /></li>
+										- Debugger en console instructies uit scripts elimineren<br /></li>
+										- CSS en JavaScript minimaliseren, samenvoegen en opschonen<br /></li>
+										- Analyseren source code op fouten<br /></li>
+										- LESS bestanden compileren<br /></li>
+										- Unit test uitvoeren<br /></li>
+										- Updates verzenden naar een productieserver<br /></li>
+										- Updaten van databases
 										</p>
 
 										<p>
