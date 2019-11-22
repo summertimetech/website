@@ -26,7 +26,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">Summertime Tech</a></li>
+							<li><a href="index.html">Frontpage</a></li>
 							<li><a href="fullstory.html">Full Story</a></li>
 							<li><a href="avgalerts.html">AVG Alerts</a></li>
 							<li><a href="archives.html">Archief</a></li>
@@ -59,29 +59,45 @@
 											<h2 id="compatibel"><a href="#">X86 versus ARM</a></h2>
 											<p>
 											<span class="image right"><img src="images/hardware.jpg" alt="" /></span>
-											De processor architectuur is van belang om te bepalen welke versie van operatings systeem (OS) kan worden gebruikt, namelijk de x86 architectuur of ARM. Fabrikanten Intel en AMD zijn een van de meest toegepaste processors met x86 architectuur in laptop, desktop en servers met MS Windows, Apple macOS en Linux. <br /></li>
+											De processor architectuur is van belang om te bepalen welke versie van operatings systeem (OS) kan worden gebruikt, namelijk de x86 architectuur of ARM. Fabrikanten Intel en AMD zijn een van de meest toegepaste processors met x86 architectuur, form factor meestal op klassieke moederboard met voor elke functie afzonderlijke componenten in laptop, desktop en servers met MS Windows, Apple macOS en Linux. <br /></li>
 											→ zie:<a href="https://nl.wikipedia.org/wiki/X86-instructieset" target="blank"> Wikipedia x86 </a>
 											</p>
 
 											<p>
-											ARM architectuur wordt meestal gebruikt in mobiele apparaten zoals Android en Apple iOS, iPadOS etc vanwege lage energieverbuik. En omdat mondiaal de trend is naar mobiel en IoT, groeit daarbij ook gebruik van ARM. Fabrikanten van mobiele processoren zoals Samsung, TSMC (oa voor Apple)), Rockchip, NXP, ATi, Qualcomm, Broadcom, Nividia, Allwinner, Texas Instruments etc. hebben een licentie op ARM architectuur.
-											</p>
-
-											<p>
-											Linux heeft een reeks ARM distro's bijv in gebruik bij Raspberry Pi, Linux phones van System76, Purisme en Pine, en ChromiumOS. Tegenwoordig is er ook een stripdown versie van Windows10 genaamd "Windows on ARM (WOA)". Enige grote speler die nog geen ARM versie heeft is Apple met macOS - wat voer geeft voor analisten "wat te verwachten".<br /></li>
+											ARM architectuur met System on a Chip (SoC) waarbij componenten zoals processor, GPU, WiFi- BT modem, memory etc als één geheel in de processor kunnen zijn opgenomen, wordt meestal gebruikt in mobiele apparaten zoals Android en Apple iOS, iPadOS etc vanwege lage energieverbuik. En omdat mondiaal de trend is naar mobiel en IoT, groeit daarbij ook gebruik van ARM. Fabrikanten van mobiele processoren zoals Samsung, TSMC, Rockchip, NXP, ATi, Qualcomm, Broadcom, Nividia, Allwinner, Texas Instruments etc. hebben een licentie op ARM architectuur..<br /></li>
 											→ zie:<a href="https://nl.wikipedia.org/wiki/ARM-architectuur" target="blank"> Wikipedia ARM </a>
 											</p>
 
 											<p>
-											De verschillen tussen de twee architecturen zijn groot, waarbij x86 Intel I7 processor 45 Watt consumeert, verbruikt de ARM 3 Watt. Niet alleen gaat een batterij op ARM dus veel langer mee, ook hitte dat gepaard gaat met stroomverbuik, is met ARM veel lager met dus in principe geen bijzondere koel voorzieningen. Zie deze website back ground foto: is watergekoelde x86 computer met bedrijfstemperatuur ~40C.
+											Linux kent een reeks ARM distro's, bijvoorbeeld voor Single Board Computers (SBC) Raspberry Pi, Arduino, LattePanda. En Linux phones zoals System76, Purisme en Pine. En ook op traditionele form factor laptop en desktop met oa ChromiumOS. Sinds 2018 is er ook een stripdown versie van Windows10 genaamd "Windows on ARM (WOA)". Er is nog geen ARM versie voor macOS.
 											</p>
 
 											<p>
-											On a side note: het hiervoor vermelde verklaart de reden waarom Apple MacBook's draaiende met macOS x86 architectuur in een super small high design formfactor dus koeling issues heeft; althans bij ~100C gaat de processor klokfrequentie via embedded software naar beneden, want veel te heet. Apple's iPhone en iPad met iOS op ARM hebben niet dat hitte issue.   
+											De verschillen tussen de twee architecturen zijn groot, waarbij x86 Intel I7 U-serie mobiele processor 45 Watt Thermal Design Power (TDP) consumeert, verbruikt de ARM 3 Watt TDP. Niet alleen gaat een batterij op ARM dus veel langer mee, ook hitte (weerstand verhogend, snelheid vertragend) dat gepaard gaat met stroomverbuik, is met ARM veel lager met dus in principe geen bijzondere koel voorzieningen.
+											</p>
+
+											<p>
+											Zie deze website back ground foto: vloeistof gekoelde PC's komen voor bij high performance x86 processor zoals AMD Ryzen Threadripper 1950X met 16 cores en een TDP van 180 Watt. Bedrijfstemperatuur is kamertemperatuur plus 10C.
+											</p>
+
+											<p>
+											On a side note: het hiervoor vermelde verklaart waarom laptops zoals MacBook's draaiende met x86 architectuur in een super small high design form factor meestal worstelen met koeling; bij ~100C gaat de processor klokfrequentie via embedded software naar beneden, want maximale tolerantie bereikt. Dat thermal throttling is nodig want hoge temperaturen verlagen levenduur van processor aanzienlijk.
+											</p>
+
+											<p>
+											Niet bepaald iets waar de gemiddelde consument bij aankoop op let maar bij veel laptops (wo Apple) is de processor vast gesoldeerd op moederboard - in plaats van geplaatst in een socket. Dus, als de processor door hoge temperaturen, natuurlijk buiten de garantietermijn, maar veel vroeger dan gehoopt de geest geeft, het meestal goedkoper is om dan een nieuwe computer te kopen.
+											</p>
+
+											<p>
+											Wat betreft dat vast solderen van componenten: gelet op hedendaagse aandacht voor het milieu en allerlei groene maatregelen zou het van fabrikanten eigenlijk te verwachten zijn dat zij de repareerbaarheid van apparatuur top prioriteit geven. Echter, dat is zeker níet het geval - prio heeft design met toedeledokie aan milieu.    
+											</p>
+
+											<p>
+											Overigens, de nieuwe november 2019 16" MacBook Pro op high load stress test heeft bedrijfstemperatuur van ~95C zonder thermal throttling. Nog steeds flink warm maar binnen de toleranties als aangegeven door fabrikant - dat is blijven functioneren binnen de fabriek garantietermijn van 3 jaar. Maar... nu ook de SSD vast gesoldeerd - dat is niet milieu verantwoordelijk en qua aankoop opletten want dus geen midlife SSD upgrade.
 											</p>
 											
 											<p>
-											Beide architecturen kennen 32bit en 64bit processor varianten. Alhoewel de 64bit variant al meer dan 10 jaar wordt geproduceerd zijn er anno heden nog 32 bit OS'n want er is nog veel software waaronder véle klassieke games die destijds voor 32bit OS zijn geprogrammeerd.
+											Om terug te komen op processor: beide architecturen (x86 en ARM) kennen 32bit en 64bit processor varianten. Alhoewel de 64bit variant al meer dan 10 jaar wordt geproduceerd zijn er anno heden nog 32 bit OS'n want er is nog veel software waaronder véle klassieke games die destijds voor 32bit OS zijn geprogrammeerd.
 											</p>
 
 											<p>
@@ -97,7 +113,7 @@
 											</p>
 
 											<p>
-											Free open source software zoals OS Linux kent géén telemetrie en omdat het open source is kunnen developers de code daarop controleren; ergo geen hidden features. Om maximale privacy en security alsook AVG compliancy te verkrijgen is het daarom te adviseren om alleen Linux te gebruiken; en andere OS'n te mijden.
+											Free open source software zoals OS Linux kent géén telemetrie en omdat het open source is kunnen developers de code daarop controleren; ergo geen hidden features. Om maximale privacy en security alsook AVG compliancy te verkrijgen is het daarom te adviseren om alleen Linux te gebruiken; en andere OS'n te mijden. Zie op deze webiste bij AVG Alerts referentie naar rapporten uit NL en Duitsland.
 											</p>
 
 											<p>
@@ -106,7 +122,7 @@
 											</p>
 
 											<p>
-											Fabrikanten zoals Samsung ea doen bovenop Google's GMS-schil hun eigen proprietry software wat het probleem nog groter maakt. Apple's macOS, iOS, WatchOS, tvOS etc zijn ook closed source proprietry OS'n, en kennen dezelfde issues als met Windows en Android. Dus ook Apple OS'n voldoen niet aan privacy-, security en AVG compliancy.
+											Fabrikanten zoals Samsung ea doen bovenop Google's GMS schil hun eigen proprietry software wat het probleem nog groter maakt. Apple's macOS, iOS, WatchOS, tvOS etc zijn ook closed source proprietry OS'n, en kennen dezelfde issues als met Windows en Android. Dus ook Apple OS'n voldoen niet aan privacy-, security en AVG compliancy.
 											</p>
 									</div>
 
@@ -126,7 +142,7 @@
 										<h2 id="diycomputer"><a href="#">Desktop Computer <br />DIY private en Secure</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Om een veilige en privacy bestendige desktop te verkrijgen kan een bestaande computer worden heringericht. Bijvoorbeeld om naast bestaande operating systeem (OS) zoals Windows10 een 2e Linux OS in de vorm van dual boot te installeren. Of, ingeval van oudere computer met Windows 7 of Vista om deze geheel schoon te poetsen en daar voor in de plaats Linux te installeren. Als er géén bestaande of verouderde computer is, of ter aanvulling op bestaande situatie kan een DIY nieuwe veilige en privacy bestendige en<a href="archives.html#avg"> AVG </a>compliant desktop worden gemaakt</p>
+									<p>Om een veilige en privacy bestendige desktop te verkrijgen kan een bestaande computer worden heringericht. Bijvoorbeeld om naast bestaande operating systeem (OS) zoals Windows10 een 2e Linux OS in de vorm van dual boot te installeren. Of, ingeval van oudere computer met Windows 7 of Vista om deze geheel schoon te poetsen en daar voor in de plaats Linux te installeren. Als er géén bestaande of verouderde computer is, of ter aanvulling op bestaande situatie kan een DIY nieuwe veilige en privacy bestendige en<a href="archives.html#avg"> AVG </a>compliant desktop worden gemaakt.</p>
 									<ul class="actions special">
 									<li><a href="https://drive.google.com/open?id=1kZJiNiDmkjREw-FXuahHoK-_wLkDplna" target=blank class="button">Handleiding</a></li>
 									</ul>
@@ -138,7 +154,7 @@
 										<h2 id="librem5"><a href="#">Smartphone <br />Private en Secure</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Android en iOS smartphones zijn persoonlijke track en trace bakens voor reclame doeleinden, en zeer vele native apps uit Google PlayStore en Apple AppStore zijn privacy en security ondermijnend. Voor iedereen die zijn persoonlijke levenssfeer wil beschermen of degene met een verhoogd risico profiel zoals overheidsdienaren, corporate bigwigs, publieke figuren en degene die conform de<a href="archives.html#avg"> AVG </a>wordt geacht te handelen is er nu de smartphone Librem5 draaiend met Linux operating system dus "privacy by design". Deze smartphone is via HDMI kabel aansluitbaar op monitor en op die manier multifunctioneel een private en secure computer</p>
+									<p>Android en iOS smartphones zijn persoonlijke track en trace bakens voor reclame doeleinden, en zeer vele native apps uit Google PlayStore en Apple AppStore zijn privacy en security ondermijnend. Voor iedereen die zijn persoonlijke levenssfeer wil beschermen of degene met een verhoogd risico profiel zoals overheidsdienaren, corporate bigwigs, publieke figuren en degene die conform de<a href="archives.html#avg"> AVG </a>wordt geacht te handelen is er nu de smartphone Librem5 draaiend met Linux operating system dus "privacy by design". Deze smartphone is via HDMI kabel aansluitbaar op monitor en op die manier multifunctioneel een private en secure computer.</p>
 									<ul class="actions special">
 									<li><a href="https://puri.sm/products/librem-5/" target=blank class="button">Learn more</a></li>
 									</ul>
@@ -150,7 +166,7 @@
 										<h2 id="delllaptop"><a href="#">Dell Laptop <br />Private en Secure</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/delllaptop.png" alt="" /></a>
-									<p>Voor iedereen die<a href="archives.html#avg"> AVG </a>compliant wil of moet zijn, zijn er verschillende leveranciers die computers leveren met "af fabriek" Linux geinstalleerd. Deze website begint met 1e artikel over ombouwen van bestaande Windows ea computer naar Linux en verder op een artikel met zelfbouw DIY desktop Linux desktop computer. Voor degene die kant en klaar een<a href="archives.html#avg"> AVG </a>compliant computer willen met Linux "af fabriek" zijn er verschillende leveranciers, waaronder in dit bijvoorbeeld Dell. Géén telemetrie zoals bij<a href="avgalerts.html#telemetrie"> Windows7/8/10, ChromeOS en macOS </a>en met gebruik van aanbevolen foss software private en secure</p>
+									<p>Voor iedereen die<a href="archives.html#avg"> AVG </a>compliant wil of moet zijn, zijn er verschillende leveranciers die computers leveren met "af fabriek" Linux geinstalleerd. Deze website begint met 1e artikel over ombouwen van bestaande Windows ea computer naar Linux en verder op een artikel met zelfbouw DIY desktop Linux desktop computer. Voor degene die kant en klaar een<a href="archives.html#avg"> AVG </a>compliant computer willen met Linux "af fabriek" zijn er verschillende leveranciers, waaronder in dit bijvoorbeeld Dell. Géén telemetrie zoals bij<a href="avgalerts.html#telemetrie"> Windows7/8/10, ChromeOS en macOS </a>en met gebruik van aanbevolen FOSS software; private en secure!</p>
 									<ul class="actions special">
 									<li><a href="https://www.dell.com/nl-nl/work/shop/scc/sc/laptops?~ck=mn&appliedRefinements=10673" target=blank class="button">Learn more</a></li>
 									</ul>
@@ -162,7 +178,7 @@
 										<h2 id="linuxsmartwatch"><a href="#">Smartwatch PineTime <br />Private en Secure</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pinetime.jpg" alt="" /></a>
-									<p>Android en iOS smartwatches zijn persoonlijke<a href="avgalerts.html#cookies"> track en trace </a>bakens voor reclame doeleinden, en zeer vele native <a href="avgalerts.html#smartwatch"> sport en fitness apps </a>uit Google PlayStore en Apple AppStore zijn privacy en security ondermijnend. Voor iedereen die zijn persoonlijke levenssfeer wil beschermen of degene met een verhoogd risico profiel zoals overheidsdienaren, corporate bigwigs en publieke figuren, komt er de Pine64 smartwatch "PineTime" draaiend met Linux operating system dus "privacy by design". Aangekondigde release is begin 2020</p>
+									<p>Android en iOS smartwatches zijn persoonlijke<a href="avgalerts.html#cookies"> track en trace </a>bakens voor reclame doeleinden, en zeer vele native <a href="avgalerts.html#smartwatch"> sport en fitness apps </a>uit Google PlayStore en Apple AppStore zijn privacy en security ondermijnend. Voor iedereen die zijn persoonlijke levenssfeer wil beschermen of degene met een verhoogd risico profiel zoals overheidsdienaren, corporate bigwigs en publieke figuren, komt er de Pine64 smartwatch "PineTime" draaiend met Linux operating system dus "privacy by design". Aangekondigde release is begin 2020.</p>
 									<ul class="actions special">
 									<li><a href="https://wiki.pine64.org/index.php/PineTime" target=blank class="button">Learn more</a></li>
 									</ul>
