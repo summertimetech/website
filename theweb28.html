@@ -55,7 +55,7 @@
 
 									<div class="box">
 										<p><span class="image right"><img src="images/theweb28.jpg" alt="" /></span>
-										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#otap">OTAP omgevingen</a> op te zetten, te deployen en beheren. De term voor dit proces wordt ook wel Development en Operations (DevOps) genoemd.
+										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#otap">OTAP omgevingen</a> op te zetten, te deployen en beheren. De term voor dit proces wordt ook wel DevOps genoemd - Development en Operations.
 										</p>
 										<p>
 										Zoals later in deze guide bij DevOps aan de orde komt zijn Agile en CI/CD daarbij kernbegrippen. Omgevingen zijn niet meer statische entiteiten zoals 'vroeger' maar dynamisch, schaalbaar en zó mobiel dat ze in 'no time' zich over de hele wereld kunnen verspreiden. Gelet op aard en karakter zijn er specifieke tools beschikbaar voor management van OTAP omgevingen.<br /></li>	
@@ -68,60 +68,84 @@
 										<h3 id="taken">Taken</h3>
 										<p>
 										Beheersing skill set en taken<a href="theweb27.html#backenddatabase"> Back End Web Developer Database </a>wordt verondersteld.<br /></li>
-										Voor Full Stack Web Developer komt erbij:<br /></li>
-										- Machine Management<br /></li>
-										- Provisioning<br /></li>
-										- Resource Management<br /></li>
-										- Containerization<br /></li>
-										- Job Sheduling<br /></li>
-										- Container Orchestration<br /></li>
-										- Application Orchestration<br /></li>
+										Voor Full Stack Web Developer komt erbij de volgende reeks taken. Let op, de taken zijn chronologisch genummerd waarbij het een volgt uit het ander, met als eindproduct een volledig functionerende DevOps:<br /></li>
+										1. Machine Management<br /></li>
+										2. Provisioning<br /></li>
+										3. Resource Management<br /></li>
+										4. Containerization<br /></li>
+										5. Job Sheduling<br /></li>
+										6. Container Orchestration<br /></li>
+										7. Application Orchestration<br /></li>
 										De Full Stack Web Developer beheerst alle onderstaande tools om taken te kunnen verrichten.
 										</p>
 
-										<h3 id="machinemngt">Machine Management</h3>										
+										<h3 id="machinemngt">1. Machine Management</h3>										
 										<p><span class="image right"><img src="images/cloudproviders.jpg" alt="" /></span>
-										Met machine management wordt bedoeld het identifiseren, selecteren en realiseren van "computers" waarop tooling en software functioneert. Met computers wordt bedoeld bare metal cq fysieke of virtuele apparatuur of servers.
+										Met machine management wordt bedoeld het identifiseren, selecteren en realiseren van "computers" waarop tooling en software functioneert. Met computers wordt bedoeld bare metal oftewel fysieke, dan wel virtuele apparatuur of servers.
 										</p>
 										<p>
 										Zoals eerder in deze guide bij <a href="theweb23.html#otap">OTAP omgevingen</a> genoemd zijn er vele soorten van machines:<br /></li>
 										- Installatie van Virtual Machine zoals VirtualBox of VMware<br /></li>
 										- Installatie van dual boot met 2e of meer OS<br /></li>
-										- Dedicated computer inrichten zoals Pi4 of ombouwen bestaande computer<br /></li>
+										- Dedicated computer inrichten (Pi4?) of ombouwen bestaande computer<br /></li>
 										- Cloud huren Virtual Machine bij Google GCP, AWS, Azure of Oracle<br /></li>
 										- Cloud huren via shared hosting met meerdere klanten op één server<br /></li>
 										- Cloud huren via Virtual Private Server als dedicated "eigen" machine					</p>
-
 										<p>
 										Aangezien voornoemde varianten van machines en hun management in voorgaande Web Developer profielen inhoudelijk zijn behandeld volgt hier verder geen verdere uitdieping en wordt verwezen naar betreffende passages alwaar uiteenzetting plaatsvindt.
 										</p>
+										<p>
+										Product van Machine Management is een overzicht van on premises geinstalleerde, dan wel en of cloud machines / servers mét dus alle LAN of WAN (lees: local netwerk of internet) IP adressen daarvan.
+										</p>
+										<p>
+										Deze IP adressen zijn nodig voor verder uitvoeren van provisioning en zijn de basis voor werkzaamheden aldaar. Immers, die machines (nodes) zijn de target voor verdere installatie!
+										</p>
 
-										<h3 id="provisioning">Provisioning</h3>
+										<h3 id="provisioning">2. Provisioning</h3>
 										<p><span class="image right"><img src="images/provisioning.jpg" alt="" /></span>
 										Provisioning is een reeks acties om een ​​server met geschikte systemen, gegevens en software voor te bereiden en gereed te maken voor netwerkgebruik.<br /></li>	
 										→ zie:<a href="https://en.wikipedia.org/wiki/Provisioning_(telecommunications)" target="blank"> Wikipedia Provisioning</a>
 										</p>
-
-
 										<p>
-										Typische taken bij het inrichten van een server zijn: selecteer een server uit een pool van beschikbare servers, laad de juiste software (besturingssysteem, apparaatstuurprogramma's, middleware en applicaties), pas het systeem en de software op de juiste manier aan en configureer deze om een ​​boot te maken of te wijzigen image voor deze server en wijzig vervolgens de parameters, zoals het IP-adres, de IP-gateway om bijbehorende netwerk- en opslagbronnen te vinden om het systeem te controleren.
+										Typische taken bij het inrichten van een server zijn: selecteer een server uit een pool van beschikbare servers (zie bij 1 hiervoor), laad de juiste software zoals besturingssysteem, apparaatstuurprogramma's, middleware en applicaties, pas het systeem en de software op de juiste manier aan en configureer deze om een ​​boot te maken of te wijzigen image voor deze server en wijzig vervolgens de parameters, zoals het IP-adres, de IP-gateway om bijbehorende netwerk- en opslagbronnen te vinden om het systeem te controleren.
 										</p>
-
-
 									<dl>
-										<dt id="vagrant">Vagrant</dt>										
+										<dt id="voorwoord">Voorwoord Vagrant & Ansible</dt>										
 										<dd>
+										<p>
+										In de praktijk blijkt dat provisioning van nieuwe OTAP omgevingen geschiedt in twéé stappen:<br /></li>
+										- Vagrant deployed mbv IP adressen uit (1) de nieuwe omgevingen<br /></li>
+										- Ansible configureert de nieuwe omgevingen
+										</p>
+										<p>
+										Dit voorwoord is er speciaal op gericht om te wijzen op het feit dat Vagrant tijdens deployment van nieuwe omgeving óók de configuratie daarvan kan uitvoeren. En bijna alle  tutorials laten dat dan ook zien. Echter, de toeschouwer kan daardoor in verwarring raken over wat dan nog het nut is van Ansible. Immers, laatstgenoemde doet hetzefde en schijnt niks toe te voegen.
+										</p>
+										<p>
+										Maar Ansible voegt wél iets toe, namelijk het eenmaal gedeclareerde Ansible task-bestand, kan 'later' ook ingezet worden om een omgeving te controleren op juistheid, Óf met datzelfde task-bestand changes doorvoeren op de omgeving. Want(!) als Ansible constateert dat iets is zoals het moet zijn dan negeert Ansible betreffende task en gaat gewoon door. Of als er iets onbreekt of verkeerd ingesteld staat, dan corrigeert of vult Ansible dat aan.
+										</p>
+										<p>
+										Zodoende is Ansible na éénmalige (Vagrant) deployment van omgevingen een prima long term support configuratie management tool van omgevingen. Dus dat is de reden dat in de praktijk blijkt dat Vagrant wordt gebruikt voor deployment om daarna Ansible te starten voor configuratie van die omgeving. 
+										</p>
+										</dd>
+									</dl>
+
+										<h3 id="vagrant">Deployment via Vagrant</h3>
 										<p><span class="image right"><img src="images/vagrant.jpg" alt="" /></span>
 										Vagrant is free open source software voor het bouwen en onderhouden van draagbare virtuele software ontwikkelomgevingen, voor VirtualBox, KVM, Hyper-V, Docker containers, VMware en AWS.<br /></li>	
 										→ zie:<a href="https://en.wikipedia.org/wiki/Vagrant_%28software%29" target="blank"> Wikipedia Vagrant</a><br /></li>
 										→ zie:<a href="https://www.vagrantup.com/" target="blank"> Website Vagrant download & get started</a>
 										</p>
 										</p>
-
-										<dt id="query">Kenmerken</dt>										
+									<dl>
+										<dt id="kenmerkenVagrant">Kenmerken</dt>										
 										<dd>
 										<p>
-										Vagrant maakt gebruik van een declaratief configuratiebestand dat een geheel systeem beschrijft. OS, pakketten, besturingssysteemconfiguratie, gebruikers en meer. Het automatiseert de configuratie van virtuele omgevingen met Chef of Puppet. Machine- en softwarevereisten worden geschreven in een bestand met de naam "Vagrantfile" om de nodige stappen uit te voeren om een ontwikkelklaar omgeving te maken. "Box" is een indeling en een extensie (.box) voor Vagrant omgevingen die naar een andere machine wordt gekopieerd om dezelfde omgeving te repliceren.
+										Vagrant maakt gebruik van een declaratief configuratiebestand dat een geheel systeem beschrijft. OS, pakketten, besturingssysteemconfiguratie, gebruikers en meer. Machine- en softwarevereisten worden geschreven in een bestand met de naam "Vagrantfile" om de nodige stappen uit te voeren om een omgeving aan te maken.
+										</p>
+										<p>
+										Vagrantfile kan op verschilende manieren worden ingezet, bijvoorbeeld:<br /></li>
+										- Push: vanuit master worden slave target machines ingericht, of;<br /></li>
+										- Pull: Vagrantfile kopieeren naar target machines om zo daar omgeving te deployen
 										</p>
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/vBreXjkizgo" target="blank"> YouTube Videotorial Vagrant</a>
@@ -129,9 +153,78 @@
 										</dd>
 									</dl>
 
+										<h3 id="ansible">Configuratie via Ansible</h3>
+										<p><span class="image right"><img src="images/ansible.jpg" alt="" /></span>
+										Ansible is een (community free) open source provisioning, configuratiebeheer en applicatie implementatie tool.<br /></li>	
+										→ zie:<a href="https://en.wikipedia.org/wiki/Ansible_(software)" target="blank"> Wikipedia Ansible</a><br /></li>
+										→ zie:<a href="https://www.ansible.com/" target="blank"> Website Ansible download & get started</a>
+										</p>
+										</p>
+									<dl>
+										<dt id="kenmerkenAnsible">Kenmerken</dt>										
+										<dd>
+										<p>
+										Ansible werkt met meerdere systemen in uw infrastructuur door delen van de inventaris van Ansible te selecteren, opgeslagen als bewerkbare, versie compatibele ASCII tekstbestanden. Deze inventaris is niet alleen configureerbaar, maar u kunt ook meerdere inventarisbestanden tegelijkertijd gebruiken en inventaris ophalen uit dynamische of cloudbronnen of verschillende formaten (YAML, INI, enz.).
+										</p>
+										<p>
+										Elke machine waarop Ansible hulpprogramma's zijn geïnstalleerd, kan gebruikmaken van een reeks bestanden en mappen om andere nodes te orkestreren. De afwezigheid van een centrale serververeiste vereenvoudigt de planning voor disaster en recovery planning aanzienlijk. Nodes worden beheerd door deze controlerende machine - meestal via SSH. De controlerende machine beschrijft de locatie van nodes door zijn inventaris.
+										</p>
+
+										<p>
+										Gevoelige gegevens kunnen worden opgeslagen in gecodeerde bestanden met behulp van Ansible Vault. In tegenstelling tot andere populaire software voor configuratiebeheer gebruikt Ansible een architectuur zonder agent, met Ansible software die normaal niet actief is of zelfs op het gecontroleerde node is geïnstalleerd. In plaats daarvan orkestreert Ansible een node door modules op de node tijdelijk te installeren en uit te voeren via SSH.
+										</p>
+										<p>
+										Voor de duur van een orkestratietaak communiceert een proces dat de module uitvoert met de controlerende machine via een op JSON gebaseerd protocol via de standaard invoer en uitvoer. Wanneer Ansible geen node beheert, verbruikt het geen bronnen op het node omdat geen daemons geïnstalleerde software uitvoeren.
+										</p>
+										<p>
+										Bijgaande videotorial zit een fout, namelijk de man spreek terecht over Ansible als zijnde PUSH tool, maar in de slides staat PULL. <br /></li>
+										→ zie:<a href="https://www.youtube.com/embed/wgQ3rHFTM4E" target="blank"> YouTube Videotorial Ansible</a>
+										</p>
+										<p>
+										Bijgaande videotorial is provisioning compleet uitgewerkt</a> <br /></li>
+										→ zie:<a href="https://www.youtube.com/embed/F3SJ5mKfDkM" target="blank"> YouTube Videotorial Vagrant met VirtualBox & Ansible</a>
+										</p>
+										</dd>
+									</dl>
+
+									<dl>
+										<dt id="configratietools">Meerdere configuratie tools</dt>								
+										<dd>
+										<p>
+										Naast Ansible zijn er ook andere configuratie tools. Deze doen ongeveer allemaal hetzelfde maar dan net even anders. Men kan zich zelf verdiepen in welke de voorkeur geniet. Onderstaande tutorial maakt vergelijking tussen tools Chef, Puppet, Ansible en Saltstack. 
+										</p>
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/_TVNCTK808I" target="blank"> YouTube Videotorial Vergelijk configuratie tools</a>
+										</p>
+										</dd>
+									</dl>
+
+										<h3 id="resourcemngt">3. Resource Management</h3>
+										<p><span class="image right"><img src="images/dcos.png" alt="" /></span>
+										Bij Resource Management wordt in dit verband gesproken als DataCentrum OS (DC/OS) waarbij verschillende tools, bijvoorbeeld bij onderstaand verder uitgewerkte tool Apache Mesos, gezamenlijk alle beschikbare nodes beheerd.<br /></li>	
+										→ zie:<a href="https://en.wikipedia.org/wiki/Mesosphere,_Inc.#Datacenter_Operating_System" target="blank"> Wikipedia DataCentrum OS</a>
+										</p>
+										<p>
+										Geautomatiseerd beheer geschiedt op bestaande nodes zoals boven bij (1) beschreven en kunnen zijn on premises geinstalleerde, dan wel en of cloud machines en servers naar gelang gebruik in productie (de Ops uit DevOps), met monitoring van need to up or down scaling.
+										</p>
+										<p>
+										Tevens kan geautomatiseerd met een vooraf aangegane account bij Cloud provider nog niet gealloceerde nodes dynamisch allocated en provisioned (deploy, configure), alsook gekilled worden.
+<dl>
+										<dt id="mesosphere">DC/OS Mesospehere</dt>										
+										<dd>
+										<p><span class="image right"><img src="images/mesosphere.jpg" alt="" /></span>
+										DC/OS Mesosphere is een free open source gedistribueerd operating systeem gebaseerd op Apache Mesos. DC/OS Mesospehere categoriseert componenten als in gebruikersruimte of kernelruimte. De kernelruimte omvat de Mesos master en agents, terwijl de gebruikersruimte verschillende systeemcomponenten van het DC/OS omvat.<br /></li>
+										→ zie:<a href="https://dcos.io/" target="blank"> Website DC/OS download & get started</a>
+										</p>
+										<p>
+										Deze componenten omvatten onder andere Admin Router, een interne load balancer, Cosmos, een API-service voor interne verpakkingen, Exposant, een Java supervisorsysteem voor ZooKeeper, Marathon, een Apache Mesos framework voor container orkestratie, Mesos-DNS, een interne DNS-service. 
+										</p>
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/JXrDQQe7Ud4" target="blank"> YouTube Videotorial DC/OS Apache Mesos</a>
+										</p>
 										
-
-
+										</dd>
+									</dl>
 
 									<!-- 
 
