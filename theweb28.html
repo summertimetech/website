@@ -118,18 +118,15 @@
 										- Ansible configureert de nieuwe omgevingen
 										</p>
 										<p>
-										Dit voorwoord is er speciaal op gericht om te wijzen op het feit dat Vagrant tijdens deployment van nieuwe omgeving óók de configuratie daarvan kan uitvoeren. En bijna alle  tutorials laten dat dan ook zien. Echter, de toeschouwer kan daardoor in verwarring raken over wat dan nog het nut is van Ansible. Immers, laatstgenoemde doet hetzefde en schijnt niks toe te voegen.
+										Dit voorwoord is er speciaal op gericht om te wijzen op het feit dat Vagrant tijdens deployment van nieuwe omgeving óók de configuratie daarvan kan uitvoeren. En bijna alle  tutorials laten dat dan ook zien. Echter, de toeschouwer kan daardoor in verwarring raken over wat dan nog het nut is van Ansible.
 										</p>
 										<p>
-										Maar Ansible voegt wél iets toe, namelijk het eenmaal gedeclareerde Ansible task-bestand, kan 'later' ook ingezet worden om een omgeving te controleren op juistheid, Óf met datzelfde task-bestand changes doorvoeren op de omgeving. Want(!) als Ansible constateert dat iets is zoals het moet zijn dan negeert Ansible betreffende task en gaat gewoon door. Of als er iets onbreekt of verkeerd ingesteld staat, dan corrigeert of vult Ansible dat aan.
-										</p>
-										<p>
-										Zodoende is Ansible na éénmalige (Vagrant) deployment van omgevingen een prima long term support configuratie management tool van omgevingen. Dus dat is de reden dat in de praktijk blijkt dat Vagrant wordt gebruikt voor deployment om daarna Ansible te starten voor configuratie van die omgeving. 
+										Na éénmalige Vagrant deployment van omgevingen is Ansible een prima long term support configuratie management, en meer, tool van omgevingen. Dat is de reden dat in de praktijk blijkt dat Vagrant wordt gebruikt voor deployment om daarna Ansible te starten voor configuratie van die omgeving. 
 										</p>
 										</dd>
 									</dl>
 
-										<h3 id="vagrant">Deployment via Vagrant</h3>
+										<h3 id="vagrant">Vagrant</h3>
 										<p><span class="image right"><img src="images/vagrant.jpg" alt="" /></span>
 										Vagrant is free open source software voor het bouwen en onderhouden van draagbare virtuele software ontwikkelomgevingen, voor VirtualBox, KVM, Hyper-V, Docker containers, VMware en AWS.<br /></li>	
 										→ zie:<a href="https://en.wikipedia.org/wiki/Vagrant_%28software%29" target="blank"> Wikipedia Vagrant</a><br /></li>
@@ -153,32 +150,27 @@
 										</dd>
 									</dl>
 
-										<h3 id="ansible">Configuratie via Ansible</h3>
+										<h3 id="ansible">Ansible</h3>
 										<p><span class="image right"><img src="images/ansible.jpg" alt="" /></span>
-										Ansible is een (community free) open source provisioning, configuratiebeheer en applicatie implementatie tool.<br /></li>	
-										→ zie:<a href="https://en.wikipedia.org/wiki/Ansible_(software)" target="blank"> Wikipedia Ansible</a><br /></li>
-										→ zie:<a href="https://www.ansible.com/" target="blank"> Website Ansible download & get started</a>
-										</p>
+										Ansible is een (community free) open source tool voor Application deployment, Configuratie management, Security, Compliancy, Provisioning, Orchestration.<br /></li>→ zie:<a href="https://en.wikipedia.org/wiki/Ansible_(software)" target="blank"> Wikipedia Ansible</a><br /></li>
+										→ zie:<a href="https://www.ansible.com/" target="blank"> Website Ansible download & get started</a><br /></li>	
+										→ zie:<a href="https://en.wikipedia.org/wiki/YAML" target="blank"> Wikipedia YAML</a><br /></li>
+										→ zie:<a href="https://yaml.org/" target="blank"> Website YAML download & get started</a>
 										</p>
 									<dl>
 										<dt id="kenmerkenAnsible">Kenmerken</dt>										
 										<dd>
-										<p>
-										Ansible werkt met meerdere systemen in uw infrastructuur door delen van de inventaris van Ansible te selecteren, opgeslagen als bewerkbare, versie compatibele ASCII tekstbestanden. Deze inventaris is niet alleen configureerbaar, maar u kunt ook meerdere inventarisbestanden tegelijkertijd gebruiken en inventaris ophalen uit dynamische of cloudbronnen of verschillende formaten (YAML, INI, enz.).
+											<p>
+										<span class="image right"><img src="images/yaml.jpg" alt="" /></span>
+										- Playbook is opgave van uit te voeren tasks.<br /></li>
+										- Inventory is opgave van target nodes<br /></li>
+										- Modules zijn programma's die tasks uitvoeren<br /></li>
+										- Roles zijn gegroepeerde tasks naar functionaliteit<br /></li>
+										- YAML is in Playbook te gebruiken taal
 										</p>
 										<p>
-										Elke machine waarop Ansible hulpprogramma's zijn geïnstalleerd, kan gebruikmaken van een reeks bestanden en mappen om andere nodes te orkestreren. De afwezigheid van een centrale serververeiste vereenvoudigt de planning voor disaster en recovery planning aanzienlijk. Nodes worden beheerd door deze controlerende machine - meestal via SSH. De controlerende machine beschrijft de locatie van nodes door zijn inventaris.
-										</p>
-
-										<p>
-										Gevoelige gegevens kunnen worden opgeslagen in gecodeerde bestanden met behulp van Ansible Vault. In tegenstelling tot andere populaire software voor configuratiebeheer gebruikt Ansible een architectuur zonder agent, met Ansible software die normaal niet actief is of zelfs op het gecontroleerde node is geïnstalleerd. In plaats daarvan orkestreert Ansible een node door modules op de node tijdelijk te installeren en uit te voeren via SSH.
-										</p>
-										<p>
-										Voor de duur van een orkestratietaak communiceert een proces dat de module uitvoert met de controlerende machine via een op JSON gebaseerd protocol via de standaard invoer en uitvoer. Wanneer Ansible geen node beheert, verbruikt het geen bronnen op het node omdat geen daemons geïnstalleerde software uitvoeren.
-										</p>
-										<p>
-										Bijgaande videotorial zit een fout, namelijk de man spreek terecht over Ansible als zijnde PUSH tool, maar in de slides staat PULL. <br /></li>
-										→ zie:<a href="https://www.youtube.com/embed/wgQ3rHFTM4E" target="blank"> YouTube Videotorial Ansible</a>
+										→ zie:<a href="https://www.youtube.com/embed/MfoAb50Br94" target="blank"> YouTube Videotorial Ansible</a><br /></li>
+										→ zie:<a href="https://www.youtube.com/embed/cdLNKUoMc6c" target="blank"> YouTube Videotorial YAML</a>
 										</p>
 										<p>
 										Bijgaande videotorial is provisioning compleet uitgewerkt</a> <br /></li>
@@ -225,6 +217,52 @@
 										
 										</dd>
 									</dl>
+
+										<h3 id="containerization">4. Containerization</h3>
+										<p><span class="image right"><img src="images/container.png" alt="" /></span>
+										Een container is een standaardeenheid van software die code en al zijn afhankelijkheden verpakt, zodat de toepassing snel en betrouwbaar van de ene computeromgeving naar de andere wordt uitgevoerd. Gecontaineriseerde software zal altijd hetzelfde draaien, ongeacht de infrastructuur. Containers isoleren software van zijn omgeving en zorgen ervoor dat het uniform werkt, ongeacht welke OTAP stage.<br /></li>				
+										→ zie:<a href="https://en.wikipedia.org/wiki/Category:Containerization_software" target="blank"> Wikipedia Containerization</a>
+										</p>
+										
+										<dl>
+										<dt id="kenmerkencontainer">Kenmerken</dt>										
+										<dd>
+											<p>
+										De industrie standaard voor gebruik van containers is Docker. Hét host operating systeem is altijd Linux. Dat betekent dat Docker Engine op Windows of macOS alleen functioneert in een Virtual Machine zoals VirtualBox met daarin host OS Linux. Of bij Windows10 en  Windows Server 2019 in het Windows Subsystem for Linux.	<br /></li>			
+										→ zie:<a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux" target="blank"> Wikipedia WSL </a>
+										</p>
+										</dd>
+									</dl>
+
+										<h3 id="docker">Docker</h3>
+										<p>
+										<span class="image right"><img src="images/docker.jpg" alt="" /></span>
+										Docker is (community free) open source software en een set van Platform as a Service producten (PaaS) die op OS niveau virtualisatie gebruiken om software te leveren in pakketten die containers worden genoemd. Containers zijn geïsoleerd van elkaar en bundelen hun eigen software, bibliotheken en configuratiebestanden; ze kunnen met elkaar communiceren via goed gedefinieerde kanalen. Docker maakt gebruik van host OS en is dus lichter dan virtuele machines waarbij elke VM een eigen OS heeft.<br /></li>
+										→ zie:<a href="https://en.wikipedia.org/wiki/Docker_(software)" target="blank"> Wikipedia Docker</a><br /></li>
+										→ zie:<a href="https://www.docker.com/" target="blank"> Website Docker download & get started</a>
+
+										<dl>
+										<dt id="kenmerkendocker">Kenmerken</dt>										
+										<dd>
+											<p>
+										Docker gebruikt de resource isolatiefuncties van de Linux kernel zoals cgroups en kernel namespaces en een bestandssysteem dat geschikt is voor unificatie zoals OverlayFS om containers binnen een enkele Linux instantie te laten draaien, waarbij de overhead van het starten en onderhouden van virtuele machines wordt voorkomen.
+										</p>
+										</p>
+										<span class="image right"><img src="images/docker-vm-container.png" alt="" /></span>
+										Omdat Docker containers lichtgewicht zijn, kan een enkele server of virtuele machine meerdere containers tegelijkertijd uitvoeren. Bij een analyse uit 2018 bleek dat een typische Docker use case betrekking heeft op acht containers per host, maar dat een kwart van de geanalyseerde organisaties 18 of meer per host uitvoert.				
+										</p>
+										<p>
+
+										Docker en Vagrant (VM VirtualBox als provider) concurreren niet rechtstreeks met elkaar. Ze kunnen samen worden gebruikt. En zijn dat vaak ook door de Vagrant Docker Provisioner te gebruiken om Docker automatisch te installeren, Docker containers te Pullen en bepaalde containers te configureren voor opstarten.
+										</p>
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/fqMOX6JJhGo" target="blank"> YouTube Videotorial Docker</a>
+										</p>
+										</dd>
+									</dl>
+
+								
+
 
 									<!-- 
 
