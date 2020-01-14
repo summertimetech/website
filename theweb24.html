@@ -586,6 +586,70 @@
 
 									</dl>
 
+									<h3 id="seo">Search Engine Optimization (SEO)</h3>
+										<p><span class="image right"><img src="images/seo.jpg" alt="" /></span>
+										Zoekmachine optimalisatie (search engine optimization of SEO) is een onderdeel van zoekmachine marketing en kan worden gedefinieerd als het geheel aan activiteiten bedoeld om een webpagina hoog te laten scoren in de organische zoekresultaten van een zoekmachine.<br /></li>
+										→ zie:<a href="https://nl.wikipedia.org/wiki/Zoekmachineoptimalisatie" target="blank"> Wikipedia SEO </a>
+										</p>
+										<p>
+										Enkele tips:<br /></li>
+										- Metatag trefwoorden worden door web crawlers genegeerd dus niet meer zinvol<br /></li>
+										- Bij hoofdstuk gebruik tag id="tekst" en web crawler zal "tekst" als zoek argument opnemen.<br /></li>
+										Voorbeeld:
+
+<textarea>									
+<h3 id="seo">Search Engine Optimization (SEO)</h3>
+</textarea><br /></li>
+
+										- Gebruik meta charset<br /></li>
+										- Gebruik viewport omdat respsonsive websites voorrang krijgen<br /></li>
+										- Gebruik name description: verschijnt als tekst onder url bij zoekresultaten<br /></li>
+										Voorbeeld:
+
+<textarea>
+<html>
+<head>
+	<title>Summertime Tech</title>
+	<link rel="icon" type="image/ico" href="images/profile.png" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Guide to web development is een gids over het world wide web en alle software voorzieningen die nodig zijn om een website of app te maken en laten functioneren" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" />
+</head>
+</textarea><br /></li>
+										
+										- maak aan en installeer in root directory bestand sitemap.xml<br /></li>
+										→ zie:<a href="https://www.sitemaps.org/protocol.html" target="blank"> Sitemap Protocol</a><br /></li>
+										→ zie:<a href="https://www.xml-sitemaps.com/" target="blank"> Sitemap xml creator</a><br /></li>
+										Voorbeeld:
+<textarea>									
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+
+<url>
+  <loc>https://www.summertime.tech/</loc>
+  <lastmod>2020-01-14T08:20:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/index.html</loc>
+  <lastmod>2020-01-14T08:20:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/fullstory.html</loc>
+  <lastmod>2020-01-14T08:20:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>
+</textarea>
+
+
+										</p>
+									
+
 										<h3 id="closing">Afronding profiel</h3>
 										<p>
 										Tot zover het overzicht van tools zoals gebruikt door Basic Front End Web Developer. Zoals bovenaan deze pagina gesteld heeft woord "basic" niks te maken met eenvoud of mate van complexiteit, doch in dit geval beschijft het beheersing van essentieel benodigde tooling voor Front End Web Developer. 
@@ -632,7 +696,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Summertime Tech</li><li>Content: Andreas Hulspas met boilerplate design: Massively <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Summertime Tech</li><li>Content: Andreas Hulspas met boilerplate Massively <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
