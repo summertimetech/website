@@ -261,7 +261,7 @@
 										</dd>
 									</dl>
 
-										<h3 id="containerization">5. Job Scheduling</h3>
+										<h3 id="jobscheduler">5. Job Scheduling</h3>
 										<p><span class="image right"><img src="images/jobscheduler.jpg" alt="" /></span>
 										Een Job Scheduler is een computertoepassing voor het beheren en uitvoeren van taken zonder toezicht op de achtergrond. Synoniemen zijn batchsystemen, distributed resource management system (DRMS), distributed resource manager (DRM) en, tegenwoordig, meestal, workload automation (WLA). De gegevensstructuur van uit te voeren taken wordt de job queue genoemd.<br /></li>				
 										→ zie:<a href="https://en.wikipedia.org/wiki/Job_scheduler" target="blank"> Wikipedia Job Scheduling</a>
@@ -285,8 +285,30 @@
 										</p>
 										</dd>
 									</dl>
+									<dl>
+										<dt id="meerderejobschedulers">Meerdere Job Schedulers</dt>										
+										<dd>
+										<p>
+										Cronjob is zeg maar zoals het begonnen is. Anno heden zijn er vele tools die ook job scheduling bevatten, maar daarnaast nog veel meer doen en op grotere schaal, meestal op containerfarm en datacentre breed niveau. Zo is Kubernetes uitstekend geschikt voor Job Scheduling, maar gelet op het overall karakter daarvan wordt deze tool in volgende hoofdstuk opgenomen.   
+										</p>
+										</dd>
+									</dl>
 
-								<h3 id="kubernetes">Kubernetes</h3>										
+										<h3 id="containerorchestration">6. Container Orchestration</h3>
+										<p><span class="image right"><img src="images/container_orchestration.jpg" alt="" /></span>
+										Van oudsher omvatte deployment allerlei bash-scripts met vele statements en schimmige workarounds. Het coördineren van dit alles deed een sysadmin en DBA.
+										</p>
+										<p>
+										Toen kwam Chef, Puppet, Ansible en continue integratie en implementatie (CI). Deze tools maakten het eenvoudig om tests en implementatie te standaardiseren. Belangrijk is dat deze tools, eenmaal op hun plaats, ontwikkelaars en DevOps mensen in staat stellen om het detail van wat er moet gebeuren te vergeten.
+										</p>
+										<p>
+										Op dezelfde manier stellen containers zoals Docker ons in staat om de omgeving te standaardiseren en de details van het onderliggende besturingssysteem en de hardware te abstraheren. Bij container orkestratie hoeft men niet na te denken over welke server een bepaalde container zal hosten of hoe die container zal worden gestart, gecontroleerd en gekilled.
+										</p>
+										<p>
+										Container orkestratie is major op dit moment. Hoewel het containerformaat zich grotendeels heeft uitgekristalliseerd (Docker), is het echte verschil (van tools) in het implementeren en beheren van die containers.
+										</p>
+
+										<h3 id="kubernetes">Kubernetes</h3>										
 										<p><span class="image right"><img src="images/kubernetes.jpg" alt="" /></span>
 										Kubernetes meestal gestileerd als k8s, is een free open source container orkestratiesysteem voor het automatiseren van applicatie implementatie, schaling en beheer over clusters van hosts. Het werkt met verschillende containerhulpmiddelen, waaronder Docker. Veel cloudservices bieden een op Kubernetes gebaseerd platform of infrastructuur als een service (PaaS of IaaS) waarop Kubernetes kan worden ingezet als een platformverschaffende service.<br /></li>			
 										→ zie:<a href="https://en.wikipedia target="blank"> Wikipedia Kubernetes</a>
@@ -302,19 +324,27 @@
 										Deze uitbreidbaarheid wordt grotendeels geleverd door de Kubernetes API, die wordt gebruikt door interne componenten en uitbreidingen en containers die op Kubernetes draaien. Het platform oefent controle uit over reken- en opslagbronnen door bronnen als objecten te definiëren, die vervolgens als zodanig kunnen worden beheerd.
 										</p>
 										<p>
+										Kubernetes wordt vaak gebruikt als een manier om een op microservice gebaseerde implementatie te hosten, omdat het en het bijbehorende ecosysteem van tools alle mogelijkheden bieden die nodig zijn om de belangrijkste problemen van elke microservice architectuur aan te pakken.
+										</p>
+										<p>
 										→ zie:<a href="http://www.youtube.com/playlist?list=PLbG4OyfwIxjFE5Ban_n2JdGad4EDWmisR" target="blank"> YouTube Videotorial Playlist Kubernetes</a>
 										</p>
 										</dd>
 									</dl>
 										<dl>
-										<dt id="schudelingtools">Meerdere Scheduling tools</dt>								
+										<dt id="containerorchestrationtools">Meerdere Container Orchestration tools</dt>				
 										<dd>
 										<p>
-										Naast Kubernetes zijn er ook andere configuratie tools. Deze doen ongeveer allemaal hetzelfde maar dan net even anders. Men kan zich zelf verdiepen in welke de voorkeur geniet; bijvoorbeeld OpenShift. Onderstaande tutorial maakt vergelijking tussen tools Kubernetes en OpenShift (RedHat not foss). 
+										Naast Kubernetes zijn er ook andere configuratie tools zoals Docker Swarm, Marathon, Fleet, Lattice, ECS. Deze doen ongeveer allemaal hetzelfde maar dan anders. Men kan zich zelf verdiepen in welke de voorkeur geniet. Onderstaande tutorial maakt vergelijking tussen tools Kubernetes en Docker Swarm.
+										</p>
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/9_s3h_GVzZc" target="blank"> YouTube Videotorial Vergelijk Kubernetes vs Docker Swarm</a>
+										</p>
+										<p>
+										Nogal een big thing is OpenShift en ook geschikt voor Container Orchestration, maar gelet op het overall karakter daarvan wordt deze tool in volgende hoofdstuk opgenomen. Onderstaande tutorial maakt vergelijking tussen tools Kubernetes en OpenShift (RedHat, geen foss). 
 										</p>
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/cTPFwXsM2po" target="blank"> YouTube Videotorial Vergelijk Kubernetes vs OpenShift</a>
-										</p>
 										</p>
 										</dd>
 									</dl>
