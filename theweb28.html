@@ -54,21 +54,44 @@
 								</header>
 
 									<div class="box">
-										<p><span class="image right"><img src="images/theweb28.jpg" alt="" /></span>
-										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#otap">OTAP omgevingen</a> op te zetten, te deployen en beheren. De term voor dit proces wordt ook wel DevOps genoemd - Development en Operations.
-										</p>
 										<p>
-										Zoals later in deze guide bij DevOps aan de orde komt zijn Agile en CI/CD daarbij kernbegrippen. Omgevingen zijn niet meer statische entiteiten zoals 'vroeger' maar dynamisch, schaalbaar en zó mobiel dat ze in 'no time' zich over de hele wereld kunnen verspreiden. Gelet op aard en karakter zijn er specifieke tools beschikbaar voor management van OTAP omgevingen.<br /></li>	
-										→ zie:<a href="hhttps://en.wikipedia.org/wiki/DevOps" target="blank"> Wikipedia DevOps</a><br /></li>										
+										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#otap">OTAP omgevingen</a> op te zetten, te deployen en beheren. Kernbegrippen zijn daarbij DevOps, Agile en CI/CD.
+										</p>
+										<p><span class="image right"><img src="images/DevOps.png" alt="" /></span>
+										 DevOps:<br /></li>
+										 Cultuurverandering en term voor het software proces van Ontwikkelen, Testen, Acceptatie en Productie (OTAP) waarbij de Productie nauw verbonden is met samenwerking naar tussen ontwikkelaars.
+									
+										 Zodoende zijn er niet meer de van oudsher bestaande scheidslijnen tussen coding van functionaliteit (de software tijgers) versus IT'ers (de techneuten) die de machines 'op stoom' houden. Het geheel is nu één team dat gezamenlijk het product managed.<br /></li>	
+										→ zie:<a href="hhttps://en.wikipedia.org/wiki/DevOps" target="blank"> Wikipedia DevOps</a><br /></li>
+										</p>
+
+										<p><span class="image right"><img src="images/Waterfall-vs-Agile.jpg" alt="" /></span>
+										Agile is mindset met drijvende principes:<br /></li>
+										- Klanttevredenheid door vroege en continue levering van waardevolle software<br /></li>
+										- Verwelkom veranderende eisen, zelfs in de late ontwikkeling<br /></li>
+										- Lever werkende software regelmatig (weken in plaats van maanden)<br /></li>
+										- Nauwe, dagelijkse samenwerking tussen 'de business' en ontwikkelaars<br /></li>
+										- Projecten zijn gebouwd rond gemotiveerde individuen, die vertrouwd moeten worden<br /></li>
+										- Face-to-face gesprek is de beste vorm van communicatie (co-locatie)<br /></li>
+										- Werkende software is de primaire maatstaf voor vooruitgang<br /></li>
+										- Duurzame ontwikkeling, in staat om een constant tempo te handhaven<br /></li>
+										- Continue aandacht voor technische excellence en goed ontwerp<br /></li>
+										- Eenvoud, de kunst van het maximaliseren van de hoeveelheid niet gedaan werk is essentieel<br /></li>
+										- De beste architecturen, vereisten en ontwerpen komen voort uit zelforganiserende teams<br /></li>
+										- Regelmatig denkt het team na over effectiever worden en past zich dienovereenkomstig aan<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Agile_software_development" target="blank"> Wikipedia Agile</a><br /></li>	
+										</p>
+
+										<p><span class="image right"><img src="images/CI-CD.jpg" alt="" /></span>
+										CI/CD is methode van aanpak:<br /></li>
+										Continue integratie en continue delivery want vanuit functionaliteit zijn er dagelijks wijzingen en verbeteringen die aan gebruikers moet worden geleverd met OTAP omgevingen die niet meer statische entiteiten zijn zoals 'vroeger', maar dynamisch, schaalbaar en zó mobiel dat ze in 'no time' zich over de hele wereld kunnen verspreiden.<br /></li>										
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_integration" target="blank"> Wikipedia CI </a><br /></li>	
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_delivery" target="blank"> Wikipedia CD </a>
 										</p>			
 										
 										<h3 id="taken">Taken</h3>
 										<p><span class="image right"><img src="images/devopscycle.jpg" alt="" /></span>
-										Beheersing skill set en taken<a href="theweb27.html#backenddatabase"> Back End Web Developer Database </a>wordt verondersteld.<br /></li>
-										Voor Full Stack Web Developer komt erbij de volgende reeks taken. Let op, de taken zijn chronologisch genummerd waarbij het een volgt uit het ander, met als eindproduct een volledig functionerende DevOps:<br /></li>
+										Beheersing skill set en taken<a href="theweb27.html#backenddatabase"> Back End Web Developer Database </a>wordt verondersteld. Voor Full Stack Web Developer komt erbij de volgende reeks taken, die voor het lees en leerproces chronologisch zijn genummerd waarbij het een volgt uit het ander.<br /></li>
 										1. Machine Management<br /></li>
 										2. Provisioning<br /></li>
 										3. Resource Management<br /></li>
@@ -299,7 +322,7 @@
 										Van oudsher omvatte deployment allerlei bash-scripts met vele statements en schimmige workarounds. Het coördineren van dit alles deed een sysadmin en DBA.
 										</p>
 										<p>
-										Toen kwam Chef, Puppet, Ansible en continue integratie en implementatie (CI). Deze tools maakten het eenvoudig om tests en implementatie te standaardiseren. Belangrijk is dat deze tools, eenmaal op hun plaats, ontwikkelaars en DevOps mensen in staat stellen om het detail van wat er moet gebeuren te vergeten.
+										Toen kwam Chef, Puppet, Ansible en continue integratie en implementatie (CI). Deze tools maakten het eenvoudig om tests en implementatie te standaardiseren. Belangrijk is dat deze tools, eenmaal op hun plaats, een DevOps team in staat stelt om het detail van wat er moet gebeuren te vergeten.
 										</p>
 										<p>
 										Op dezelfde manier stellen containers zoals Docker ons in staat om de omgeving te standaardiseren en de details van het onderliggende besturingssysteem en de hardware te abstraheren. Bij container orkestratie hoeft men niet na te denken over welke server een bepaalde container zal hosten of hoe die container zal worden gestart, gecontroleerd en gekilled.
@@ -349,8 +372,16 @@
 										</dd>
 									</dl>
 
+										<h3 id="applicationorchestration">7. Application Orchestration</h3>
+										<p><span class="image right"><img src="images/application_orchestration.png" alt="" /></span>
+										 Zoals bovenaan deze pagina gezien bestaat een DevOps team uit ontwikkelaars, testers, acceptanten en productie leden. Dit team werkt op basis van Agile principes en hun aanpak is CI/CD. Team werkcyclus oftewel pipeline, wordt end-to-end ondersteund met reeks tools. 
+										 </p>
+										 <p>
+										 Application orchestration is de term van automatiseren van deze pipeline van eenvoudige of complexe systeemtaken op die normaal handmatig zouden worden uitgevoerd. Van elke tool hierna gepresenteerd is er ongetwijfeld een equivalent, edoch dit zijn veel gebruikte.
+										 </p>
+										
 
-									<!-- 
+										 									<!-- 
 
 										
 										<h3 id="closing">Afronding profiel</h3>
