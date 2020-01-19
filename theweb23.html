@@ -170,7 +170,20 @@
 										Het is mogelijk om vanuit host computer cq VB omgeving waar gebruiker op is ingelogd, in te loggen op elke computer of virtuele omgeving aangesloten op het LAN of internet door middel van Secure Shell. Indien gewenst kan dat SSH inloggen dus ook op VirtualBox omgeving, want dat maakt beheer van die VB omgeving een stuk handzamer. Voor het initieel opzetten van SSH connectie is minimaal nodig het target (LAN/WAN) IP adres.<br /></li>
 										→ zie:<a href="https://nl.wikipedia.org/wiki/Secure_Shell" target="blank"> Wikipedia SSH </a>
 										</p>										
-
+										<p>
+										Vanaf localhost cq client inloggen op host kan issues geven, vandaar enkele tips:<br /></li>
+										- client$ sudo nano /etc/hosts voeg toe host LAN IPadres resolve to hostvoorkeurnaam<br /></li>
+										- client$ ssh usernaam@hostvoorkeurnaam<br /></li>
+										Voor GUI verbinding tussen client en host te versnellen:<br /></li>
+										- host$ sudo nano /etc/ssh/nano /etc/ssh/ssh_config enable X11Forwarding yes<br /></li>
+										- host$ sudo nano /etc/ssh/sshd_config enable X11 yes<br /></li>
+										- restart<br /></li>
+										- client$ ssh -X -C -c chacha20-poly1305@openssh.com usernaam@hostvoorkeurnaam<br /></li>
+										of<br /></li>
+										- client$ ssh -X -C -c aes128-gcm@openssh.com usernaam@hostvoorkeurnaam<br /></li>
+										Voor copy file van host naar client:<br /></li>
+										- client$ scp usernaam@hostvoorkeurnaam:filenaam.xyz /home/user/folder/
+										</p>
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/S7jD6nnYJy0" target="blank"> YouTube Videotorial VirtualBox Netwerk en SSH toegang</a>
 										</p>
