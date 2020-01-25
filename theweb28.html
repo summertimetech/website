@@ -55,7 +55,7 @@
 
 									<div class="box">
 										<p>
-										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#otap">OTAP omgevingen</a> op te zetten, te deployen en beheren. Kernbegrippen zijn daarbij DevOps, Agile en CI/CD.
+										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#otap">OTAP omgevingen</a> op te zetten, te deployen en beheren. Kernbegrippen zijn daarbij DevOps, Agile met Scrum en CI/CD.
 										</p>
 										
 										<h4 id="DevOps">DevOps</h4>	
@@ -67,7 +67,7 @@
 										→ zie:<a href="hhttps://en.wikipedia.org/wiki/DevOps" target="blank"> Wikipedia DevOps</a><br /></li>
 										</p>
 
-										<h4 id="Agile">Agile</h4>	
+										<h4 id="agile">Agile</h4>	
 										<p><span class="image right"><img src="images/Waterfall-vs-Agile.jpg" alt="" /></span>
 										Agile is mindset met drijvende principes:<br /></li>
 										- Klanttevredenheid door vroege en continue levering van waardevolle software<br /></li>
@@ -82,13 +82,34 @@
 										- Eenvoud, de kunst van het maximaliseren van de hoeveelheid niet gedaan werk is essentieel<br /></li>
 										- De beste architecturen, vereisten en ontwerpen komen voort uit zelforganiserende teams<br /></li>
 										- Regelmatig denkt het team na over effectiever worden en past zich dienovereenkomstig aan<br /></li>
-										→ zie:<a href="https://en.wikipedia.org/wiki/Agile_software_development" target="blank"> Wikipedia Agile</a><br /></li>	
+										→ zie:<a href="https://en.wikipedia.org/wiki/Agile_software_development" target="blank"> Wikipedia Agile</a>	
 										</p>
 
-										<h4 id="CI-CD">CI-CD</h4>	
-										<p><span class="image right"><img src="images/CI-CD.jpg" alt="" /></span>
-										CI-CD is methode van aanpak:<br /></li>
-										Continue integratie en continue delivery want vanuit functionaliteit zijn er dagelijks wijzingen en verbeteringen die aan gebruikers moet worden geleverd met OTAP omgevingen die niet meer statische entiteiten zijn zoals 'vroeger', maar dynamisch, schaalbaar en zó mobiel dat ze in 'no time' zich over de hele wereld kunnen verspreiden.<br /></li>										
+										<dl>
+										<dt id="scrum">Scrum</dt>										
+										<dd>
+										<p><span class="image right"><img src="images/scrum.jpg" alt="" /></span>
+										Scrum is een framework om op een flexibele manier (software) producten te maken. Het wordt gebruikt als instrument om Agile handen en voeten te geven. Er wordt gewerkt in multidisciplinaire teams die in korte sprints, met een vaste lengte van 1 tot 4 weken, werkende (software) producten opleveren.<br /></li>
+										→ zie:<a href="https://nl.wikipedia.org/wiki/Scrum_%28softwareontwikkelmethode%29" target="blank"> Wikipedia Scrum</a>
+										</p>
+										<p>
+										De naam van deze manier van werken komt vanuit rugby: bij een scrum probeert een team samen een doel te bereiken en de wedstrijd te winnen. Samenwerking is heel belangrijk en men moet snel kunnen inspelen op veranderende omstandigheden. 
+										</p>
+										<p>
+										Scrum wordt vaak gebruikt bij nieuwe producten waarbij men al doende leert om de eisen en wensen beter te beschrijven en in bruikbare producten om te zetten. Vaak weet men pas wat men wil als men het eerste product, het prototype, ziet en dan worden alsnog de eisen aangepast. Scrum heeft de flexibiliteit om met laat wijzigende eisen en wensen om te gaan.
+										</p>
+										<p>
+										De resultaten uit scrum overleg kunnen worden vastgelegd in tools zoals Bugzilla en Jira die ook worden gebruikt voor software issues tracken, en voor bijhouden taken. Genoemde tools worden verder onderaan deze pagina behandeld bij<a href="theweb28.html#planning"> hoofdstuk 7 "stage planning"</a>. 
+										</p>
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/lQ3RBl0rdSo" target="blank"> YouTube Videotorial Scrum</a>
+										</p>										
+										</dd>
+									</dl>
+
+										<h4 id="CI-CD">CI/CD</h4>	
+										<p><span class="image right"><img src="images/CI-CD.jpg" alt="" /></span>				
+										Continue integratie en continue delivery (CI/CD) is methode van aanpak. Vanuit functionaliteit zijn er dagelijks wijzigingen en verbeteringen die aan gebruikers moet worden geleverd, met OTAP omgevingen die niet meer statische entiteiten zijn zoals 'vroeger', maar dynamisch, schaalbaar en zó mobiel dat ze in 'no time' zich over de hele wereld kunnen verspreiden. CI/CD is dé aanpak om in deze snel wijzigende infrastuctuur omgeving snel wijzigende functionaliteit te implementeren.<br /></li>										
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_integration" target="blank"> Wikipedia CI </a><br /></li>	
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_delivery" target="blank"> Wikipedia CD </a>
 										</p>			
@@ -332,7 +353,7 @@
 										Op dezelfde manier stellen containers zoals Docker ons in staat om de omgeving te standaardiseren en de details van het onderliggende besturingssysteem en de hardware te abstraheren. Bij container orkestratie hoeft men niet na te denken over welke server een bepaalde container zal hosten of hoe die container zal worden gestart, gecontroleerd en gekilled.
 										</p>
 										<p>
-										Container orkestratie is major op dit moment. Hoewel het containerformaat zich grotendeels heeft uitgekristalliseerd (Docker), is het echte verschil (van tools) in het implementeren en beheren van die containers.
+										Container orkestratie is major op dit moment. Hoewel het containerformaat zich grotendeels heeft uitgekristalliseerd (Docker), zijn de overwegingen welke tools te gebruiken bij het implementeren en beheren van die containers: de trend is Kubernetes.
 										</p>
 
 										<h3 id="kubernetes">Kubernetes</h3>										
@@ -379,12 +400,18 @@
 
 										<h3 id="applicationorchestration">7. Application Orchestration</h3>
 										<p><span class="image right"><img src="images/application_orchestration.png" alt="" /></span>
-										 Zoals bovenaan deze pagina gezien bestaat een DevOps team uit ontwikkelaars, testers, acceptanten en productie leden. Ofwel, alle technische disciplines cq personen in hun rollen die het product ontwerpen, bouwen, testen, uitrollen en beheren. Dit team werkt op basis van Agile principes en hun aanpak is CI/CD. Team werkcyclus wordt ook wel CI/CD pipeline genoemd en dat wordt end-to-end ondersteund met reeks tools.
-										 </p>
+										Zoals bovenaan deze pagina gezien bestaat een DevOps team uit ontwikkelaars, testers, acceptanten en productie leden. Ofwel, alle technische disciplines cq personen in hun rollen die het product ontwerpen, bouwen, testen, uitrollen en beheren.
+										</p>
+										<p>
+										Dit team werkt op basis van Agile principes, die worden vormgegeven met Scrum methode, en hun aanpak is CI/CD. Team inhoudelijke werkcyclus om een product "de applicatie" te maken en beheren wordt ook wel CI/CD pipeline genoemd.
+										</p>
+										<p>
+										Het samenspel van DevOps onderdelen (stages) tot één geolied geheel "de orkestratie" van werkende applicatie in de diverse OTAP omgevingen wordt geregeld met tools in de pipeline. Ofwel een pipeline kan gezien worden als een set op elkaar afgestemde tools.
+										</p>
 										
 										<h4 id="pipelines">Pipelines</h4>
 										<p>
-										Vanuit de dagelijkse praktijk zijn er veel pipelines uitgekristalliseerd. Meestal rondom een toonaangevend technisch concept. Zeker inzet van "de cloud" heeft geresulteerd in specifieke pipelines zoals "Azure pipeline" en "AWS pipeline" - en de OpenStack pipeline is weer een schil rondom AWS pipeline. Maar ook "Java pipeline" want deze taal kent andere tools dan "HTML-JavaScipt pipeline". Of "Jenkins pipeline" of "Git pipeline" enzovoorts.
+										Vanuit de dagelijkse praktijk zijn er veel pipelines uitgekristalliseerd. Meestal rondom een toonaangevend technisch concept. Inzet van "de cloud" heeft geresulteerd in specifieke pipelines zoals "Azure pipeline" en "AWS pipeline". En de OpenStack pipeline is onstaan rondom AWS pipeline. Of ook "Java pipeline" want deze taal kent andere tools dan "HTML-JavaScipt pipeline". Of "Jenkins pipeline" of "Git pipeline" enzovoorts.
 										</p>
 										<p>
 										 Dus een pipeline behelst geen vast gedefinieerde set van tools, doch betreft indicatieve benaming voor kenmerkende technische CI/CD opzet. Er is dus geen magische set van tools voor een Full Stack Web Developer om te beheersen want in de praktijk is elke CI/CD omgeving anders. Niettemin, onderstaande uitwerking is representatief. 
@@ -394,7 +421,7 @@
 										 <p>
 										 Zoals hierboven beschreven is de CI/CD pipeline onder te verdelen in groepen van soorten werk, verder te noemen stages. En voor elke stage zijn er verschillende tools voorhanden ter realisatie van het werk. Uitwerking is als volgt met enkele belangrijke tools als voorbeeld.
 
-										 <h4 id="planning">Planning</h4>
+										 <h4 id="planning">Stage - Planning</h4>
 
 										<dl>
 										<dt id="bugzilla">Bugzilla</dt>										
@@ -411,33 +438,29 @@
 										</dd>
 										</dl>
 
-										 <h4 id="develop">Develop</h4>
-										 - develop coding (zie diverse programmeertalen met frameworks en IDE's)
-
-										 <h4 id="versionscontrol">Version control</h4>
-										 - versiebeheer (Git)
-
-										 <h4 id="build">Build</h4>
-										 - build (Maven)
-
-										 <h4 id="continous testen">Continious Testen</h4>
-										 - continous testen (Selenium)
-
-										 <h4 id="continous integration">Continious Integration</h4>
-										 - continous integrations (Maven en Jenkins)
-
-										 <h4 id="qa">Quality Assurance</h4>
-										 - testen (Selenium en Cucumber)
-
-										 <h4 id="continious deployment">Continious Deployment</h4>
-										 - release, configure en continious deployment (Ansible)
-
-										 <h4 id="coninious monitoring">Continious Monitoring</h4>
-										 - continous monitoring (Nagios en Elastic Stack) 
-
-										 <h4 id="application orchestration">Application Orchestration</h4>
-										 - application orchestration (automated monitoring en deployment OpenShift) 
+										<dl>
+										<dt id="jira">Jira</dt>										
+										<dd>
+										<p><span class="image right"><img src="images/jira.jpg" alt="" /></span>
+										Jira is een non free closed sourced tool om software issues te tracken en kan ook worden ingezet voor bijhouden van taken binnen een project. Kortingen op licenties zijn mogelijk in sommige gevallen. <br /></li>			
+										→ zie:<a href="https://en.wikipedia.org/wiki/Jira_(software)" target="blank"> Wikipedia Jira</a><br /></li>
+										→ zie:<a href="https://www.atlassian.com/software/jira" target="blank"> Website Jira download & get started</a>
 										</p>
+										<p>
+										Jira bevat vier pakketten:<br /></li>
+										- Jira Core, generiek projectmanagement<br /></li>
+										- Jira Software, de basis inclusief functies voor agile projectbeheer<br /></li>
+										- Jira Service Desk, voor gebruik door IT- of zakelijke servicedesks<br /></li>
+										- Jira Ops, voor incidentbeheer
+										</p>									
+										<p>
+										Jira ondersteunt voor RPC (Remote Procedure Calls) REST, SOAP en XML-RPC. Jira integreert met broncontroleprogramma's zoals Clearcase, Concurrent Versions System (CVS), Git, Mercurial, Perforce, Subversion en Team Foundation Server.
+										</p>
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/sFDLO4DiPFk" target="blank"> YouTube Videotorial Jira</a>
+										</p>
+										</dd>
+										</dl>
 
 
 										 									<!-- 
