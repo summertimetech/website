@@ -414,15 +414,19 @@
 										Vanuit de dagelijkse praktijk zijn er veel pipelines uitgekristalliseerd. Meestal rondom een toonaangevend technisch concept. Inzet van "de cloud" heeft geresulteerd in specifieke pipelines zoals "Azure pipeline" en "AWS pipeline". En de OpenStack pipeline is onstaan rondom AWS pipeline. Of ook "Java pipeline" want deze taal kent andere tools dan "HTML-JavaScipt pipeline". Of "Jenkins pipeline" of "Git pipeline" enzovoorts.
 										</p>
 										<p>
-										 Dus een pipeline behelst geen vast gedefinieerde set van tools, doch betreft indicatieve benaming voor kenmerkende technische CI/CD opzet. Er is dus geen magische set van tools voor een Full Stack Web Developer om te beheersen want in de praktijk is elke CI/CD omgeving anders. Niettemin, onderstaande uitwerking is representatief. 
+										Dus een pipeline behelst geen vast gedefinieerde set van tools, doch betreft indicatieve benaming voor kenmerkende technische CI/CD opzet. Er is dus geen magische set van tools voor een Full Stack Web Developer om te beheersen want in de praktijk is elke CI/CD omgeving anders. Niettemin, onderstaande uitwerking is representatief. 
 										</p>
 
 										<h4 id="stages">Pipeline Stages</h4>
-										 <p>
-										 Zoals hierboven beschreven is de CI/CD pipeline onder te verdelen in groepen van soorten werk, verder te noemen stages. En voor elke stage zijn er verschillende tools voorhanden ter realisatie van het werk. Uitwerking is als volgt met enkele belangrijke tools als voorbeeld.
+										<p>
+										Zoals hierboven beschreven is de CI/CD pipeline onder te verdelen in groepen van soorten werk, verder te noemen stages. En voor elke stage zijn er verschillende tools voorhanden ter realisatie van het werk. Uitwerking is als volgt met enkele belangrijke tools als voorbeeld.
+										</p>
+										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										Pipeline status<br /></li>
+										Volg App in stages van pipeline 
+										</p>
 
-										 <h4 id="planning">Stage - Planning</h4>
-
+										<h4 id="planning">Stage - Planning</h4>
 										<dl>
 										<dt id="bugzilla">Bugzilla</dt>										
 										<dd>
@@ -458,10 +462,103 @@
 										</p>
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/sFDLO4DiPFk" target="blank"> YouTube Videotorial Jira</a>
-										</p>
+										</p>										
 										</dd>
 										</dl>
+										<p>
+										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										Pipeline status<br /></li>
+										Een task wordt toegewezen aan engineer 
+										</p>
+										
+										<h4 id="develop">Stage - Develop / Coding</h4>
+										<p><span class="image right"><img src="images/software_development.jpg" alt="" /></span>
+										In deze guide komen verschillende programmeertalen, coding languages, met diverse frameworks en ook Integrated Development Environments (IDE's) aan de orde.
+										</p>
+										<p>
+										Aangezien deze development tools inhoudelijk elders op deze website zijn behandeld volgt hier verder geen verdere uitdieping en wordt verwezen naar betreffende passages alwaar uiteenzetting plaatsvindt.
+										<dl>
+										<dt>Profielen met Skill set</dt>										
+										<dd>
+										<p>
+										<a href="theweb24.html#basicfrontenddev">Basic Front End Web Developer </a><br /></li>
+										<a href="theweb25.html#fullfledgedfrontenddev">Full Fledged Front End Web Developer </a><br /></li>
+										<a href="theweb26.html#backendsoftware">Back End Web Developer Software</a><br /></li>
+										<a href="theweb27.html#backenddatabase">Back End Web Developer Database</a><br /></li>
+										<a href="theweb28.html#fullstack">Full Stack Web Developer</a><br /></li>
+										
+										Native app Developer Android, iOS, Windows, Fuchsia<br /></li>
+										* voor navigatie naar profiel druk op betreffende functie
+										</p>											
+										</dd>
+									</dl>
+										<p>
+										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										Pipeline status<br /></li>
+										Engineer pushed mbv Git coding naar GitHub repository
+										</p>
 
+										<h4 id="versionscontrol">Stage - Version control</h4>
+										<dl>
+										<dt id="git">Git</dt>						
+										<dd>											
+										<p><span class="image right"><img src="images/theweb24git.jpg" alt="" /></span>
+										Git functioneert op eigen computer (localhost) en bevat compleet historisch overzicht en volledige trackingcapaciteiten van alle wijzigingen, toevoegingen en vervallingen.<br /></li>
+										→ zie:<a href="https://nl.wikipedia.org/wiki/Git_(software)" target="blank"> Wikipedia Git</a>
+										</p>
+
+										<p>
+										Met push wordt de hele wijzigingssessie geupload naar server van GitHub in project repository. Met pull kunnen de wijzigingen (van andere teamleden) vanaf server GitHub repo naar folder op localhost worden gedownload.
+										</p>
+										</dd>
+										
+										<dt id="github">GitHub</dt>								
+										<dd>
+										<p><span class="image right"><img src="images/theweb24github.jpg" alt="" /></span>
+										Github is de repository waarin coding (van teamleden) geplaatst wordt. Github versiebeheer opereert in de cloud en kent “privé” account en “openbare” account, met dus die onderscheidende exposure.<br /></li>
+										→ zie:<a href="https://nl.wikipedia.org/wiki/GitHub" target="blank"> Wikipedia GitHub</a>
+										</p>										
+										<p>
+										Voor continious integration kan de coding vanuit GitHub versiebeheer automatisch gelezen worden voor verdere verwerking.				 
+										</p>
+										</dd>
+										</dl>									
+										<p>
+										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										Pipeline status<br /></li>
+										Coding gaat van repository naar build
+										</p>
+
+										<h4 id="build">Stage - Build</h4>
+										<dl>
+										<dt id="maven">Maven</dt>						
+										<dd>											
+										<p><span class="image right"><img src="images/maven.jpg" alt="" /></span>
+										Maven is een free open source tool voor projectmanagement en geautomatiseerde softwarebouw. Maven wordt voornamelijk gebruikt voor Java projecten, maar kan ook worden gebruikt voor projecten die zijn geschreven in JavaScipt, HTML, c, C++, C#, Ruby, Scala en andere talen.<br /></li>
+										→ zie:<a href="https://en.wikipedia.org/wiki/Apache_Maven" target="blank"> Wikipedia Maven</a>
+										</p>
+										<p>
+										Maven wordt ingesteld (cronjob) om automatisch nieuwe versie van coding te halen uit GitHub. Maven beschrijft in een XML bestand (POM) het softwareproject dat wordt gebouwd, de afhankelijkheden van andere externe modules en componenten, de bouwvolgorde, mappen en vereiste plugins.
+										</p>
+										<p>
+										De Maven build default lifecycle fasen zijn: validate, generate sources, process sources, generate resources, process resources, compile, process test sources, process test resources, test compile, test, package, install en deploy.
+										</p>								
+										<p>
+										→ zie:<a href="https://www.youtube.com/playlist?list=PLEAQNNR8IlB7uvr8EJbCNJq2I82A8cqE7" target="blank"> YouTube Videotorial Playlist Maven</a>
+										</p>
+										<dt id="buildtools">Meerdere build tools</dt>				
+										<dd>
+										<p>
+										Naast Maven zijn er ook andere build tools zoals Nexus, Apache Ant en Gradle. Deze doen ongeveer hetzelfde of anders. Men kan zich zelf verdiepen in welke de voorkeur geniet.
+										</p>										
+										</dd>
+										</dl>
+										<p>
+										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										Pipeline status<br /></li>
+										Coding gaat van build naar integration
+										</p>
+										
 
 										 									<!-- 
 
