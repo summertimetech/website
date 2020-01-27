@@ -468,7 +468,7 @@
 										<p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
 										Pipeline status<br /></li>
-										Een task wordt toegewezen aan engineer 
+										Een task wordt toegewezen aan developer 
 										</p>
 										
 										<h4 id="develop">Stage - Develop / Coding</h4>
@@ -541,7 +541,7 @@
 										Maven wordt ingesteld (cronjob) om automatisch nieuwe versie van coding te halen uit GitHub. Maven beschrijft in een XML bestand (POM) het softwareproject dat wordt gebouwd, de afhankelijkheden van andere externe modules en componenten, de bouwvolgorde, mappen en vereiste plugins.
 										</p>
 										<p>
-										De Maven build default lifecycle fasen zijn: validate, generate sources, process sources, generate resources, process resources, compile, process test sources, process test resources, test compile, test, package, install en deploy.
+										De Maven build default lifecycle fasen zijn: validate, generate sources, process sources, generate resources, process resources, compile, process test sources, process test resources, test compile, Unit test, package, install en deploy.
 										</p>								
 										<p>
 										→ zie:<a href="https://www.youtube.com/playlist?list=PLEAQNNR8IlB7uvr8EJbCNJq2I82A8cqE7" target="blank"> YouTube Videotorial Playlist Maven</a>
@@ -549,7 +549,7 @@
 										<dt id="buildtools">Meerdere build tools</dt>				
 										<dd>
 										<p>
-										Naast Maven zijn er ook andere build tools zoals Nexus, Apache Ant en Gradle. Deze doen ongeveer hetzelfde of anders. Men kan zich zelf verdiepen in welke de voorkeur geniet.
+										Naast Maven zijn er ook andere build tools zoals Nexus Repo Manager; Apache Ant en Gradle. Deze doen ongeveer hetzelfde of anders. Men kan zich zelf verdiepen in welke de voorkeur geniet.
 										</p>										
 										</dd>
 										</dl>
@@ -559,7 +559,41 @@
 										Coding gaat van build naar integration
 										</p>
 										
-
+										<h4 id="CI">Stage - CI Continious Integration</h4>
+										<dl>
+										<dt id="jenkins">Jenkins</dt>						
+										<dd>											
+										<p><span class="image right"><img src="images/jenkins.jpg" alt="" /></span>
+										Jenkins is een free open source tool voor automatiseren van het niet menselijke deel van het software ontwikkelingsproces. In samenwerking met Maven verzorgen van integratie (CI) en het faciliteren van builds voor automated testen en daarna deploy naar OTAP omgevingen (CD).<br /></li>
+										→ zie:<a href="https://en.wikipedia.org/wiki/Jenkins_(software)" target="blank"> Wikipedia Jenkins</a><br /></li>
+										→ zie:<a href="https://www.youtube.com/embed/LFDrDnKPOTg" target="blank"> YouTube Videotorial What is Jenkins</a>
+										</p>
+										<p>
+										Jenkins CI lifecycle<br /></li>
+										- Cronjob haalt automatisch nieuwe builds vanuit Maven<br /></li>
+										- Geautomatiseerde testen worden uitgevoerd met Selenium<br /></li>
+										- Geautomatiseerde testen worden uitgevoerd met Cucumber<br /></li>
+										- Testrapporten komen beschikbaar<br /></li>
+										- Build wordt aangeleverd voor deploy op (O)TAP omgeving<br /></li>			→ zie:<a href="https://en.wikipedia.org/wiki/Software_testing" target="blank"> Wikipedia Software testen</a>	
+										</p>																	
+										<p>
+										→ zie:<a href="https://www.youtube.com/watch?v=7Il_8_YPWtk&list=PL_noPv5wmuO-oOO2-czJsqVbPAKnmT_7h" target="blank"> YouTube Videotorial Playlist Jenkins</a><br /></li>						→ zie:<a href="https://www.youtube.com/watch?v=YlS9saA3A5U&list=PL_noPv5wmuO-EPEktMdKcaScJ4e5TIgVn" target="blank"> YouTube Videotorial Playlist WebDriver.JS</a><br /></li>
+										→ zie:<a href="https://www.youtube.com/playlist?list=PL_noPv5wmuO-JwfM6uiLcg_IlP9E8U1Hv" target="blank"> YouTube Videotorial Playlist JUnit testen en Selenium</a><br /></li>
+										→ zie:<a href="https://www.youtube.com/playlist?list=PL_noPv5wmuO_t6yYbPfjwhJFOOcio89tI" target="blank"> YouTube Videotorial Playlist Cucumber</a>
+										</p>
+										<dt id="CItools">Meerdere CI tools</dt>				
+										<dd>
+										<p>
+										Naast Jenkins zijn er ook andere CI tools zoals Bamboo tbv meerdere builds meerdere platforms paralel; Buildbot tbv test, build omgeving en release; Gump tbv Java-functionaliteit testen; Travis CI voor hosted GitHub projecten. Deze tools hebben min of meer dezelfde plek in CI/CD pipeline als Jenkins maar dan met andere functies. Men kan zich zelf verdiepen in welke de voorkeur geniet.
+										</p>										
+										</dd>
+										</dl>
+										<p>
+										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										Pipeline status<br /></li>
+										Coding gaat van CI naar Quality Assurance QA
+										</p>
+										
 										 									<!-- 
 
 										
