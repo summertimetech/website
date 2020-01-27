@@ -534,7 +534,7 @@
 										<dt id="maven">Maven</dt>						
 										<dd>											
 										<p><span class="image right"><img src="images/maven.jpg" alt="" /></span>
-										Maven is een free open source tool voor projectmanagement en geautomatiseerde softwarebouw. Maven wordt voornamelijk gebruikt voor Java projecten, maar kan ook worden gebruikt voor projecten die zijn geschreven in JavaScipt, HTML, c, C++, C#, Ruby, Scala en andere talen.<br /></li>
+										Maven is een free open source tool voor projectmanagement en geautomatiseerde softwarebouw. Maven wordt voornamelijk gebruikt voor Java projecten, maar kan ook worden gebruikt voor projecten die zijn geschreven in JavaScipt, HTML, C, C++, C#, Ruby, Scala en andere talen.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Apache_Maven" target="blank"> Wikipedia Maven</a>
 										</p>
 										<p>
@@ -548,9 +548,13 @@
 										</p>
 										<dt id="buildtools">Meerdere build tools</dt>				
 										<dd>
+										<p><span class="image right"><img src="images/nexus.png" alt="" /></span>
+										Naast Maven zijn er ook andere build tools zoals veel gebruikt non free Nexus secure on premises Repo Manager (zie hierna video); Apache Ant, JFrog en Gradle. Deze doen ongeveer hetzelfde maar dan anders. Men kan zich zelf verdiepen in welke de voorkeur geniet.<br /></li>
+										→ zie:<a href="https://www.sonatype.com/product-nexus-repository" target="blank"> Website Nexus get started</a>
+										</p>								
 										<p>
-										Naast Maven zijn er ook andere build tools zoals Nexus Repo Manager; Apache Ant en Gradle. Deze doen ongeveer hetzelfde of anders. Men kan zich zelf verdiepen in welke de voorkeur geniet.
-										</p>										
+										→ zie:<a href="https://www.youtube.com/embed/Tve5w2pATZo" target="blank"> YouTube Videotorial Nexus</a>
+										</p>	
 										</dd>
 										</dl>
 										<p>
@@ -570,11 +574,12 @@
 										</p>
 										<p>
 										Jenkins CI lifecycle<br /></li>
-										- Cronjob haalt automatisch nieuwe builds vanuit Maven<br /></li>
+										- Cronjob haalt automatisch nieuwe builds vanuit Maven (of Nexus ea)<br /></li>
 										- Geautomatiseerde testen worden uitgevoerd met Selenium<br /></li>
 										- Geautomatiseerde testen worden uitgevoerd met Cucumber<br /></li>
 										- Testrapporten komen beschikbaar<br /></li>
-										- Build wordt aangeleverd voor deploy op (O)TAP omgeving<br /></li>			→ zie:<a href="https://en.wikipedia.org/wiki/Software_testing" target="blank"> Wikipedia Software testen</a>	
+										- Build artifact wordt geleverd voor release (O)TAP omgeving<br /></li>
+										→ zie:<a href="https://en.wikipedia.org/wiki/Software_testing" target="blank"> Wikipedia Software testen</a>	
 										</p>																	
 										<p>
 										→ zie:<a href="https://www.youtube.com/watch?v=7Il_8_YPWtk&list=PL_noPv5wmuO-oOO2-czJsqVbPAKnmT_7h" target="blank"> YouTube Videotorial Playlist Jenkins</a><br /></li>						→ zie:<a href="https://www.youtube.com/watch?v=YlS9saA3A5U&list=PL_noPv5wmuO-EPEktMdKcaScJ4e5TIgVn" target="blank"> YouTube Videotorial Playlist WebDriver.JS</a><br /></li>
@@ -591,10 +596,75 @@
 										<p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
 										Pipeline status<br /></li>
-										Coding gaat van CI naar Quality Assurance QA
+										1. TEST - build gaat van CI naar T/A-omgeving Quality Assurance QA<br /></li>
+										als alle testen akkoord, dan<br /></li>
+										<span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										2. PROD - build gaat van CI naar P-omgeving CD Continous Deployment<br /></li>
+										3. ONTW - build gaat naar O-omgeving
 										</p>
 										
-										 									<!-- 
+
+										<h4 id="qa">Stage - Quality Assurance</h4>					
+										<p><span class="image right"><img src="images/software-testing.jpg" alt="" /></span>
+										Softwaretests zijn onderzoeken om belanghebbenden te informeren over de kwaliteit van het softwareproduct of de service die wordt getest. Bodoeling is een objectief, onafhankelijk beeld van de software zodat het bedrijf de risico's van software implementatie kan inschatten.<br /></li>
+										→ zie:<a href="https://en.wikipedia.org/wiki/Software_testing" target="blank"> Wikipedia Software testen</a>
+										</p>
+
+										<dl>
+										<dt id="qa">Test Strategie</dt>						
+										<dd>
+										<p>
+										De Test Strategie bevat de WAT vragen zoals:<br /></li>
+										- Voldoet aan vereisten voor ontwerp en ontwikkeling<br /></li>
+										- Reageert correct op allerlei inputs<br /></li>
+										- Voert functies uit binnen een acceptabele tijd<br /></li>
+										- Is voldoende bruikbaar<br /></li>
+										- Kan worden geïnstalleerd en uitgevoerd in beoogde omgevingen<br /></li>
+										- Behaalt het resultaat dat stakeholders wensen<br /></li>
+										</p>
+										<p><span class="image right"><img src="images/v-model.png" alt="" /></span>
+										De Test Strategie bevat tevens WELKE testen zoals:<br /></li>
+										- Functionele Acceptatie Test (FAT)<br /></li>
+										- Gebruikers Acceptatie Test (GAT)<br /></li>
+										- Productie Acceptatie Test (PAT)<br /></li>
+										- Integratie Test<br /></li>
+										- Regressie Test<br /></li>
+										- Performance Test<br /></li>
+										- Penetratie Test<br /></li>
+										- En veel meer test soorten<br /></li>
+										→ zie:<a href="https://www.template.net/business/strategy-templates/sample-test-strategy-template/" target="blank"> Test Strategy Template</a>
+										</p>										
+										</dd>
+										</dl>
+										<dl>
+										<dt id="">Testplan</dt>
+										<dd>					
+										<p>
+										Het Testplan bevat de HOE vragen zoals:<br /></li>
+										- Handmatige of geautomatiseerd<br /></li>
+										- Welke testcases<br /></li>
+										- Testcyclus per soort test<br /></li>
+										- Hoe performance testen met meetpunten en criteria<br /></li>
+										- Benodigde omgeving(en), rollen, bemensing, tijd, geld<br /></li>
+										→ zie:<a href="https://www.template.net/business/plan-templates/simple-test-plan/" target="blank"> Test Plan Template</a>
+										</p>
+										<p>
+										→ zie:<a href="https://www.youtube.com/embed/goaZTAzsLMk" target="blank"> YouTube Videotorial Testing</a>
+										</p>								
+										</dd>
+										</dl>
+
+
+	<!-- 
+
+										<h4 id="continious deployment">Stage - Continious Deployment</h4>
+										 - release
+										 Octopus Deply, Puppet, IBM UrbanCode Release 
+
+
+										 configure en continious deployment (Ansible)
+
+										 								
 
 										
 										<h3 id="closing">Afronding profiel</h3>
