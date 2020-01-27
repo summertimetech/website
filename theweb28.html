@@ -60,7 +60,7 @@
 										
 										<h4 id="DevOps">DevOps</h4>	
 										<p><span class="image right"><img src="images/DevOps.png" alt="" /></span>						 
-										 Cultuurverandering en term voor het software proces van Ontwikkelen, Testen, Acceptatie en Productie (OTAP) waarbij de Productie nauw verbonden is met samenwerking naar tussen ontwikkelaars.
+										 Cultuurverandering en term voor het software proces van Ontwikkelen, Testen, Acceptatie en Productie (OTAP of DTAP) waarbij de Productie nauw verbonden is met samenwerking naar tussen ontwikkelaars.
 										 </p>
 										 <p>									
 										 Zodoende zijn er niet meer de van oudsher bestaande scheidslijnen tussen coding van functionaliteit (de software tijgers) versus IT'ers (de techneuten) die de machines 'op stoom' houden. Het geheel is nu één team dat gezamenlijk het product managed.<br /></li>	
@@ -99,7 +99,7 @@
 										Scrum wordt vaak gebruikt bij nieuwe producten waarbij men al doende leert om de eisen en wensen beter te beschrijven en in bruikbare producten om te zetten. Vaak weet men pas wat men wil als men het eerste product, het prototype, ziet en dan worden alsnog de eisen aangepast. Scrum heeft de flexibiliteit om met laat wijzigende eisen en wensen om te gaan.
 										</p>
 										<p>
-										De resultaten uit scrum overleg kunnen worden vastgelegd in tools zoals Bugzilla en Jira die ook worden gebruikt voor software issues tracken, en voor bijhouden taken. Genoemde tools worden verder onderaan deze pagina behandeld bij<a href="theweb28.html#planning"> hoofdstuk 7 "stage planning"</a>. 
+										De resultaten uit scrum overleg kunnen worden vastgelegd in tools zoals Bugzilla en Jira die ook worden gebruikt voor software issues tracken, en voor bijhouden taken. Genoemde tools worden verder onderaan deze pagina behandeld bij<a href="theweb28.html#planning"> hoofdstuk 7 fase "planning"</a>. 
 										</p>
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/lQ3RBl0rdSo" target="blank"> YouTube Videotorial Scrum</a>
@@ -417,16 +417,16 @@
 										Dus een pipeline behelst geen vast gedefinieerde set van tools, doch betreft indicatieve benaming voor kenmerkende technische CI/CD opzet. Er is dus geen magische set van tools voor een Full Stack Web Developer om te beheersen want in de praktijk is elke CI/CD omgeving anders. Niettemin, onderstaande uitwerking is representatief. 
 										</p>
 
-										<h4 id="stages">Pipeline Stages</h4>
+										<h4 id="stages">Pipeline fasen</h4>
 										<p>
-										Zoals hierboven beschreven is de CI/CD pipeline onder te verdelen in groepen van soorten werk, verder te noemen stages. En voor elke stage zijn er verschillende tools voorhanden ter realisatie van het werk. Uitwerking is als volgt met enkele belangrijke tools als voorbeeld.
+										Zoals hierboven beschreven is de CI/CD pipeline onder te verdelen in groepen van soorten werk, verder te noemen stages. En voor elke fase zijn er verschillende tools voorhanden ter realisatie van het werk. Uitwerking is als volgt met enkele belangrijke tools als voorbeeld.
 										</p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										Pipeline status<br /></li>
-										Volg App in stages van pipeline 
+										Pipeline fase<br /></li>
+										Volg App in fase van pipeline 
 										</p>
 
-										<h4 id="planning">Stage - Planning</h4>
+										<h4 id="planning">Fase: Planning</h4>
 										<dl>
 										<dt id="bugzilla">Bugzilla</dt>										
 										<dd>
@@ -467,11 +467,11 @@
 										</dl>
 										<p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										Pipeline status<br /></li>
+										Pipeline fase<br /></li>
 										Een task wordt toegewezen aan developer 
 										</p>
 										
-										<h4 id="develop">Stage - Develop / Coding</h4>
+										<h4 id="develop">Fase: Develop / Coding</h4>
 										<p><span class="image right"><img src="images/software_development.jpg" alt="" /></span>
 										In deze guide komen verschillende programmeertalen, coding languages, met diverse frameworks en ook Integrated Development Environments (IDE's) aan de orde.
 										</p>
@@ -494,11 +494,11 @@
 									</dl>
 										<p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										Pipeline status<br /></li>
+										Pipeline fase<br /></li>
 										Engineer pushed mbv Git coding naar GitHub repository
 										</p>
 
-										<h4 id="versionscontrol">Stage - Version control</h4>
+										<h4 id="versionscontrol">Fase: Version control</h4>
 										<dl>
 										<dt id="git">Git</dt>						
 										<dd>											
@@ -525,11 +525,11 @@
 										</dl>									
 										<p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										Pipeline status<br /></li>
+										Pipeline fase<br /></li>
 										Coding gaat van repository naar build
 										</p>
 
-										<h4 id="build">Stage - Build</h4>
+										<h4 id="build">Fase: Build</h4>
 										<dl>
 										<dt id="maven">Maven</dt>						
 										<dd>											
@@ -559,11 +559,11 @@
 										</dl>
 										<p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										Pipeline status<br /></li>
+										Pipeline fase<br /></li>
 										Coding gaat van build naar integration
 										</p>
 										
-										<h4 id="CI">Stage - CI Continious Integration</h4>
+										<h4 id="CI">Fase: CI Continious Integration</h4>
 										<dl>
 										<dt id="jenkins">Jenkins</dt>						
 										<dd>											
@@ -595,23 +595,22 @@
 										</dl>
 										<p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										Pipeline status<br /></li>
-										1. TEST - build gaat van CI naar T/A-omgeving Quality Assurance QA<br /></li>
-										als alle testen akkoord, dan<br /></li>
+										Pipeline fase Staging<br /></li>
+										1. TST - build promote naar TST- of ACC omgeving Quality Assurance QA<br /></li>
+										Als alle testen akkoord, dan<br /></li>
 										<span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										2. PROD - build gaat van CI naar P-omgeving CD Continous Deployment<br /></li>
-										3. ONTW - build gaat naar O-omgeving
-										</p>
-										
+										2. PRD - build promote naar P-omgeving CD Continous Deployment<br /></li>
+										3. DEV - build promote naar D-omgeving
+										</p>										
 
-										<h4 id="qa">Stage - Quality Assurance</h4>					
+										<h4 id="qa">Fase: QA Quality Assurance</h4>					
 										<p><span class="image right"><img src="images/software-testing.jpg" alt="" /></span>
 										Softwaretests zijn onderzoeken om belanghebbenden te informeren over de kwaliteit van het softwareproduct of de service die wordt getest. Bodoeling is een objectief, onafhankelijk beeld van de software zodat het bedrijf de risico's van software implementatie kan inschatten.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Software_testing" target="blank"> Wikipedia Software testen</a>
 										</p>
 
 										<dl>
-										<dt id="qa">Test Strategie</dt>						
+										<dt id="teststrategy">Test Strategie</dt>						
 										<dd>
 										<p>
 										De Test Strategie bevat de WAT vragen zoals:<br /></li>
@@ -637,7 +636,7 @@
 										</dd>
 										</dl>
 										<dl>
-										<dt id="">Testplan</dt>
+										<dt id="testplan">Testplan</dt>
 										<dd>					
 										<p>
 										Het Testplan bevat de HOE vragen zoals:<br /></li>
