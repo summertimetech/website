@@ -55,15 +55,15 @@
 
 									<div class="box">
 										<p>
-										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#otap">OTAP omgevingen</a> op te zetten, te deployen en beheren. Kernbegrippen zijn daarbij DevOps, Agile met Scrum en CI/CD.
+										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#otap">OTAP/DTAP omgevingen</a> op te zetten, te deployen en beheren. Kernbegrippen zijn daarbij DevOps, Agile met Scrum en CI/CD.
 										</p>
 										
 										<h4 id="DevOps">DevOps</h4>	
 										<p><span class="image right"><img src="images/DevOps.png" alt="" /></span>						 
-										 Cultuurverandering en term voor het software proces van Ontwikkelen, Testen, Acceptatie en Productie (OTAP of DTAP) waarbij de Productie nauw verbonden is met samenwerking naar tussen ontwikkelaars.
-										 </p>
-										 <p>									
-										 Zodoende zijn er niet meer de van oudsher bestaande scheidslijnen tussen coding van functionaliteit (de software tijgers) versus IT'ers (de techneuten) die de machines 'op stoom' houden. Het geheel is nu één team dat gezamenlijk het product managed.<br /></li>	
+										Cultuurverandering en term voor het software proces van Ontwikkelen, Testen, Acceptatie en Productie (OTAP of DTAP) waarbij de Productie nauw verbonden is met samenwerking naar tussen ontwikkelaars.
+										</p>
+										<p>									
+										Zodoende zijn er niet meer de van oudsher bestaande scheidslijnen tussen coding van functionaliteit (de software tijgers) versus IT'ers (de techneuten) die de machines 'op stoom' houden. Het geheel is nu één team dat gezamenlijk het product managed.<br /></li>	
 										→ zie:<a href="hhttps://en.wikipedia.org/wiki/DevOps" target="blank"> Wikipedia DevOps</a><br /></li>
 										</p>
 
@@ -109,7 +109,7 @@
 
 										<h4 id="CI-CD">CI/CD</h4>	
 										<p><span class="image right"><img src="images/CI-CD.jpg" alt="" /></span>				
-										Continue integratie en continue delivery (CI/CD) is methode van aanpak. Vanuit functionaliteit zijn er dagelijks wijzigingen en verbeteringen die aan gebruikers moet worden geleverd, met OTAP omgevingen die niet meer statische entiteiten zijn zoals 'vroeger', maar dynamisch, schaalbaar en zó mobiel dat ze in 'no time' zich over de hele wereld kunnen verspreiden. CI/CD is dé aanpak om in deze snel wijzigende infrastuctuur omgeving snel wijzigende functionaliteit te implementeren.<br /></li>										
+										Continue integratie en continue delivery (CI/CD) is methode van aanpak. Vanuit functionaliteit zijn er dagelijks wijzigingen en verbeteringen die aan gebruikers moet worden geleverd, met OTAP omgevingen die niet meer statische entiteiten zijn zoals 'vroeger', maar dynamisch, schaalbaar en zó mobiel dat ze in 'no time' zich over de hele wereld kunnen verspreiden. CI/CD is dé aanpak om in deze snel wijzigende infrastuctuur omgeving snel wijzigende functionaliteit te implementeren.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_integration" target="blank"> Wikipedia CI </a><br /></li>	
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_delivery" target="blank"> Wikipedia CD </a>
 										</p>			
@@ -249,8 +249,10 @@
 										</p>
 										<p>
 										Tevens kan geautomatiseerd met een vooraf aangegane account bij Cloud provider nog niet gealloceerde nodes dynamisch allocated en provisioned (deploy, configure), alsook gekilled worden.
-<dl>
-										<dt id="mesosphere">DC/OS Mesospehere</dt>										
+										</p>
+
+										<dl>
+										<dt id="mesosphere">DC/OS Mesospehere</dt>									
 										<dd>
 										<p><span class="image right"><img src="images/mesosphere.jpg" alt="" /></span>
 										DC/OS Mesosphere is een free open source gedistribueerd operating systeem gebaseerd op Apache Mesos. DC/OS Mesospehere categoriseert componenten als in gebruikersruimte of kernelruimte. De kernelruimte omvat de Mesos master en agents, terwijl de gebruikersruimte verschillende systeemcomponenten van het DC/OS omvat.<br /></li>
@@ -262,9 +264,8 @@
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/JXrDQQe7Ud4" target="blank"> YouTube Videotorial DC/OS Apache Mesos</a>
 										</p>
-										
 										</dd>
-									</dl>
+										</dl>
 
 										<h3 id="containerization">4. Containerization</h3>
 										<p><span class="image right"><img src="images/container.png" alt="" /></span>
@@ -273,9 +274,9 @@
 										</p>
 										
 										<dl>
-										<dt id="kenmerkencontainer">Kenmerken</dt>										
+										<dt id="kenmerkencontainer">Kenmerken</dt>									
 										<dd>
-											<p>
+										<p>
 										De industrie standaard voor gebruik van containers is Docker. Hét host operating systeem is altijd Linux. Dat betekent dat Docker Engine op Windows of macOS alleen functioneert in een Virtual Machine zoals VirtualBox met daarin host OS Linux. Of bij Windows10 en  Windows Server 2019 in het Windows Subsystem for Linux.	<br /></li>			
 										→ zie:<a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux" target="blank"> Wikipedia WSL </a>
 										</p>
@@ -292,7 +293,7 @@
 										<dl>
 										<dt id="kenmerkendocker">Kenmerken</dt>										
 										<dd>
-											<p>
+										<p>
 										Docker gebruikt de resource isolatiefuncties van de Linux kernel zoals cgroups en kernel namespaces en een bestandssysteem dat geschikt is voor unificatie zoals OverlayFS om containers binnen een enkele Linux instantie te laten draaien, waarbij de overhead van het starten en onderhouden van virtuele machines wordt voorkomen.
 										</p>
 										</p>
@@ -315,11 +316,9 @@
 										→ zie:<a href="https://en.wikipedia.org/wiki/Job_scheduler" target="blank"> Wikipedia Job Scheduling</a>
 										</p>
 										
-										
 										<h3 id="cron">Cron</h3>										
 										<p><span class="image right"><img src="images/crontab.jpg" alt="" /></span>
-										Een Cronjob of crontab is een Linux commando dat een programma of script op een ingesteld tijdstip uitvoert. Cronjobs worden gebruikt in Unix achtige systemen als Linux, BSD en Apple Macintosh. Het woord 'cron' is afkomstig van het Engelse woord chronograph, dat een soort stopwatch is. Later is hier job (taak) aan toegevoegd. Een cronjob die een systeem service draait wordt een daemon genoemd. Dit zijn meestal servertoepassingen.<br /></li>			
-										→ zie:<a href="https://nl.wikipedia.org/wiki/Cronjob" target="blank"> Wikipedia Cron</a>
+										Een Cronjob of crontab is een Linux commando dat een programma of script op een ingesteld tijdstip uitvoert. Cronjobs worden gebruikt in Unix achtige systemen als Linux, BSD en Apple Macintosh. Het woord 'cron' is afkomstig van het Engelse woord chronograph, dat een soort stopwatch is. Later is hier job (taak) aan toegevoegd. Een cronjob die een systeem service draait wordt een daemon genoemd. Dit zijn meestal servertoepassingen.<br /></li>→ zie:<a href="https://nl.wikipedia.org/wiki/Cronjob" target="blank"> Wikipedia Cron</a>
 										</p>									
 								
 										<dl>
@@ -332,15 +331,16 @@
 										→ zie:<a href="https://www.youtube.com/embed/QEdHAwHfGPc" target="blank"> YouTube Videotorial Cron Jobs</a>
 										</p>
 										</dd>
-									</dl>
-									<dl>
-										<dt id="meerderejobschedulers">Meerdere Job Schedulers</dt>										
+										</dl>
+										
+										<dl>
+										<dt id="meerderejobschedulers">Meerdere Job Schedulers</dt>
 										<dd>
 										<p>
 										Cronjob is zeg maar zoals het begonnen is. Anno heden zijn er vele tools die ook job scheduling bevatten, maar daarnaast nog veel meer doen en op grotere schaal, meestal op containerfarm en datacentre breed niveau. Zo is Kubernetes uitstekend geschikt voor Job Scheduling, maar gelet op het overall karakter daarvan wordt deze tool in volgende hoofdstuk opgenomen.   
 										</p>
 										</dd>
-									</dl>
+										</dl>
 
 										<h3 id="containerorchestration">6. Container Orchestration</h3>
 										<p><span class="image right"><img src="images/container_orchestration.jpg" alt="" /></span>
@@ -364,7 +364,7 @@
 										</p>									
 								
 										<dl>
-										<dt id="kenmerkenkubernetes">Kenmerken</dt>										
+										<dt id="kenmerkenkubernetes">Kenmerken</dt>								
 										<dd>
 										<p><span class="image right"><img src="images/kubernetesflow.png" alt="" /></span>
 										Kubernetes definieert een set bouwstenen "primitives", die gezamenlijk mechanismen bieden die applicaties implementeren, onderhouden en schalen op basis van CPU, geheugen of custom metrics. Kubernetes is losjes gekoppeld en uitbreidbaar om aan verschillende workloads te voldoen.
@@ -379,7 +379,7 @@
 										→ zie:<a href="http://www.youtube.com/playlist?list=PLbG4OyfwIxjFE5Ban_n2JdGad4EDWmisR" target="blank"> YouTube Videotorial Playlist Kubernetes</a>
 										</p>
 										</dd>
-									</dl>
+										</dl>
 										<dl>
 										<dt id="containerorchestrationtools">Meerdere Container Orchestration tools</dt>				
 										<dd>
@@ -390,13 +390,13 @@
 										→ zie:<a href="https://www.youtube.com/embed/9_s3h_GVzZc" target="blank"> YouTube Videotorial Vergelijk Kubernetes vs Docker Swarm</a>
 										</p>
 										<p>
-										Nogal een big thing is OpenShift en ook geschikt voor Container Orchestration, maar gelet op het overall karakter daarvan wordt deze tool in volgende hoofdstuk opgenomen. Onderstaande tutorial maakt vergelijking tussen tools Kubernetes en OpenShift (RedHat, geen foss). 
+										Non free OpenShift van firma RedHat ìs ook geschikt voor Container Orchestration, maar gelet op het overall karakter daarvan wordt deze tool in volgende hoofdstuk opgenomen. Onderstaande tutorial maakt vergelijking tussen tools Kubernetes en OpenShift. 
 										</p>
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/cTPFwXsM2po" target="blank"> YouTube Videotorial Vergelijk Kubernetes vs OpenShift</a>
 										</p>
 										</dd>
-									</dl>
+										</dl>
 
 										<h3 id="applicationorchestration">7. Application Orchestration</h3>
 										<p><span class="image right"><img src="images/application_orchestration.png" alt="" /></span>
@@ -417,7 +417,7 @@
 										Dus een pipeline behelst geen vast gedefinieerde set van tools, doch betreft indicatieve benaming voor kenmerkende technische CI/CD opzet. Er is dus geen magische set van tools voor een Full Stack Web Developer om te beheersen want in de praktijk is elke CI/CD omgeving anders. Niettemin, onderstaande uitwerking is representatief. 
 										</p>
 
-										<h4 id="stages">Pipeline fasen</h4>
+										<h4 id="fasen">Pipeline fasen</h4>
 										<p>
 										Zoals hierboven beschreven is de CI/CD pipeline onder te verdelen in groepen van soorten werk, verder te noemen stages. En voor elke fase zijn er verschillende tools voorhanden ter realisatie van het werk. Uitwerking is als volgt met enkele belangrijke tools als voorbeeld.
 										</p>
@@ -464,8 +464,7 @@
 										→ zie:<a href="https://www.youtube.com/embed/sFDLO4DiPFk" target="blank"> YouTube Videotorial Jira</a>
 										</p>										
 										</dd>
-										</dl>
-										<p>
+										</dl>										
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
 										Pipeline fase<br /></li>
 										Een task wordt toegewezen aan developer 
@@ -477,6 +476,8 @@
 										</p>
 										<p>
 										Aangezien deze development tools inhoudelijk elders op deze website zijn behandeld volgt hier verder geen verdere uitdieping en wordt verwezen naar betreffende passages alwaar uiteenzetting plaatsvindt.
+										</p>
+
 										<dl>
 										<dt>Profielen met Skill set</dt>										
 										<dd>
@@ -486,7 +487,6 @@
 										<a href="theweb26.html#backendsoftware">Back End Web Developer Software</a><br /></li>
 										<a href="theweb27.html#backenddatabase">Back End Web Developer Database</a><br /></li>
 										<a href="theweb28.html#fullstack">Full Stack Web Developer</a><br /></li>
-										
 										Native app Developer Android, iOS, Windows, Fuchsia<br /></li>
 										* voor navigatie naar profiel druk op betreffende functie
 										</p>											
@@ -557,13 +557,20 @@
 										</p>	
 										</dd>
 										</dl>
-										<p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
 										Pipeline fase<br /></li>
 										Coding gaat van build naar integration
 										</p>
 										
 										<h4 id="CI">Fase: CI Continious Integration</h4>
+										<p><span class="image right"><img src="images/ci workflow.jpeg" alt="" /></span>
+										In software engineering is continue integratie (CI) de praktijk om meerdere werkkopieën van ontwikkelaars meerdere keren per dag samen te voegen tot een gedeelde hoofdlijn.
+										</p>
+										<p>
+										Extreme programmeren is (XP) het concept CI over en pleitte ervoor om meer dan eens per dag te integreren - misschien wel tientallen keren per dag.<br /></li>
+										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_integration" target="blank"> Wikipedia CI </a>
+										</p>
+
 										<dl>
 										<dt id="jenkins">Jenkins</dt>						
 										<dd>											
@@ -586,21 +593,20 @@
 										→ zie:<a href="https://www.youtube.com/playlist?list=PL_noPv5wmuO-JwfM6uiLcg_IlP9E8U1Hv" target="blank"> YouTube Videotorial Playlist JUnit testen en Selenium</a><br /></li>
 										→ zie:<a href="https://www.youtube.com/playlist?list=PL_noPv5wmuO_t6yYbPfjwhJFOOcio89tI" target="blank"> YouTube Videotorial Playlist Cucumber</a>
 										</p>
-										<dt id="CItools">Meerdere CI tools</dt>				
+
+										<dt id="CI tools">Meerdere CI tools</dt>				
 										<dd>
 										<p>
 										Naast Jenkins zijn er ook andere CI tools zoals Bamboo tbv meerdere builds meerdere platforms paralel; Buildbot tbv test, build omgeving en release; Gump tbv Java-functionaliteit testen; Travis CI voor hosted GitHub projecten. Deze tools hebben min of meer dezelfde plek in CI/CD pipeline als Jenkins maar dan met andere functies. Men kan zich zelf verdiepen in welke de voorkeur geniet.
 										</p>										
 										</dd>
 										</dl>
-										<p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										Pipeline fase Staging<br /></li>
-										1. TST - build promote naar TST- of ACC omgeving Quality Assurance QA<br /></li>
+										Pipeline fase - inclusief Staging<br /></li>
+										1. Als status is TEST - promote build naar TST- of ACC omgeving Quality Assurance QA<br /></li>
 										Als alle testen akkoord, dan<br /></li>
 										<span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										2. PRD - build promote naar P-omgeving CD Continous Deployment<br /></li>
-										3. DEV - build promote naar D-omgeving
+										2. Promote build naar P-omgeving bij, en ga verder naar fase CD Continous Deployment<br /></li>
 										</p>										
 
 										<h4 id="qa">Fase: QA Quality Assurance</h4>					
@@ -610,7 +616,7 @@
 										</p>
 
 										<dl>
-										<dt id="teststrategy">Test Strategie</dt>						
+										<dt id="test strategy">Test Strategie</dt>						
 										<dd>
 										<p>
 										De Test Strategie bevat de WAT vragen zoals:<br /></li>
@@ -627,6 +633,7 @@
 										- Gebruikers Acceptatie Test (GAT)<br /></li>
 										- Productie Acceptatie Test (PAT)<br /></li>
 										- Integratie Test<br /></li>
+										- End-to-end systeem Test<br /></li>
 										- Regressie Test<br /></li>
 										- Performance Test<br /></li>
 										- Penetratie Test<br /></li>
@@ -635,16 +642,17 @@
 										</p>										
 										</dd>
 										</dl>
+
 										<dl>
 										<dt id="testplan">Testplan</dt>
 										<dd>					
 										<p>
 										Het Testplan bevat de HOE vragen zoals:<br /></li>
 										- Handmatige of geautomatiseerd<br /></li>
-										- Welke testcases<br /></li>
+										- Welke testcases en testdata<br /></li>
 										- Testcyclus per soort test<br /></li>
 										- Hoe performance testen met meetpunten en criteria<br /></li>
-										- Benodigde omgeving(en), rollen, bemensing, tijd, geld<br /></li>
+										- Benodigde TAP-omgevingen, rollen, bemensing, tijd, geld<br /></li>
 										→ zie:<a href="https://www.template.net/business/plan-templates/simple-test-plan/" target="blank"> Test Plan Template</a>
 										</p>
 										<p>
@@ -652,28 +660,102 @@
 										</p>								
 										</dd>
 										</dl>
+										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										Pipeline fase<br /></li>
+										1. TST en/of ACC niét okay; meld bevinding bij, en ga naar fase Planning<br /></li>
+										Als alle testen akkoord, dan<br /></li>
+										<span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										2. TST en ACC wél okay; meld akkoord bij CI; Staging naar PRD gaat via CI naar fase CD
+										</p>	
 
+										<h4 id="CD">Fase - CD Continious Delivery</h4>
+										<p><span class="image right"><img src="images/cd workflow.png" alt="" /></span>
+										In software engineering is Continue Delivery (CD) een aanpak waarbij teams software in korte cycli produceren. En ervoor zorgen dat de software op elk gewenst moment betrouwbaar kan worden vrijgegeven.<br /></li>	
+										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_delivery" target="blank"> Wikipedia CD</a>
+										</p> 
+										<p>
+										Continious Delivery is gericht op het bouwen, testen en vrijgeven van software met hogere snelheid en frequentie. Een eenvoudig en herhaalbaar implementatieproces is belangrijk voor continue levering.
+										</p>
+										<p>Bij onderstaande Git-Jenkins-Kubernetes pipeline wordt bij Continious Delivery ook de PRD omgeving aangemaakt door Kubernetes. Zowel bij aanmaken van DEV en ACC wordt dus ook bij PRD het Ansible Playbook gebruikt. Dus waar men zegt dat continious delivery 'handmatig' plaatsvindt, dan is dat niet geheel correct; behalve dan dat handmatig de trigger tot deploy geschiedt. 
+										<span class="image fit"><img src="images/git_jenkins_k8s_pipeline.png" alt="" /></span>
+										</p>
 
-	<!-- 
+										<p>
+										Hiervoor op deze pagina bij (2) Provisioning is Ansible beschreven, dus zie daar voor verdere details. Ook staat daar vemeld dat er meedere configuratie tools beschikbaar zijn, met daarbij verder ook voor release management Octopus Deploy en IBM UrbanCode Release, Clarive. 
+										</p>
+										<p>
 
-										<h4 id="continious deployment">Stage - Continious Deployment</h4>
-										 - release
-										 Octopus Deply, Puppet, IBM UrbanCode Release 
+										<dl>
+										<dt id="nagios">Nagios</dt>						
+										<dd>											
+										<p><span class="image right"><img src="images/nagios.jpg" alt="" /></span>
+										Nagios is een free open source tool die systemen, netwerken en infrastructuur bewaakt. Nagios biedt monitoring- en waarschuwingsservices voor servers, switches, applicaties en services. Het waarschuwt gebruikers wanneer er iets misgaat en waarschuwt hen een tweede keer wanneer het probleem is opgelost.<br /></li>
+										→ zie:<a href="https:free open sour//en.wikipedia.org/wiki/Nagios" target="blank"> Wikipedia Nagios</a><br /></li>
+										→ zie:<a href="https://www.nagios.org/" target="blank"> Website Nagios Download & Get started</a><br /></li>
+										</p>
+										<p>
+										→ zie:<a href="" target="blank"> YouTube Videotorial Nagios</a>
+										</p>
+										<dt id="monitoringtools">Meerdere monitoring tools</dt>				
+										<dd>										
+										Naast Nagios zijn er ook andere monitoring tools zoals Zabbix, Splunk, ElasticStack etc.<br /></li>
+										→ zie:<a href="https://en.wikipedia.org/wiki/Comparison_of_network_monitoring_systems" target="blank"> Wikipedia overzicht monitoring tools</a>
+										</p>
+										</dd>
+										</dl>
+										
+										<h4 id="CD">Fase - CD Continious Deployment</h4>
+										<p><span class="image right"><img src="images/cd workflow2.png" alt="" /></span>
+										<p>Continue Deployment is continue implementatie met dus vergelijkbare aanpak als bij continue delivery waarbij software in korte cycli wordt geproduceerd, alleen dan met geautomatiseerde implementaties zonder handmatige triggers.<br /></li>	
+										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_delivery" target="blank"> Wikipedia CD</a>
+										</p>			
 
+										<p>
+										Het huidige summum van applicatie orkestratie is hiervoor op deze pagina bij (3) Resource Management beschreven free open source DC/OS Mesosphere of hierna te beschrijven non free OpenShift van de firma RedHat.
+										</p>
+										<p>
+										
+										Deze twee tools kunnen technische niet, of niet goed, complementair functioneren (OpenShift=Hadoop cluster). Dus indien gewenst een van de twee kiezen (tenzij iemand een goed idee heeft).
+										</p>
+										<p>
+										Waar Nagios monitoring alerts stuurt en beheerders 24/7 op basis daarvan acties ondernemen, kunnen ook deze acties verder worden geautomatiseerd. Application orchestration voltrekt zich aan de hand van monitoring van performance van het systeem en op basis van conditionele Alerts wordt predefined automated up- en down scaling van web- en file servers aangestuurd, aldus handmatige interventies onnodig gemaakt.
+										</p>
 
-										 configure en continious deployment (Ansible)
+										<p>
+										Zie voor uitwerking onderstaand plaatje: op de Docker-Kubernetes pipeline wordt het blauwe Container as a Service (Caas) gedeelte van OpenShift toegevoegd.											
+										<span class="image fit"><img src="images/cd workflow3.png" alt="" /></span>
+										</p>
 
-										 								
-
+										<p>
+										Pipelines kunnen zijn:<br /></li>
+										Continious Delivery:<br /></li>
+										- Docker-Kubernetes-Nagios/Prometheus/Grafana *<br /></li>
+										Continious Deployment:<br /></li>
+										- Mesosphere-Docker-Kubernetes (Mesosphere doet taken van Nagios) **<br /></li>
+										- Docker-Kubernetes-OpenShift (Openshift doet taken ipv Mesophere) ***<br /></li>
+										
+										*) Variant voor MKB en grote organisaties zonder 24/7 operations<br /></li>
+										**) Variant voor organisaties mét hoge volumes én datacentre én 24/7 operations<br /></li>
+										***) Gebruikt door paar honderd grote mondiaal opererende 24/7 organisaties
+										</p>
+										<dl>
+										<dt id="openshift">OpenShift</dt>						
+										<dd>											
+										<p><span class="image right"><img src="images/docker_k8s_openshift.jpg" alt="" /></span>
+										OpenShift is non free containerisatie software van RedHat.
+										Het is een on premises platform als een service gebouwd rond Docker containers georkestreerd en beheerd door Kubernetes op basis van Red Hat Enterprise Linux. OpenShift Online is het platform dat wordt aangeboden als software als een service, en Openshift Dedicated is het platform dat wordt aangeboden als een managed service.<br /></li>
+										→ zie:<a href="https://en.wikipedia.org/wiki/OpenShift" target="blank"> Wikipedia OpenShift</a><br /></li>
+										→ zie:<a href="https://www.openshift.com/" target="blank"> Website RedHat Get started</a><br /></li>
+										→ zie:<a href="https://www.youtube.com/embed/618UgtPjbqA" target="blank"> YouTube Videotorial Docker, Kubernetes & OpenShift</a>
+										</p>
+										</dd>
+										</dl>
 										
 										<h3 id="closing">Afronding profiel</h3>
 										<p>
-										Tot zover het overzicht van tools zoals gebruikt door Back End Web Developer Database. Er zijn uiteraard meerdere databases zoals Couchbase, AWS en Azure Document DB, SQLite, NeDB etc. Het is zeker de moeite waard om ook die varianten te bestuderen.
+										Tot zover het overzicht van tools zoals gebruikt door Full Stack Web Developer. 
 										</p>
 										
-										 -->
-
-
 									</div>
 		
 							</section>
