@@ -55,12 +55,12 @@
 
 									<div class="box">
 										<p>
-										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#otap">OTAP/DTAP omgevingen</a> op te zetten, te deployen en beheren. Kernbegrippen zijn daarbij DevOps, Agile met Scrum en CI/CD.
+										Naast ontwikkelen van Websites, Apps en webApps beheerst de Full Stack Web Developer ook de kennis en vaardigheid om <a href="theweb23.html#DTAP">DTAP omgevingen</a> op te zetten, te deployen en beheren. Kernbegrippen zijn daarbij DevOps, Agile met Scrum en CI/CD.
 										</p>
 										
 										<h4 id="DevOps">DevOps</h4>	
 										<p><span class="image right"><img src="images/DevOps.png" alt="" /></span>						 
-										Cultuurverandering en term voor het software proces van Ontwikkelen, Testen, Acceptatie en Productie (OTAP of DTAP) waarbij de Productie nauw verbonden is met samenwerking naar tussen ontwikkelaars.
+										Cultuurverandering en term voor het software proces van Ontwikkelen, Testen, Acceptatie en Productie (DEV, TST, ACC, PRD) waarbij de beheerders van alle omgevingen nauw verbonden zijn met samenwerking naar tussen ontwikkelaars.
 										</p>
 										<p>									
 										Zodoende zijn er niet meer de van oudsher bestaande scheidslijnen tussen coding van functionaliteit (de software tijgers) versus IT'ers (de techneuten) die de machines 'op stoom' houden. Het geheel is nu één team dat gezamenlijk het product managed.<br /></li>	
@@ -72,7 +72,7 @@
 										Agile is mindset met drijvende principes:<br /></li>
 										- Klanttevredenheid door vroege en continue levering van waardevolle software<br /></li>
 										- Verwelkom veranderende eisen, zelfs in de late ontwikkeling<br /></li>
-										- Lever werkende software regelmatig (weken in plaats van maanden)<br /></li>
+										- Lever werkende software regelmatig (weken ipv maanden)<br /></li>
 										- Nauwe, dagelijkse samenwerking tussen 'de business' en ontwikkelaars<br /></li>
 										- Projecten zijn gebouwd rond gemotiveerde individuen, die vertrouwd moeten worden<br /></li>
 										- Face-to-face gesprek is de beste vorm van communicatie (co-locatie)<br /></li>
@@ -109,7 +109,7 @@
 
 										<h4 id="CI-CD">CI/CD</h4>	
 										<p><span class="image right"><img src="images/CI-CD.jpg" alt="" /></span>				
-										Continue integratie en continue delivery (CI/CD) is methode van aanpak. Vanuit functionaliteit zijn er dagelijks wijzigingen en verbeteringen die aan gebruikers moet worden geleverd, met OTAP omgevingen die niet meer statische entiteiten zijn zoals 'vroeger', maar dynamisch, schaalbaar en zó mobiel dat ze in 'no time' zich over de hele wereld kunnen verspreiden. CI/CD is dé aanpak om in deze snel wijzigende infrastuctuur omgeving snel wijzigende functionaliteit te implementeren.<br /></li>
+										Continue integratie en continue delivery & deployment (CI/CD) is methode van aanpak. Vanuit functionaliteit zijn er dagelijks wijzigingen en verbeteringen die aan gebruikers moet worden geleverd, met DTAP omgevingen die niet meer statische entiteiten zijn zoals 'vroeger', maar dynamisch, schaalbaar en zó mobiel dat ze in 'no time' zich over de hele wereld kunnen verspreiden. CI/CD is dé aanpak om in deze snel wijzigende infrastuctuur omgeving snel wijzigende functionaliteit te implementeren.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_integration" target="blank"> Wikipedia CI </a><br /></li>	
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_delivery" target="blank"> Wikipedia CD </a>
 										</p>			
@@ -132,7 +132,7 @@
 										Met machine management wordt bedoeld het identifiseren, selecteren en realiseren van "computers" waarop tooling en software functioneert. Met computers wordt bedoeld bare metal oftewel fysieke, dan wel virtuele apparatuur of servers.
 										</p>
 										<p>
-										Zoals eerder in deze guide bij <a href="theweb23.html#otap">OTAP omgevingen</a> genoemd zijn er vele soorten van machines:<br /></li>
+										Zoals eerder in deze guide bij <a href="theweb23.html#DTAP">DTAP omgevingen</a> genoemd zijn er vele soorten van machines:<br /></li>
 										- Installatie van Virtual Machine zoals VirtualBox of VMware<br /></li>
 										- Installatie van dual boot met 2e of meer OS<br /></li>
 										- Dedicated computer inrichten (Pi4?) of ombouwen bestaande computer<br /></li>
@@ -143,7 +143,7 @@
 										Aangezien voornoemde varianten van machines en hun management in voorgaande Web Developer profielen inhoudelijk zijn behandeld volgt hier verder geen verdere uitdieping en wordt verwezen naar betreffende passages alwaar uiteenzetting plaatsvindt.
 										</p>
 										<p>
-										Product van Machine Management is een overzicht van on premises geinstalleerde, dan wel en of cloud machines / servers mét dus alle LAN of WAN (lees: local netwerk of internet) IP adressen daarvan.
+										PRDuct van Machine Management is een overzicht van on premises geinstalleerde, dan wel en of cloud machines / servers mét dus alle LAN of WAN (lees: local netwerk of internet) IP adressen daarvan.
 										</p>
 										<p>
 										Deze IP adressen zijn nodig voor verder uitvoeren van provisioning en zijn de basis voor werkzaamheden aldaar. Immers, die machines (nodes) zijn de target voor verdere installatie!
@@ -155,21 +155,21 @@
 										→ zie:<a href="https://en.wikipedia.org/wiki/Provisioning_(telecommunications)" target="blank"> Wikipedia Provisioning</a>
 										</p>
 										<p>
-										Typische taken bij het inrichten van een server zijn: selecteer een server uit een pool van beschikbare servers (zie bij 1 hiervoor), laad de juiste software zoals besturingssysteem, apparaatstuurprogramma's, middleware en applicaties, pas het systeem en de software op de juiste manier aan en configureer deze om een ​​boot te maken of te wijzigen image voor deze server en wijzig vervolgens de parameters, zoals het IP-adres, de IP-gateway om bijbehorende netwerk- en opslagbronnen te vinden om het systeem te controleren.
+										Typische taken bij het inrichten van een server zijn: selecteer een server uit een pool van beschikbare servers (1), laad de juiste software zoals besturingssysteem, apparaatstuurprogramma's, middleware en applicaties, pas het systeem en de software op de juiste manier aan en configureer deze om een ​​boot te maken of te wijzigen image voor deze server en wijzig vervolgens de parameters, zoals het IP-adres, de IP-gateway om bijbehorende netwerk- en opslagbronnen te vinden om het systeem te controleren.
 										</p>
 									<dl>
-										<dt id="voorwoord">Voorwoord Vagrant & Ansible</dt>										
+										<dt id="voorwoord">Voorwoord Vagrant & Ansible</dt>							
 										<dd>
 										<p>
-										In de praktijk blijkt dat provisioning van nieuwe OTAP omgevingen geschiedt in twéé stappen:<br /></li>
+										In de praktijk blijkt dat provisioning van nieuwe DTAP omgevingen geschiedt in twéé stappen:<br /></li>
 										- Vagrant deployed mbv IP adressen uit (1) de nieuwe omgevingen<br /></li>
 										- Ansible configureert de nieuwe omgevingen
 										</p>
 										<p>
-										Dit voorwoord is er speciaal op gericht om te wijzen op het feit dat Vagrant tijdens deployment van nieuwe omgeving óók de configuratie daarvan kan uitvoeren. En bijna alle  tutorials laten dat dan ook zien. Echter, de toeschouwer kan daardoor in verwarring raken over wat dan nog het nut is van Ansible.
+										Dit voorwoord is er speciaal op gericht om te wijzen op het feit dat Vagrant tijdens deployment van nieuwe omgeving óók de configuratie daarvan kan uitvoeren. En bijna alle tutorials laten dat dan ook zien. Echter, de toeschouwer kan daardoor in verwarring raken over wat dan nog het nut is van Ansible.
 										</p>
 										<p>
-										Na éénmalige Vagrant deployment van omgevingen is Ansible een prima long term support configuratie management, en meer, tool van omgevingen. Dat is de reden dat in de praktijk blijkt dat Vagrant wordt gebruikt voor deployment om daarna Ansible te starten voor configuratie van die omgeving. 
+										Na éénmalige Vagrant deployment van omgevingen is Ansible een prima long term support configuratie management tool van omgevingen. Dat is de reden dat in de praktijk blijkt dat Vagrant wordt gebruikt voor opstarten van een omgeving om daarna Ansible te starten voor configuratie van die omgeving. 
 										</p>
 										</dd>
 									</dl>
@@ -182,7 +182,7 @@
 										</p>
 										</p>
 									<dl>
-										<dt id="kenmerkenVagrant">Kenmerken</dt>										
+										<dt id="kenmerkenVagrant">Kenmerken</dt>									
 										<dd>
 										<p>
 										Vagrant maakt gebruik van een declaratief configuratiebestand dat een geheel systeem beschrijft. OS, pakketten, besturingssysteemconfiguratie, gebruikers en meer. Machine- en softwarevereisten worden geschreven in een bestand met de naam "Vagrantfile" om de nodige stappen uit te voeren om een omgeving aan te maken.
@@ -206,9 +206,9 @@
 										→ zie:<a href="https://yaml.org/" target="blank"> Website YAML download & get started</a>
 										</p>
 									<dl>
-										<dt id="kenmerkenAnsible">Kenmerken</dt>										
+										<dt id="kenmerkenAnsible">Kenmerken</dt>									
 										<dd>
-											<p>
+										<p>
 										<span class="image right"><img src="images/yaml.jpg" alt="" /></span>
 										- Playbook is opgave van uit te voeren tasks.<br /></li>
 										- Inventory is opgave van target nodes<br /></li>
@@ -228,7 +228,7 @@
 									</dl>
 
 									<dl>
-										<dt id="configratietools">Meerdere configuratie tools</dt>								
+										<dt id="configratietools">Meerdere configuratie tools</dt>					
 										<dd>
 										<p>
 										Naast Ansible zijn er ook andere configuratie tools. Deze doen ongeveer allemaal hetzelfde maar dan net even anders. Men kan zich zelf verdiepen in welke de voorkeur geniet. Onderstaande tutorial maakt vergelijking tussen tools Chef, Puppet, Ansible en Saltstack. 
@@ -245,7 +245,7 @@
 										→ zie:<a href="https://en.wikipedia.org/wiki/Mesosphere,_Inc.#Datacenter_Operating_System" target="blank"> Wikipedia DataCentrum OS</a>
 										</p>
 										<p>
-										Geautomatiseerd beheer geschiedt op bestaande nodes zoals boven bij (1) beschreven en kunnen zijn on premises geinstalleerde, dan wel en of cloud machines en servers naar gelang gebruik in productie (de Ops uit DevOps), met monitoring van need to up or down scaling.
+										Geautomatiseerd beheer geschiedt op bestaande nodes zoals boven bij (1) beschreven en kunnen zijn on premises geinstalleerde, dan wel en of cloud machines en servers naar gelang gebruik (de Ops uit DevOps), met monitoring van need to up or down scaling.
 										</p>
 										<p>
 										Tevens kan geautomatiseerd met een vooraf aangegane account bij Cloud provider nog niet gealloceerde nodes dynamisch allocated en provisioned (deploy, configure), alsook gekilled worden.
@@ -259,7 +259,7 @@
 										→ zie:<a href="https://dcos.io/" target="blank"> Website DC/OS download & get started</a>
 										</p>
 										<p>
-										Deze componenten omvatten onder andere Admin Router, een interne load balancer, Cosmos, een API-service voor interne verpakkingen, Exposant, een Java supervisorsysteem voor ZooKeeper, Marathon, een Apache Mesos framework voor container orkestratie, Mesos-DNS, een interne DNS-service. 
+										Deze componenten omvatten onder andere Admin Router, een interne load balancer, Cosmos, een API-service voor interne verpakkingen, Exposant, een Java supervisorsysteem voor ZooKeeper, Marathon, een Apache Mesos framework voor container orchestration, Mesos DNS, een interne DNS service. 
 										</p>
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/JXrDQQe7Ud4" target="blank"> YouTube Videotorial DC/OS Apache Mesos</a>
@@ -269,7 +269,7 @@
 
 										<h3 id="containerization">4. Containerization</h3>
 										<p><span class="image right"><img src="images/container.png" alt="" /></span>
-										Een container is een standaardeenheid van software die code en al zijn afhankelijkheden verpakt, zodat de toepassing snel en betrouwbaar van de ene computeromgeving naar de andere wordt uitgevoerd. Gecontaineriseerde software zal altijd hetzelfde draaien, ongeacht de infrastructuur. Containers isoleren software van zijn omgeving en zorgen ervoor dat het uniform werkt, ongeacht welke OTAP stage.<br /></li>				
+										Een container is een standaardeenheid van software die code en al zijn afhankelijkheden verpakt, zodat de toepassing snel en betrouwbaar van de ene computeromgeving naar de andere wordt uitgevoerd. Gecontaineriseerde software zal altijd hetzelfde draaien, ongeacht de infrastructuur. Containers isoleren software van zijn omgeving en zorgen ervoor dat het uniform werkt, ongeacht welke DTAP omgeving.<br /></li>				
 										→ zie:<a href="https://en.wikipedia.org/wiki/Category:Containerization_software" target="blank"> Wikipedia Containerization</a>
 										</p>
 										
@@ -286,7 +286,7 @@
 										<h3 id="docker">Docker</h3>
 										<p>
 										<span class="image right"><img src="images/docker.jpg" alt="" /></span>
-										Docker is (community free) open source software en een set van Platform as a Service producten (PaaS) die op OS niveau virtualisatie gebruiken om software te leveren in pakketten die containers worden genoemd. Containers zijn geïsoleerd van elkaar en bundelen hun eigen software, bibliotheken en configuratiebestanden; ze kunnen met elkaar communiceren via goed gedefinieerde kanalen. Docker maakt gebruik van host OS en is dus lichter dan virtuele machines waarbij elke VM een eigen OS heeft.<br /></li>
+										Docker is (community free) open source software en een set van Platform as a Service PRDucten (PaaS) die op OS niveau virtualisatie gebruiken om software te leveren in pakketten die containers worden genoemd. Containers zijn geïsoleerd van elkaar en bundelen hun eigen software, bibliotheken en configuratiebestanden; ze kunnen met elkaar communiceren via goed gedefinieerde kanalen. Docker maakt gebruik van host OS en is dus lichter dan virtuele machines waarbij elke VM een eigen OS heeft.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Docker_(software)" target="blank"> Wikipedia Docker</a><br /></li>
 										→ zie:<a href="https://www.docker.com/" target="blank"> Website Docker download & get started</a>
 
@@ -302,7 +302,7 @@
 										</p>
 										<p>
 
-										Docker en Vagrant (VM VirtualBox als provider) concurreren niet rechtstreeks met elkaar. Ze kunnen samen worden gebruikt. En zijn dat vaak ook door de Vagrant Docker Provisioner te gebruiken om Docker automatisch te installeren, Docker containers te Pullen en bepaalde containers te configureren voor opstarten.
+										Docker en Vagrant (VM VirtualBox als provider) concurreren niet rechtstreeks met elkaar. Ze kunnen samen worden gebruikt. En zijn dat vaak ook door de Vagrant Docker Provisioner te gebruiken om Docker automatisch te installeren, Docker containers te Pullen en bepaalde containers te configureren via Ansible voor opstarten.
 										</p>
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/fqMOX6JJhGo" target="blank"> YouTube Videotorial Docker</a>
@@ -350,15 +350,15 @@
 										Toen kwam Chef, Puppet, Ansible en continue integratie en implementatie (CI). Deze tools maakten het eenvoudig om tests en implementatie te standaardiseren. Belangrijk is dat deze tools, eenmaal op hun plaats, een DevOps team in staat stelt om het detail van wat er moet gebeuren te vergeten.
 										</p>
 										<p>
-										Op dezelfde manier stellen containers zoals Docker ons in staat om de omgeving te standaardiseren en de details van het onderliggende besturingssysteem en de hardware te abstraheren. Bij container orkestratie hoeft men niet na te denken over welke server een bepaalde container zal hosten of hoe die container zal worden gestart, gecontroleerd en gekilled.
+										Op dezelfde manier stellen containers zoals Docker ons in staat om de omgeving te standaardiseren en de details van het onderliggende besturingssysteem en de hardware te abstraheren. Bij container orchestration hoeft men niet na te denken over welke server een bepaalde container zal hosten of hoe die container zal worden gestart, gecontroleerd en gekilled.
 										</p>
 										<p>
-										Container orkestratie is major op dit moment. Hoewel het containerformaat zich grotendeels heeft uitgekristalliseerd (Docker), zijn de overwegingen welke tools te gebruiken bij het implementeren en beheren van die containers: de trend is Kubernetes.
+										Container orchestration is major op dit moment. Hoewel het containerformaat zich grotendeels heeft uitgekristalliseerd (Docker), zijn de overwegingen welke tools te gebruiken bij het implementeren en beheren van die containers: de trend is Kubernetes.
 										</p>
 
 										<h3 id="kubernetes">Kubernetes</h3>										
 										<p><span class="image right"><img src="images/kubernetes.jpg" alt="" /></span>
-										Kubernetes meestal gestileerd als k8s, is een free open source container orkestratiesysteem voor het automatiseren van applicatie implementatie, schaling en beheer over clusters van hosts. Het werkt met verschillende containerhulpmiddelen, waaronder Docker. Veel cloudservices bieden een op Kubernetes gebaseerd platform of infrastructuur als een service (PaaS of IaaS) waarop Kubernetes kan worden ingezet als een platformverschaffende service.<br /></li>			
+										Kubernetes meestal gestileerd als k8s, is een free open source container orchestrationsysteem voor het automatiseren van applicatie implementatie, schaling en beheer over clusters van hosts. Het werkt met verschillende containerhulpmiddelen, waaronder Docker. Veel cloudservices bieden een op Kubernetes gebaseerd platform of infrastructuur als een service (PaaS of IaaS) waarop Kubernetes kan worden ingezet als een platformverschaffende service.<br /></li>			
 										→ zie:<a href="https://en.wikipedia.org/wiki/Kubernetes" target="blank"> Wikipedia Kubernetes</a><br /></li>
 										→ zie:<a href="https://kubernetes.io/" target="blank"> Website Kubernetes download & get started</a>
 										</p>									
@@ -380,6 +380,7 @@
 										</p>
 										</dd>
 										</dl>
+
 										<dl>
 										<dt id="containerorchestrationtools">Meerdere Container Orchestration tools</dt>				
 										<dd>
@@ -406,7 +407,7 @@
 										Dit team werkt op basis van Agile principes, die worden vormgegeven met Scrum methode, en hun aanpak is CI/CD. Team inhoudelijke werkcyclus om een product "de applicatie" te maken en beheren wordt ook wel CI/CD pipeline genoemd.
 										</p>
 										<p>
-										Het samenspel van DevOps onderdelen (stages) tot één geolied geheel "de orkestratie" van werkende applicatie in de diverse OTAP omgevingen wordt geregeld met tools in de pipeline. Ofwel een pipeline kan gezien worden als een set op elkaar afgestemde tools.
+										Het samenspel van DevOps onderdelen (fasen) tot één geolied geheel "de orchestration" van werkende applicatie in de diverse DTAP omgevingen wordt geregeld met tools in de pipeline. Ofwel een pipeline kan gezien worden als een set op elkaar afgestemde tools.
 										</p>
 										
 										<h4 id="pipelines">Pipelines</h4>
@@ -550,7 +551,7 @@
 										<dd>
 										<p><span class="image right"><img src="images/nexus.png" alt="" /></span>
 										Naast Maven zijn er ook andere build tools zoals veel gebruikt non free Nexus secure on premises Repo Manager (zie hierna video); Apache Ant, JFrog en Gradle. Deze doen ongeveer hetzelfde maar dan anders. Men kan zich zelf verdiepen in welke de voorkeur geniet.<br /></li>
-										→ zie:<a href="https://www.sonatype.com/product-nexus-repository" target="blank"> Website Nexus get started</a>
+										→ zie:<a href="https://www.sonatype.com/PRDuct-nexus-repository" target="blank"> Website Nexus get started</a>
 										</p>								
 										<p>
 										→ zie:<a href="https://www.youtube.com/embed/Tve5w2pATZo" target="blank"> YouTube Videotorial Nexus</a>
@@ -559,7 +560,7 @@
 										</dl>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
 										Pipeline fase<br /></li>
-										Coding gaat van build naar integration
+										Coding gaat van build naar CI continious integration
 										</p>
 										
 										<h4 id="CI">Fase: CI Continious Integration</h4>
@@ -567,7 +568,7 @@
 										In software engineering is continue integratie (CI) de praktijk om meerdere werkkopieën van ontwikkelaars meerdere keren per dag samen te voegen tot een gedeelde hoofdlijn.
 										</p>
 										<p>
-										Extreme programmeren is (XP) het concept CI over en pleitte ervoor om meer dan eens per dag te integreren - misschien wel tientallen keren per dag.<br /></li>
+										Extreme programmeren (XP) is het concept om meer dan eens per dag te integreren - misschien wel tientallen keren per dag.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_integration" target="blank"> Wikipedia CI </a>
 										</p>
 
@@ -575,7 +576,7 @@
 										<dt id="jenkins">Jenkins</dt>						
 										<dd>											
 										<p><span class="image right"><img src="images/jenkins.jpg" alt="" /></span>
-										Jenkins is een free open source tool voor automatiseren van het niet menselijke deel van het software ontwikkelingsproces. In samenwerking met Maven verzorgen van integratie (CI) en het faciliteren van builds voor automated testen en daarna deploy naar OTAP omgevingen (CD).<br /></li>
+										Jenkins is een free open source tool voor automatiseren van het niet menselijke deel van het software ontwikkelingsproces. In samenwerking met Maven verzorgen van integratie (CI) en het faciliteren van builds voor automated testen en daarna deploy naar DTAP omgevingen (CD).<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Jenkins_(software)" target="blank"> Wikipedia Jenkins</a><br /></li>
 										→ zie:<a href="https://www.youtube.com/embed/LFDrDnKPOTg" target="blank"> YouTube Videotorial What is Jenkins</a>
 										</p>
@@ -585,7 +586,7 @@
 										- Geautomatiseerde testen worden uitgevoerd met Selenium<br /></li>
 										- Geautomatiseerde testen worden uitgevoerd met Cucumber<br /></li>
 										- Testrapporten komen beschikbaar<br /></li>
-										- Build artifact wordt geleverd voor release (O)TAP omgeving<br /></li>
+										- Build artifact wordt geleverd voor release DTAP omgeving<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Software_testing" target="blank"> Wikipedia Software testen</a>	
 										</p>																	
 										<p>
@@ -606,12 +607,12 @@
 										1. Als status is TEST - promote build naar TST- of ACC omgeving Quality Assurance QA<br /></li>
 										Als alle testen akkoord, dan<br /></li>
 										<span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
-										2. Promote build naar P-omgeving bij, en ga verder naar fase CD Continous Deployment<br /></li>
+										2. Promote build naar PRD omgeving bij fase CD Continous Delivery & Deployment<br /></li>
 										</p>										
 
 										<h4 id="qa">Fase: QA Quality Assurance</h4>					
 										<p><span class="image right"><img src="images/software-testing.jpg" alt="" /></span>
-										Softwaretests zijn onderzoeken om belanghebbenden te informeren over de kwaliteit van het softwareproduct of de service die wordt getest. Bodoeling is een objectief, onafhankelijk beeld van de software zodat het bedrijf de risico's van software implementatie kan inschatten.<br /></li>
+										Softwaretests zijn onderzoeken om belanghebbenden te informeren over de kwaliteit van het softwarePRDuct of de service die wordt getest. Bodoeling is een objectief, onafhankelijk beeld van de software zodat het bedrijf de risico's van software implementatie kan inschatten.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Software_testing" target="blank"> Wikipedia Software testen</a>
 										</p>
 
@@ -652,7 +653,8 @@
 										- Welke testcases en testdata<br /></li>
 										- Testcyclus per soort test<br /></li>
 										- Hoe performance testen met meetpunten en criteria<br /></li>
-										- Benodigde TAP-omgevingen, rollen, bemensing, tijd, geld<br /></li>
+										- Benodigde TAP-omgevingen FAT en GAT op TST, en PAT op ACC
+										- Rollen, bemensing, tijd, geld<br /></li>
 										→ zie:<a href="https://www.template.net/business/plan-templates/simple-test-plan/" target="blank"> Test Plan Template</a>
 										</p>
 										<p>
@@ -676,14 +678,21 @@
 										<p>
 										Continious Delivery is gericht op het bouwen, testen en vrijgeven van software met hogere snelheid en frequentie. Een eenvoudig en herhaalbaar implementatieproces is belangrijk voor continue levering.
 										</p>
-										<p>Bij onderstaande Git-Jenkins-Kubernetes pipeline wordt bij Continious Delivery ook de PRD omgeving aangemaakt door Kubernetes. Zowel bij aanmaken van DEV en ACC wordt dus ook bij PRD het Ansible Playbook gebruikt. Dus waar men zegt dat continious delivery 'handmatig' plaatsvindt, dan is dat niet geheel correct; behalve dan dat handmatig de trigger tot deploy geschiedt. 
+										<p>Bij onderstaande Git-Jenkins-Kubernetes pipeline wordt bij Continious Delivery ook de PRD omgeving aangemaakt door Kubernetes. Zowel bij aanmaken van DEV en ACC wordt dus ook bij PRD het Ansible Playbook gebruikt.
+										</p>
+										<p>
+										Voor verder begrip nu even aandacht voor gehanteerde termen:<br /></li>
+										Continious Delivery<br /></li>
+										- Als vanuit CI de beheerder(!) melding ontvangt om build naar PRD te deployen<br /></li>
+										Continious Deployment<br /></li>
+										- Via trigger vanuit CI wordt build automatisch(!) uitgerold naar PRD<br /></li>
 										<span class="image fit"><img src="images/git_jenkins_k8s_pipeline.png" alt="" /></span>
 										</p>
 
+										<h4 id="beheer">Beheer</h4>	
 										<p>
-										Hiervoor op deze pagina bij (2) Provisioning is Ansible beschreven, dus zie daar voor verdere details. Ook staat daar vemeld dat er meedere configuratie tools beschikbaar zijn, met daarbij verder ook voor release management Octopus Deploy en IBM UrbanCode Release, Clarive. 
-										</p>
-										<p>
+										Om DEV, TST, ACC en PRD omgevingen te monitoren zijn er tools. Als voor DevOps pipeline gekozen is voor Mesosphere of OpenShift dan verrichten die tools ook de monitoring. Als níet voor twee genoemde is gekozen dan zijn er dedicated monitoring tools.					 
+										</p>						
 
 										<dl>
 										<dt id="nagios">Nagios</dt>						
@@ -696,13 +705,20 @@
 										<p>
 										→ zie:<a href="" target="blank"> YouTube Videotorial Nagios</a>
 										</p>
-										<dt id="monitoringtools">Meerdere monitoring tools</dt>				
-										<dd>										
-										Naast Nagios zijn er ook andere monitoring tools zoals Zabbix, Splunk, ElasticStack etc.<br /></li>
+										</dd>
+										<dt id="ElasticStack">ElasticStack</dt>
+										<dd>			
+										ElasticStack is veelzijdig set van tools. Zo kan ElasticStack ingezet worden voor web traffic monitoring, maar dus ook voor andere infrastructuur componenten.<br /></li>
+										→ zie:<a href="theweb24.html#elastic"> Profiel Basic Front End Web Developer</a>
+										</p> 
+										</dd>
+
+										<dt id="monitoringtools">Meerdere monitoring tools</dt>						<dd>			
+										Naast Nagios zijn er ook andere monitoring tools zoals Zabbix, Splunk etc.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Comparison_of_network_monitoring_systems" target="blank"> Wikipedia overzicht monitoring tools</a>
 										</p>
 										</dd>
-										</dl>
+										</dl>									
 										
 										<h4 id="CD">Fase - CD Continious Deployment</h4>
 										<p><span class="image right"><img src="images/cd workflow2.png" alt="" /></span>
@@ -711,11 +727,11 @@
 										</p>			
 
 										<p>
-										Het huidige summum van applicatie orkestratie is hiervoor op deze pagina bij (3) Resource Management beschreven free open source DC/OS Mesosphere of hierna te beschrijven non free OpenShift van de firma RedHat.
+										Het huidige summum van applicatie orchestration is hiervoor op deze pagina bij (3) Resource Management beschreven free open source DC/OS Mesosphere of hierna te beschrijven non free OpenShift van de firma RedHat.
 										</p>
 										<p>
 										
-										Deze twee tools kunnen technische niet, of niet goed, complementair functioneren (OpenShift=Hadoop cluster). Dus indien gewenst een van de twee kiezen (tenzij iemand een goed idee heeft).
+										Deze twee tools kunnen technische niet, of niet goed, complementair functioneren. Dus indien gewenst een van de twee kiezen.
 										</p>
 										<p>
 										Waar Nagios monitoring alerts stuurt en beheerders 24/7 op basis daarvan acties ondernemen, kunnen ook deze acties verder worden geautomatiseerd. Application orchestration voltrekt zich aan de hand van monitoring van performance van het systeem en op basis van conditionele Alerts wordt predefined automated up- en down scaling van web- en file servers aangestuurd, aldus handmatige interventies onnodig gemaakt.
@@ -750,6 +766,11 @@
 										</p>
 										</dd>
 										</dl>
+										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
+										Pipeline fase<br /></li>
+										PRD meldingen, issues, wensen en eisen worden bijgehouden bij fase Planning<br /></li>										
+										</p>
+
 										
 										<h3 id="closing">Afronding profiel</h3>
 										<p>
