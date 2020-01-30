@@ -255,7 +255,7 @@
 										<dt id="mesosphere">DC/OS Mesospehere</dt>									
 										<dd>
 										<p><span class="image right"><img src="images/mesosphere.jpg" alt="" /></span>
-										DC/OS Mesosphere is een free open source gedistribueerd operating systeem gebaseerd op Apache Mesos. DC/OS Mesospehere categoriseert componenten als in gebruikersruimte of kernelruimte. De kernelruimte omvat de Mesos master en agents, terwijl de gebruikersruimte verschillende systeemcomponenten van het DC/OS omvat.<br /></li>
+										DC/OS Mesosphere is een open source gedistribueerd operating systeem gebaseerd op Apache Mesos. DC/OS Mesospehere categoriseert componenten als in gebruikersruimte of kernelruimte. De kernelruimte omvat de Mesos master en agents, terwijl de gebruikersruimte verschillende systeemcomponenten van het DC/OS omvat.<br /></li>
 										→ zie:<a href="https://dcos.io/" target="blank"> Website DC/OS download & get started</a>
 										</p>
 										<p>
@@ -407,7 +407,7 @@
 										Dit team werkt op basis van Agile principes, die worden vormgegeven met Scrum methode, en hun aanpak is CI/CD. Team inhoudelijke werkcyclus om een product "de applicatie" te maken en beheren wordt ook wel CI/CD pipeline genoemd.
 										</p>
 										<p>
-										Het samenspel van DevOps onderdelen (fasen) tot één geolied geheel "de orchestration" van werkende applicatie in de diverse DTAP omgevingen wordt geregeld met tools in de pipeline. Ofwel een pipeline kan gezien worden als een set op elkaar afgestemde tools.
+										Het samenspel van DevOps onderdelen (fasen) tot één geolied geheel "de orchestration" van werkende applicatie in de diverse DTAP omgevingen wordt geregeld met tools in de pipeline. Ofwel een pipeline kan gezien worden als een set op elkaar afgestemde tools. En veel van die tools zijn in deze web developer guide aan de orde geweest; erbij nog een paar hierna. 
 										</p>
 										
 										<h4 id="pipelines">Pipelines</h4>
@@ -565,10 +565,7 @@
 										
 										<h4 id="CI">Fase: CI Continious Integration</h4>
 										<p><span class="image right"><img src="images/ci workflow.jpeg" alt="" /></span>
-										In software engineering is continue integratie (CI) de praktijk om meerdere werkkopieën van ontwikkelaars meerdere keren per dag samen te voegen tot een gedeelde hoofdlijn.
-										</p>
-										<p>
-										Extreme programmeren (XP) is het concept om meer dan eens per dag te integreren - misschien wel tientallen keren per dag.<br /></li>
+										In software engineering is continue integratie (CI) de praktijk om meerdere werkkopieën van ontwikkelaars een of meerdere keren per dag samen te voegen tot een gedeelde hoofdlijn.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_integration" target="blank"> Wikipedia CI </a>
 										</p>
 
@@ -689,9 +686,9 @@
 										<span class="image fit"><img src="images/git_jenkins_k8s_pipeline.png" alt="" /></span>
 										</p>
 
-										<h4 id="beheer">Beheer</h4>	
+										<h4 id="infra monitoring">Infrastructuur monitoring</h4>	
 										<p>
-										Om DEV, TST, ACC en PRD omgevingen te monitoren zijn er tools. Als voor DevOps pipeline gekozen is voor Mesosphere of OpenShift dan verrichten die tools ook de monitoring. Als níet voor twee genoemde is gekozen dan zijn er dedicated monitoring tools.					 
+										Om DEV, TST, ACC en PRD omgevingen te monitoren zijn er tools. Als voor DevOps pipeline gekozen is voor Mesosphere of OpenShift dan verrichten die tools ook de monitoring. Als níet voor twee genoemde is gekozen dan zijn er dedicated monitoring tools, zoals hierna genoemd.				 
 										</p>						
 
 										<dl>
@@ -712,6 +709,9 @@
 										ElasticStack is veelzijdig set van tools. Zo kan ElasticStack ingezet worden voor web traffic monitoring, maar dus ook voor andere infrastructuur componenten.<br /></li>
 										→ zie:<a href="theweb24.html#elastic"> Profiel Basic Front End Web Developer</a>
 										</p> 
+										<p> 
+										→ zie:<a href="https://www.youtube.com/playlist?list=PLhLSfisesZIvHS3ryJS9BPy1Mkj8Yoq7s" target="blank"> YouTube Videotorial Playlist Elastic and Kubernetes</a>
+										</p> 
 										</dd>
 
 										<dt id="monitoringtools">Meerdere monitoring tools</dt>						<dd>			
@@ -723,56 +723,71 @@
 										
 										<h4 id="CD">Fase - CD Continious Deployment</h4>
 										<p><span class="image right"><img src="images/cd workflow2.png" alt="" /></span>
-										<p>Continue Deployment is continue implementatie met dus vergelijkbare aanpak als bij continue delivery waarbij software in korte cycli wordt geproduceerd, alleen dan met geautomatiseerde implementaties zonder handmatige triggers.<br /></li>	
+										<p>Continue Deployment is continue implementatie met dus vergelijkbare aanpak als bij continue delivery waarbij software in korte cycli wordt geproduceerd, alleen dan met geautomatiseerde(!) implementaties zonder handmatige bemoeienis.<br /></li>	
 										→ zie:<a href="https://en.wikipedia.org/wiki/Continuous_delivery" target="blank"> Wikipedia CD</a>
 										</p>			
 
 										<p>
 										Het huidige summum van applicatie orchestration is hiervoor op deze pagina bij (3) Resource Management beschreven free open source DC/OS Mesosphere of hierna te beschrijven non free OpenShift van de firma RedHat.
 										</p>
+										<p>										
+										Deze twee tools kunnen technische complementair functioneren, waarbij Kubernetes een cluster van nodes managed, aanvullend Mesosphere dat meerdere k8s clusters managed.
+										</p>
+										<h4 id="infra monitoring mngt">Infrastructuur monitoring & management</h4>
 										<p>
-										
-										Deze twee tools kunnen technische niet, of niet goed, complementair functioneren. Dus indien gewenst een van de twee kiezen.
+										Hiervoor bij continious delivery is behandeld dat Nagios en andere tools monitoring alerts sturen en beheerders 24/7 op basis daarvan acties ondernemen. Uitstekende en zeer bruikbare tools! Maar er is meer. Deze mensenlijke interacties kunnen verder worden geautomatiseerd.
+										</p>
+										<p><span class="image right"><img src="images/autoscaling.png" alt="" /></span>
+										Volledig geautomatiseerde application orchestration voltrekt zich aan de hand van monitoring van performance van het systeem en op basis van conditionele Alerts wordt predefined automated up- en down scaling van web- en file servers, en infrastructuur componenten zoals routers, switches, loadbalancers enzovoorts, aangestuurd.<br /></li>	
+										→ zie:<a href="https://en.wikipedia.org/wiki/Autoscaling" target="blank"> Wikipedia Autoscaling</a>
+										</p>								
+										<p>
+										Genoemde manier van infrastructuur management is fenomenaal: het stelt in staat om een App die gaat van 100 gelijktijdige gebruikers automatisch op te schalen naar 10.000, en daarna naar een miljoen en dan naar 100 miljoen gebruikers. En als gebruik daalt, dan ook weer automatisch naar beneden te schalen.
 										</p>
 										<p>
-										Waar Nagios monitoring alerts stuurt en beheerders 24/7 op basis daarvan acties ondernemen, kunnen ook deze acties verder worden geautomatiseerd. Application orchestration voltrekt zich aan de hand van monitoring van performance van het systeem en op basis van conditionele Alerts wordt predefined automated up- en down scaling van web- en file servers aangestuurd, aldus handmatige interventies onnodig gemaakt.
-										</p>
-
+										Deze manier van binnen minuten ipv maanden op grote schaal alloceren van technische infrastructuur was tot nog niet zolang geleden ondenkbaar. En gebruik van deze cloud oplossing afgerekend op basis van aantallen nodes en hoeveelheid dataverkeer. Door automatisch up-and-down-scaling wordt alleen betaald voor daadwerkelijk verbruik.	
+										</p>										
 										<p>
-										Zie voor uitwerking onderstaand plaatje: op de Docker-Kubernetes pipeline wordt het blauwe Container as a Service (Caas) gedeelte van OpenShift toegevoegd.											
+										Zie voor uitwerking onderstaand plaatje: op de Docker-Kubernetes pipeline wordt het blauwe Container as a Service (Caas) gedeelte van OpenShift toegevoegd.<br /></li>									
 										<span class="image fit"><img src="images/cd workflow3.png" alt="" /></span>
 										</p>
 
 										<p>
-										Pipelines kunnen zijn:<br /></li>
+										Verschillende pipelines kunnen zijn:<br /></li>
 										Continious Delivery:<br /></li>
-										- Docker-Kubernetes-Nagios/Prometheus/Grafana *<br /></li>
+										- Docker-Kubernetes-Nagios-Elastic/Prometheus/Grafana<br /></li>
 										Continious Deployment:<br /></li>
-										- Mesosphere-Docker-Kubernetes (Mesosphere doet taken van Nagios) **<br /></li>
-										- Docker-Kubernetes-OpenShift (Openshift doet taken ipv Mesophere) ***<br /></li>
-										
-										*) Variant voor MKB en grote organisaties zonder 24/7 operations<br /></li>
-										**) Variant voor organisaties mét hoge volumes én datacentre én 24/7 operations<br /></li>
-										***) Gebruikt door paar honderd grote mondiaal opererende 24/7 organisaties
+										- Docker-Kubernetes-Mesosphere<br /></li>
+										- Docker-Kubernetes-OpenShift										
 										</p>
 										<dl>
 										<dt id="openshift">OpenShift</dt>						
 										<dd>											
 										<p><span class="image right"><img src="images/docker_k8s_openshift.jpg" alt="" /></span>
-										OpenShift is non free containerisatie software van RedHat.
-										Het is een on premises platform als een service gebouwd rond Docker containers georkestreerd en beheerd door Kubernetes op basis van Red Hat Enterprise Linux. OpenShift Online is het platform dat wordt aangeboden als software als een service, en Openshift Dedicated is het platform dat wordt aangeboden als een managed service.<br /></li>
+										OpenShift containerisatie software van RedHat. Het is een on premises platform als een service gebouwd rond Docker containers georkestreerd en beheerd door Kubernetes op basis van RedHat Enterprise Linux. OpenShift Online is het platform dat wordt aangeboden als software als een service, en Openshift Dedicated is het platform dat wordt aangeboden als een managed service.<br /></li>
 										→ zie:<a href="https://en.wikipedia.org/wiki/OpenShift" target="blank"> Wikipedia OpenShift</a><br /></li>
 										→ zie:<a href="https://www.openshift.com/" target="blank"> Website RedHat Get started</a><br /></li>
 										→ zie:<a href="https://www.youtube.com/embed/618UgtPjbqA" target="blank"> YouTube Videotorial Docker, Kubernetes & OpenShift</a>
 										</p>
 										</dd>
 										</dl>
+
+										<h4 id="compare">Mesosphere vs OpenShift</h4>	
+										<p><span class="image right"><img src="images/orchestration.png" alt="" /></span>
+										Om inzet van tools te overwegen is vergelijking tussen beide interessant. Navolgende artikelen gaan in op diverse aspecten.<br /></li>
+										→ zie:<a href="https://stackshare.io/stackups/mesosphere-vs-red-hat-openshift" target="blank"> Artikel Mesosphere vs OpenShift</a><br /></li>
+										→ zie:<a href="https://comparisons.financesonline.com/openshift-vs-mesosphere" target="blank"> Artikel Mesosphere vs OpenShift</a> 
+										</p>	
+										
+										<p>
+										.
+
+										</p>
 										<p><span class="image left"><img src="images/arrow_green.jpg" alt="" /></span>
 										Pipeline fase<br /></li>
 										PRD meldingen, issues, wensen en eisen worden bijgehouden bij fase Planning<br /></li>										
 										</p>
-
-										
+									
 										<h3 id="closing">Afronding profiel</h3>
 										<p>
 										Tot zover het overzicht van tools zoals gebruikt door Full Stack Web Developer. 
