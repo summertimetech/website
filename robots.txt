@@ -1,8 +1,0 @@
-# www.robotstxt.org/
-
-# location of sitemap.txt
-Sitemap: http://summertime.tech/sitemap.xml
-
-# Allow crawling of all content
-User-agent: *
-Disallow:
