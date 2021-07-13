@@ -9,272 +9,387 @@
 
 <url>
   <loc>https://www.summertime.tech/</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/index.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/story.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/alerts.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/project.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/infra.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/linux.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/zone.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/pse%20VPN%20ProtonVPN.pdf</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/pse%20Firewall.pdf</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/pse%20Encryptie%20VeraCrypt.pdf</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb15.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb09.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb08.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb28.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.summertime.tech/docs/pse%20AVG.pdf</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://www.summertime.tech/docs/DCN-Google-Data-Collection-Paper.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/docs/pwc_20190919_strategische_marktanalyse.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/docs/pse%20MinDef%20brief%20app%20Polar%20op%20smartwatch.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/docs/pse%20Zuckerberg%20Responses%20to%20Commerce%20Committee%20QFRs1.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/docs/pse%20Zuckerberg%20Responses%20to%20Judiciary%20Committee%20QFRs.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb20.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb23.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb02.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb03.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb10.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectMandateTemplate.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectBriefTemplate.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectBriefTemplate(verkorte%20versie).docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectBriefPresentation.pptx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectBusinessCaseTemplate.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectInitiationDocument_PID-template.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectInitiationStagePlanTemplate.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectStagePlanTemplate.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectBenefitsReviewPlanTemplate.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectProductDescriptionTemplate.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectProductDescriptionTemplateShort.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectWorkPackageTemplate.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectWorkPackageTemplateShort.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectHighlightReportShort.pptx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/ProjectIssueReportTemplate.docx</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb29.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/DIY%20all%20in%20one%20desktop%20computer.pdf</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw.EN.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2001-mxLinux.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2006-Debian.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2008-ElementaryOS.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2003-Mint.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2004-Pop!_OS.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2005-Ubuntu.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2002-Manjaro.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2007-EndeavourOS.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2009-Fedora.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/dtw/dtw%2010-openSuse-TW-Gnome.pdf</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb14.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb16.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb17.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb21.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb22.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb11.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb12.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb13.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb18.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb19.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/pse%20dynamic%20DNS%20auto%20update%20using%20ddclient%20on%20linux.pdf</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb24.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb07.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb27.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb25.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb26.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://www.summertime.tech/docs/the%20web%204%20DIY%20OTAP%20computer%20en%20website%20server.pdf</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
   <loc>https://www.summertime.tech/theweb04.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb05.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.summertime.tech/docs/the%20web%203%20Website%20builder%20Dropshipping.pdf</loc>
+  <lastmod>2021-07-13T11:07:51+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://www.summertime.tech/theweb06.html</loc>
-  <lastmod>2021-07-11T13:12:11+00:00</lastmod>
+  <lastmod>2021-07-13T11:07:52+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
